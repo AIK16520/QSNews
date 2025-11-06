@@ -37,6 +37,11 @@ jobs:
         run: python src/main.py init-db
 
       - name: Fetch newsletters from Gmail
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWSLETTER_GMAIL: ${{ secrets.NEWSLETTER_GMAIL }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          DATABASE_PATH: data/articles.db
         run: python src/main.py fetch-newsletters
 
       - name: Scrape newsletter archives (weekly only)
