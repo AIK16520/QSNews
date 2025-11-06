@@ -1,0 +1,48 @@
+name: Fetch and Process Articles
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  fetch-and-process:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch articles from RSS feeds
+        run: |
+          python src/main.py fetch
+
+      - name: Process articles
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python src/main.py process
+
+      - name: Generate review report
+        run: |
+          python src/main.py generate-review
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/articles.db outputs/pending_review.md
+          git diff --staged --quiet || git commit -m "Update articles: $(date +'%Y-%m-%d %H:%M')"
+          git push

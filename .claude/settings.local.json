@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Ali Imran/Desktop/Quicksilver/frontend/src/**)",
+      "Bash(dir:*)",
+      "Bash(python migrate_db.py:*)",
+      "Bash(python src/main.py:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:newsletter.strictlyvc.com)",
+      "WebSearch",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(streamlit run:*)",
+      "Bash(timeout:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

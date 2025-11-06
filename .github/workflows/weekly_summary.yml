@@ -1,0 +1,54 @@
+name: Weekly Summary
+
+on:
+  schedule:
+    # Every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  weekly-summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate weekly summary
+        run: |
+          python src/main.py weekly-summary
+
+      - name: Create GitHub Issue with summary
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const summary = fs.readFileSync('outputs/weekly_summary.md', 'utf8');
+            const weekOf = new Date().toISOString().split('T')[0];
+
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Newsletter Prep: Week of ${weekOf}`,
+              body: summary,
+              labels: ['newsletter']
+            });
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add outputs/weekly_summary.md
+          git diff --staged --quiet || git commit -m "Weekly summary: $(date +'%Y-%m-%d')"
+          git push
