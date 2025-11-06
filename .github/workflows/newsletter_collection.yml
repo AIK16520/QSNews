@@ -11,6 +11,7 @@ on:
 jobs:
   collect-newsletters:
     runs-on: ubuntu-latest
+    environment: QS
 
     steps:
       - name: Checkout repository
@@ -26,27 +27,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Create .env file
-        run: |
-          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> .env
-          echo "NEWSLETTER_GMAIL=${{ secrets.NEWSLETTER_GMAIL }}" >> .env
-          echo "GMAIL_APP_PASS=${{ secrets.GMAIL_APP_PASS }}" >> .env
-          echo "DATABASE_PATH=data/articles.db" >> .env
-
       - name: Initialize database (if needed)
+        env:
+          DATABASE_PATH: data/articles.db
         run: python src/main.py init-db
 
       - name: Fetch newsletters from Gmail
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NEWSLETTER_GMAIL: ${{ secrets.NEWSLETTER_GMAIL }}
-          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          NEWSLETTER_PASS: ${{ secrets.NEWSLETTER_PASS }}
           DATABASE_PATH: data/articles.db
         run: python src/main.py fetch-newsletters
 
       - name: Scrape newsletter archives (weekly only)
         # Only run archive scraping on Mondays to avoid rate limits
         if: github.event.schedule == '0 9 * * 1'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DATABASE_PATH: data/articles.db
         run: python src/main.py scrape-newsletter-archives
 
       - name: Commit updated database
