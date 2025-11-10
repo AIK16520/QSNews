@@ -84,6 +84,14 @@ class Industry(Base):
 
     def __repr__(self):
         return f"<Industry(id={self.id}, name='{self.name}')>"
+    
+    @classmethod
+    def from_dict(cls, data: dict):
+        """Create instance from dictionary (for Supabase API)."""
+        instance = cls()
+        instance.id = data.get('id')
+        instance.name = data.get('name')
+        return instance
 
 
 class Article(Base):
@@ -123,6 +131,20 @@ class Article(Base):
 
     def __repr__(self):
         return f"<Article(id={self.id}, title='{self.title[:50]}...', source='{self.source}', status='{self.status}')>"
+    
+    @classmethod
+    def from_dict(cls, data: dict):
+        """Create instance from dictionary (for Supabase API)."""
+        from datetime import datetime
+        instance = cls()
+        for key, value in data.items():
+            if key in ['published_date', 'fetched_date'] and value and isinstance(value, str):
+                try:
+                    value = datetime.fromisoformat(value.replace('Z', '+00:00'))
+                except:
+                    pass
+            setattr(instance, key, value)
+        return instance
 
     def to_dict(self):
         """Convert article to dictionary for easy serialization."""
@@ -193,6 +215,20 @@ class Newsletter(Base):
 
     def __repr__(self):
         return f"<Newsletter(id={self.id}, title='{self.title[:50]}...', source='{self.source}', status='{self.status}')>"
+    
+    @classmethod
+    def from_dict(cls, data: dict):
+        """Create instance from dictionary (for Supabase API)."""
+        from datetime import datetime
+        instance = cls()
+        for key, value in data.items():
+            if key in ['published_date', 'fetched_date', 'received_date'] and value and isinstance(value, str):
+                try:
+                    value = datetime.fromisoformat(value.replace('Z', '+00:00'))
+                except:
+                    pass
+            setattr(instance, key, value)
+        return instance
 
     def to_dict(self):
         """Convert newsletter to dictionary for easy serialization."""
