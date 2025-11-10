@@ -219,22 +219,35 @@ _SessionLocal = None
 
 
 def get_engine():
-    """Get or create SQLAlchemy engine."""
+    """Get or create SQLAlchemy engine (supports both SQLite and PostgreSQL/Supabase)."""
     global _engine
     if _engine is None:
-        # Ensure data directory exists
-        db_dir = os.path.dirname(config.DATABASE_PATH)
-        if db_dir and not os.path.exists(db_dir):
-            os.makedirs(db_dir)
-            logger.info(f"Created database directory: {db_dir}")
+        if config.USE_SUPABASE and config.SUPABASE_DB_URL:
+            # Use Supabase (PostgreSQL)
+            _engine = create_engine(
+                config.SUPABASE_DB_URL,
+                echo=False,  # Set to True for SQL debugging
+                pool_size=10,
+                max_overflow=20,
+                pool_pre_ping=True,  # Verify connections before using
+                pool_recycle=3600  # Recycle connections after 1 hour
+            )
+            logger.info(f"Database engine created: Supabase PostgreSQL")
+        else:
+            # Use local SQLite
+            # Ensure data directory exists
+            db_dir = os.path.dirname(config.DATABASE_PATH)
+            if db_dir and not os.path.exists(db_dir):
+                os.makedirs(db_dir)
+                logger.info(f"Created database directory: {db_dir}")
 
-        # Create engine
-        _engine = create_engine(
-            f'sqlite:///{config.DATABASE_PATH}',
-            echo=False,  # Set to True for SQL debugging
-            connect_args={'check_same_thread': False}  # Needed for SQLite
-        )
-        logger.info(f"Database engine created: {config.DATABASE_PATH}")
+            # Create engine
+            _engine = create_engine(
+                f'sqlite:///{config.DATABASE_PATH}',
+                echo=False,  # Set to True for SQL debugging
+                connect_args={'check_same_thread': False}  # Needed for SQLite
+            )
+            logger.info(f"Database engine created: {config.DATABASE_PATH}")
 
     return _engine
 

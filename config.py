@@ -22,6 +22,10 @@ print(f"[CONFIG DEBUG] OPENAI_API_KEY loaded: {'✓' if OPENAI_API_KEY else '✗
 # Database
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/articles.db')
 
+# Supabase Configuration
+SUPABASE_DB_URL = os.getenv('SUPABASE_DB_URL')  # postgresql://postgres:[PASSWORD]@db.[PROJECT].supabase.co:5432/postgres
+USE_SUPABASE = os.getenv('USE_SUPABASE', 'false').lower() == 'true'
+
 # RSS Feed Sources
 # Core sources (always enabled)
 RSS_SOURCES = {
