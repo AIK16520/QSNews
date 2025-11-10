@@ -181,6 +181,13 @@ def identify_newsletter_source(from_email: str, subject: str) -> str:
         'synthedia': 'Synthedia',
         'dataelixir': 'Data Elixir',
         'llmsresearch': 'LLMs Research',
+        'sequoiacap': 'Sequoia Capital',
+        'sequoia': 'Sequoia Capital',
+        'techcrunch': 'TechCrunch',
+        'tc daily': 'TechCrunch Daily',
+        'startups weekly': 'TechCrunch Startups Weekly',
+        'chiefaioffice': 'Chief AI Office',
+        'chief ai office': 'Chief AI Office',
     }
 
     for pattern, name in patterns.items():
@@ -214,8 +221,16 @@ def fetch_newsletters_from_gmail(
     gmail_user = config.NEWSLETTER_GMAIL
     gmail_pass = config.NEWSLETTER_PASS
 
+    # Debug logging
+    logger.info(f"[DEBUG] gmail_user present: {bool(gmail_user)}")
+    logger.info(f"[DEBUG] gmail_pass present: {bool(gmail_pass)}")
+    if gmail_user:
+        logger.info(f"[DEBUG] gmail_user value: {gmail_user[:5]}...@{gmail_user.split('@')[1] if '@' in gmail_user else 'unknown'}")
+    
     if not gmail_user or not gmail_pass:
         logger.error("Newsletter Gmail credentials not found in environment")
+        logger.error(f"[DEBUG] gmail_user is None/empty: {not gmail_user}")
+        logger.error(f"[DEBUG] gmail_pass is None/empty: {not gmail_pass}")
         return []
 
     imap = connect_to_gmail(gmail_user, gmail_pass)

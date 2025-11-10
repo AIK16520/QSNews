@@ -8,7 +8,11 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Newsletter Gmail Credentials
 NEWSLETTER_GMAIL = os.getenv('NEWSLETTER_GMAIL')
-NEWSLETTER_PASS = os.getenv('GMAIL_APP_PASS')  # 16-character app password
+NEWSLETTER_PASS = os.getenv('NEWSLETTER_PASS') or os.getenv('GMAIL_APP_PASS')  # 16-character app password
+
+# Debug: Print environment variables (remove after testing)
+print(f"[DEBUG] NEWSLETTER_GMAIL loaded: {'✓' if NEWSLETTER_GMAIL else '✗'} ({NEWSLETTER_GMAIL[:10] + '...' if NEWSLETTER_GMAIL else 'None'})")
+print(f"[DEBUG] NEWSLETTER_PASS loaded: {'✓' if NEWSLETTER_PASS else '✗'} ({'***' if NEWSLETTER_PASS else 'None'})")
 
 # Database
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/articles.db')
