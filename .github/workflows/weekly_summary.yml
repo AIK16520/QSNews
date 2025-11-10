@@ -6,6 +6,10 @@ on:
     - cron: '0 9 * * 1'
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   weekly-summary:
     runs-on: ubuntu-latest
@@ -47,8 +51,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add outputs/weekly_summary.md
-          git diff --staged --quiet || git commit -m "Weekly summary: $(date +'%Y-%m-%d')"
+          git diff --staged --quiet || git commit -m "📊 Weekly summary: $(date +'%Y-%m-%d')"
           git push

@@ -2,16 +2,18 @@ name: Daily Newsletter Collection
 
 on:
   schedule:
-    # Run daily at 9 AM UTC (adjust time as needed)
-    - cron: '0 9 * * *'
+    # Run daily at 10 AM UTC
+    - cron: '0 10 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   collect-newsletters:
     runs-on: ubuntu-latest
-    environment: QS
 
     steps:
       - name: Checkout repository
@@ -48,15 +50,10 @@ jobs:
           DATABASE_PATH: data/articles.db
         run: python src/main.py scrape-newsletter-archives
 
-      - name: Commit updated database
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/articles.db
-          git commit -m "Update newsletter database - $(date +'%Y-%m-%d')" || echo "No changes to commit"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git diff --staged --quiet || git commit -m "📧 Update newsletters: $(date +'%Y-%m-%d %H:%M UTC')"
+          git push

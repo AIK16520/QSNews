@@ -2,9 +2,12 @@ name: Fetch and Process Articles
 
 on:
   schedule:
-    # Run every 6 hours
-    - cron: '0 */6 * * *'
+    # Run daily at 10 AM UTC
+    - cron: '0 10 * * *'
   workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
 
 jobs:
   fetch-and-process:
@@ -41,8 +44,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add data/articles.db outputs/pending_review.md
-          git diff --staged --quiet || git commit -m "Update articles: $(date +'%Y-%m-%d %H:%M')"
+          git diff --staged --quiet || git commit -m "📰 Update articles: $(date +'%Y-%m-%d %H:%M UTC')"
           git push
