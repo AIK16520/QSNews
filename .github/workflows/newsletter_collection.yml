@@ -39,7 +39,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NEWSLETTER_GMAIL: ${{ secrets.NEWSLETTER_GMAIL }}
           NEWSLETTER_PASS: ${{ secrets.NEWSLETTER_PASS }}
-          DATABASE_PATH: data/articles.db
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          USE_SUPABASE: true
         run: python src/main.py fetch-newsletters
 
       - name: Scrape newsletter archives (weekly only)
@@ -47,13 +49,9 @@ jobs:
         if: github.event.schedule == '0 9 * * 1'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          DATABASE_PATH: data/articles.db
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          USE_SUPABASE: true
         run: python src/main.py scrape-newsletter-archives
 
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add data/articles.db
-          git diff --staged --quiet || git commit -m "📧 Update newsletters: $(date +'%Y-%m-%d %H:%M UTC')"
-          git push
+      # No need to commit database - using Supabase API
