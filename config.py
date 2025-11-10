@@ -18,6 +18,9 @@ NEWSLETTER_PASS = os.getenv('NEWSLETTER_PASS') or os.getenv('GMAIL_APP_PASS')  #
 print(f"[CONFIG DEBUG] NEWSLETTER_GMAIL loaded: {'✓' if NEWSLETTER_GMAIL else '✗'} ({NEWSLETTER_GMAIL[:10] + '...' if NEWSLETTER_GMAIL else 'None'})", flush=True)
 print(f"[CONFIG DEBUG] NEWSLETTER_PASS loaded: {'✓' if NEWSLETTER_PASS else '✗'} ({'***' if NEWSLETTER_PASS else 'None'})", flush=True)
 print(f"[CONFIG DEBUG] OPENAI_API_KEY loaded: {'✓' if OPENAI_API_KEY else '✗'}", flush=True)
+print(f"[CONFIG DEBUG] SUPABASE_URL loaded: {'✓' if SUPABASE_URL else '✗'} ({SUPABASE_URL[:30] + '...' if SUPABASE_URL else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] SUPABASE_KEY loaded: {'✓' if SUPABASE_KEY else '✗'} ({'eyJ...' if SUPABASE_KEY else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] USE_SUPABASE: {USE_SUPABASE}", flush=True)
 
 # Database
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/articles.db')
