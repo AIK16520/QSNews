@@ -71,19 +71,10 @@ jobs:
           echo "Scraping newsletter archives..."
           python src/main.py scrape-newsletter-archives
 
-      - name: 📝 Generate Review Report
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          USE_SUPABASE: true
-        run: |
-          echo "Generating review report..."
-          python src/main.py generate-review
-
       - name: 📊 Summary
         run: |
           echo "✅ Daily collection complete!"
           echo "- RSS articles fetched and processed"
           echo "- Gmail newsletters collected"
-          echo "- Review report generated"
+          echo "- All data saved to Supabase"
 
