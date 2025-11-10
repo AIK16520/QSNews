@@ -3,6 +3,7 @@ openai>=1.0.0
 python-dotenv>=1.0.0
 sqlalchemy>=2.0.0
 psycopg2-binary>=2.9.0  # For PostgreSQL/Supabase support
+supabase>=2.0.0  # Supabase Python client
 
 # RSS and web scraping
 feedparser>=6.0.10
@@ -23,3 +24,4 @@ python-dateutil>=2.8.2
 python-docx>=1.0.0  # For Word (.docx) export
 markdown>=3.5.0     # For Markdown to HTML conversion (PDF)
 weasyprint>=60.0    # For PDF export
+reportlab>=4.0.0    # For PDF generation
