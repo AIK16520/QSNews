@@ -62,6 +62,14 @@ class Category(Base):
 
     def __repr__(self):
         return f"<Category(id={self.id}, name='{self.name}')>"
+    
+    @classmethod
+    def from_dict(cls, data: dict):
+        """Create instance from dictionary (for Supabase API)."""
+        instance = cls()
+        instance.id = data.get('id')
+        instance.name = data.get('name')
+        return instance
 
 
 class Industry(Base):
@@ -252,8 +260,15 @@ def get_engine():
     return _engine
 
 
-def get_session() -> Session:
+def get_session():
     """Get a new database session. Creates tables if they don't exist."""
+    # Check if we should use Supabase API
+    if config.USE_SUPABASE and config.SUPABASE_URL and config.SUPABASE_KEY:
+        from src.utils.database_supabase import get_supabase_session
+        logger.info("Using Supabase API")
+        return get_supabase_session()
+    
+    # Use SQLAlchemy for SQLite
     global _SessionLocal
 
     engine = get_engine()
