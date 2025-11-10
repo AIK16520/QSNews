@@ -171,11 +171,19 @@ def cmd_full_run():
 
 def cmd_fetch_newsletters():
     """Fetch newsletters from Gmail."""
+    import os
     from processors.newsletter_pipeline import fetch_and_process_gmail_newsletters
 
     print("\n" + "="*80)
     print("FETCHING NEWSLETTERS FROM GMAIL")
     print("="*80 + "\n")
+    
+    # DEBUG: Check environment variables
+    print(f"[MAIN DEBUG] Environment variables present:", flush=True)
+    print(f"  - NEWSLETTER_GMAIL: {'✓' if os.getenv('NEWSLETTER_GMAIL') else '✗'}", flush=True)
+    print(f"  - NEWSLETTER_PASS: {'✓' if os.getenv('NEWSLETTER_PASS') else '✗'}", flush=True)
+    print(f"  - OPENAI_API_KEY: {'✓' if os.getenv('OPENAI_API_KEY') else '✗'}", flush=True)
+    print("", flush=True)
 
     start_time = datetime.now()
 
