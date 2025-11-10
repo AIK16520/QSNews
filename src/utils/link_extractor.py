@@ -26,17 +26,26 @@ UTILITY_LINK_PATTERNS = [
     r'^(privacy|privacy policy|terms|terms of service)$',
     r'^(follow us|social|twitter|linkedin|facebook)$',
     r'^(download|get the app|install)$',
-    
+
     # App store links
     r'(app store|google play|microsoft store)',
-    
+
     # Generic/empty
     r'^(link|here|click here|read more)$',
     r'^(see more|learn more|view more)$',
     r'^(share|forward|forward to a friend)$',
-    
+
     # Single words that are likely navigation
     r'^(home|archive|blog|newsletter|feed)$',
+
+    # Promotional/spam patterns
+    r'(ai marketplace)',
+    r'(access our database)',
+    r'(funding database)',
+    r'(chief ai office pro)',
+    r'(for free|get free access)',
+    r'(referral|refer a friend)',
+    r'(\d+\+?\s*(ai\s*)?startups)',  # "2000+ AI Startups"
 ]
 
 # URL patterns to filter out
@@ -102,6 +111,72 @@ def get_link_domain(url: str) -> str:
         return domain
     except:
         return ''
+
+
+def clean_tracking_url(url: str) -> str:
+    """
+    Clean tracking URLs and extract the real destination.
+
+    Common tracking patterns:
+    - marketing.statnews.com/e3t/... (email tracking)
+    - click.convertkit-mail.com/...
+    - email.mg.../c/...
+
+    Args:
+        url: Raw URL that might be a tracking link
+
+    Returns:
+        Cleaned URL (or original if not a tracking link)
+    """
+    try:
+        # Only warn about extremely long URLs (>2000 chars), but don't truncate
+        # Many newsletter tracking URLs are legitimately 500-1500 chars
+        if len(url) > 2000:
+            logger.warning(f"Very long URL detected ({len(url)} chars): {url[:100]}...")
+            # Keep the full URL - it might still be valid
+
+        # Known tracking domains
+        tracking_domains = [
+            'marketing.statnews.com',
+            'click.convertkit-mail',
+            'email.mg.',
+            'mandrillapp.com',
+            'list-manage.com',
+            'links.ml.',
+            'go.redirectingat.com',
+            'link.mail.',
+            'elinka',  # Common in Insidr and other newsletters
+            'elinkaf',  # Variant
+        ]
+
+        # Check if this is a tracking URL
+        is_tracking = any(domain in url for domain in tracking_domains)
+
+        if is_tracking:
+            # Try to extract destination from query parameters
+            from urllib.parse import parse_qs, urlparse
+
+            parsed = urlparse(url)
+            query_params = parse_qs(parsed.query)
+
+            # Common parameter names for destination URLs
+            destination_params = ['url', 'u', 'redirect', 'dest', 'destination', 'link', 'goto']
+
+            for param in destination_params:
+                if param in query_params:
+                    destination = query_params[param][0]
+                    if destination.startswith('http'):
+                        logger.debug(f"Extracted destination from tracking URL: {destination}")
+                        return destination
+
+            # If we can't extract destination, keep the tracking URL but note it
+            logger.debug(f"Could not extract destination from tracking URL: {url[:100]}")
+
+        return url
+
+    except Exception as e:
+        logger.warning(f"Error cleaning tracking URL: {e}")
+        return url
 
 
 def extract_better_context(a_tag, soup) -> str:
@@ -217,11 +292,14 @@ def extract_links_with_intelligence(html_content: str, source: str = '') -> List
         # Find all <a> tags
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
-            
+
             # Skip non-http links (mailto, tel, etc.)
             if not href.startswith('http'):
                 continue
-            
+
+            # Clean tracking URLs and extract real destination
+            href = clean_tracking_url(href)
+
             # Get link text
             link_text = a_tag.get_text(strip=True)
             
@@ -344,5 +422,7 @@ if __name__ == "__main__":
         print(f"   URL: {link['url']}")
         print(f"   Explanation: {link['explanation']}")
         print()
+
+
 
 

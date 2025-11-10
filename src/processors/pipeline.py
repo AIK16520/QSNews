@@ -15,12 +15,12 @@ from datetime import datetime
 
 from sqlalchemy.orm import Session
 
-from fetchers.rss_fetcher import load_fetched_articles
-from fetchers.web_scraper import scrape_article_content
-from processors.deduplicator import is_duplicate
-from processors.classifier import classify_article
-from processors.content_validator import validate_article_quality
-from utils.database import (
+from src.fetchers.rss_fetcher import load_fetched_articles
+from src.fetchers.web_scraper import scrape_article_content
+from src.processors.deduplicator import is_duplicate
+from src.processors.classifier import classify_article
+from src.processors.content_validator import validate_article_quality
+from src.utils.database import (
     Article,
     get_session,
     get_or_create_category,

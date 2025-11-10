@@ -14,25 +14,43 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../.
 
 from sqlalchemy.orm import Session
 
-from fetchers.newsletter_fetcher import fetch_newsletters_from_gmail
-from fetchers.newsletter_archive_scraper import scrape_newsletter_archive, scrape_all_archives
-from processors.newsletter_processor import (
+from src.fetchers.newsletter_fetcher import fetch_newsletters_from_gmail
+from src.fetchers.newsletter_archive_scraper import scrape_newsletter_archive, scrape_all_archives
+from src.processors.newsletter_processor import (
     generate_newsletter_summary,
     extract_newsletter_title,
     extract_newsletter_tags,
     extract_newsletter_industries
 )
-from utils.database import (
+from src.utils.database import (
     Newsletter,
     get_session,
     init_database
 )
+from clean_newsletter_links import clean_newsletter_links
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Patterns to identify intro/welcome newsletters that should be filtered out
+INTRO_NEWSLETTER_PATTERNS = [
+    'welcome',
+    'thanks for subscribing',
+    'subscription confirmed',
+    'confirm your',
+    "you're in",
+    "you're officially",
+    'thank you for joining',
+    'quick steps to get started',
+    'subscription successful',
+    'confirm your email',
+    'action required',
+    "here's what's next",
+    "here's your access"
+]
 
 
 def is_duplicate_newsletter(session: Session, newsletter_data: Dict) -> bool:
@@ -70,6 +88,29 @@ def is_duplicate_newsletter(session: Session, newsletter_data: Dict) -> bool:
     return False
 
 
+def is_intro_newsletter(newsletter_data: Dict) -> bool:
+    """
+    Check if a newsletter is an intro/welcome newsletter that should be filtered out.
+
+    Only checks title and email_subject for specific welcome/confirmation patterns.
+
+    Args:
+        newsletter_data: Newsletter dictionary
+
+    Returns:
+        True if it's an intro newsletter (should be filtered), False otherwise
+    """
+    title = extract_newsletter_title(newsletter_data).lower()
+    email_subject = (newsletter_data.get('email_subject', '') or '').lower()
+
+    # Check if any intro pattern is in the title or email subject
+    for pattern in INTRO_NEWSLETTER_PATTERNS:
+        if pattern in title or pattern in email_subject:
+            return True
+
+    return False
+
+
 def process_single_newsletter(
     session: Session,
     newsletter_data: Dict
@@ -86,6 +127,11 @@ def process_single_newsletter(
     """
     source = newsletter_data.get('source', 'Unknown')
 
+    # Filter out intro/welcome newsletters
+    if is_intro_newsletter(newsletter_data):
+        logger.info(f"Skipping intro/welcome newsletter: {source}")
+        return None
+
     # Check for duplicates
     if is_duplicate_newsletter(session, newsletter_data):
         logger.info(f"Skipping duplicate: {source}")
@@ -100,9 +146,23 @@ def process_single_newsletter(
 
         # Extract tags using AI
         tags = extract_newsletter_tags(title, summary)
-        
+
         # Extract industries using AI
         industries = extract_newsletter_industries(title, summary)
+
+        # INVESTOR-GRADE LINK CLEANING: Clean links before saving
+        raw_links = newsletter_data.get('extracted_links', [])
+        cleaned_links = clean_newsletter_links(
+            newsletter_id=None,  # Not yet saved, so no ID
+            links=raw_links,
+            newsletter_summary=summary,
+            use_ai=True  # Use AI to improve bad titles
+        )
+
+        links_before = len(raw_links)
+        links_after = len(cleaned_links)
+        if links_before != links_after:
+            logger.info(f"  Link cleaning: {links_before} → {links_after} links (removed {links_before - links_after} bad links)")
 
         # Create Newsletter object
         newsletter = Newsletter(
@@ -112,12 +172,13 @@ def process_single_newsletter(
             summary=summary,
             full_content=newsletter_data.get('html_content'),
             plain_text=newsletter_data.get('plain_text'),
-            extracted_links=newsletter_data.get('extracted_links', []),
+            extracted_links=cleaned_links,  # CLEANED LINKS
             tags=tags,
             industries=industries,
             email_subject=newsletter_data.get('email_subject'),
             from_email=newsletter_data.get('from_email'),
             received_date=newsletter_data.get('received_date', datetime.utcnow()),
+            archive_url=newsletter_data.get('archive_url'),  # Optional field
             fetched_date=datetime.utcnow(),
             status='not_included'
         )

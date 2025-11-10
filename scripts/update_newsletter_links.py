@@ -289,3 +289,5 @@ if __name__ == "__main__":
         update_all_newsletters(batch_size=args.batch_size, dry_run=args.dry_run)
 
 
+
+

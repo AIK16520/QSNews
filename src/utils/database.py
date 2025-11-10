@@ -104,6 +104,11 @@ class Article(Base):
     generated_content = Column(Text, nullable=True)  # AI-generated article
     final_content = Column(Text, nullable=True)  # Final version after user tweaks
 
+    # Newsletter Builder fields (manual control)
+    commentary = Column(Text, nullable=True)  # User's manual insights for this item
+    newsletter_section = Column(String(128), nullable=True)  # e.g., "Top Story", "Quick Links"
+    section_order = Column(Integer, nullable=True)  # Order within the section
+
     # Relationships
     category = relationship('Category', back_populates='articles')
     industries = relationship('Industry', secondary=article_industries, back_populates='articles')
@@ -159,6 +164,9 @@ class Newsletter(Base):
     from_email = Column(String(256), nullable=True)
     received_date = Column(DateTime, default=datetime.utcnow, nullable=False)
 
+    # Archive URL (optional - only for newsletters from public archives)
+    archive_url = Column(String(2048), nullable=True)
+
     # Same workflow as articles
     fetched_date = Column(DateTime, default=datetime.utcnow, nullable=False)
     your_analysis = Column(Text, nullable=True)  # Editor's notes
@@ -169,6 +177,11 @@ class Newsletter(Base):
     ai_instructions = Column(Text, nullable=True)
     generated_content = Column(Text, nullable=True)
     final_content = Column(Text, nullable=True)
+
+    # Newsletter Builder fields (manual control)
+    commentary = Column(Text, nullable=True)  # User's manual insights for this item
+    newsletter_section = Column(String(128), nullable=True)  # e.g., "Top Story", "Quick Links"
+    section_order = Column(Integer, nullable=True)  # Order within the section
 
     def __repr__(self):
         return f"<Newsletter(id={self.id}, title='{self.title[:50]}...', source='{self.source}', status='{self.status}')>"
@@ -185,9 +198,11 @@ class Newsletter(Base):
             'plain_text': self.plain_text,
             'extracted_links': self.extracted_links,
             'tags': self.tags,
+            'industries': self.industries,
             'email_subject': self.email_subject,
             'from_email': self.from_email,
             'received_date': self.received_date.isoformat() if self.received_date else None,
+            'archive_url': self.archive_url,
             'fetched_date': self.fetched_date.isoformat() if self.fetched_date else None,
             'your_analysis': self.your_analysis,
             'status': self.status,

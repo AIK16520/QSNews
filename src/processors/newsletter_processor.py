@@ -72,17 +72,21 @@ def generate_newsletter_summary(
     plain_text = newsletter_data.get('plain_text', '')
     extracted_links = newsletter_data.get('extracted_links', [])
 
-    # Use plain text if available, otherwise clean HTML
+    # Clean HTML but remove all URLs to prevent AI from using tracking links
     content = plain_text if plain_text else clean_html_content(html_content)
+
+    # Remove all URLs from content to force AI to use only extracted_links
+    import re
+    content = re.sub(r'https?://[^\s<>"{}|\\^`\[\]]+', '[URL]', content)
 
     # Limit content length for API (keep first 3000 chars)
     if len(content) > 3000:
         content = content[:3000] + "..."
 
-    # Format links for context
+    # Format links for context (these are the ONLY links AI should use)
     links_context = ""
     if extracted_links:
-        links_context = "\n\nKey Links Found:\n"
+        links_context = "\n\nAVAILABLE LINKS (use ONLY these URLs):\n"
         for i, link in enumerate(extracted_links[:10], 1):  # Top 10 links
             link_title = link.get('title', 'Link')
             link_url = link.get('url', '')
@@ -99,13 +103,15 @@ def generate_newsletter_summary(
 
         system_prompt = """You are an expert at summarizing newsletters. Create a brief 2-3 sentence summary that:
 1. Highlights the main themes and topics covered
-2. Embeds the most important/relevant links inline using markdown format: [descriptive text](url)
-3. Is concise and informative
-4. Focuses on what matters most to AI/tech/VC professionals
-5. Does NOT use any emojis - use plain text only
+2. Is concise and informative
+3. Focuses on what matters most to AI/tech/VC professionals
+4. Does NOT use any emojis - use plain text only
+5. Does NOT include embedded links or URLs - just describe the topics
+
+IMPORTANT: Do NOT embed any markdown links or URLs in the summary. Links will be displayed separately. Just provide a clear narrative description of the content.
 
 Example format:
-"This week's newsletter covers [OpenAI's new GPT-5 announcement](https://example.com), discusses [implications for enterprise AI](https://example2.com), and highlights [3 new coding tools](https://example3.com) that boost developer productivity."
+"This week's newsletter covers OpenAI's new GPT-5 announcement, discusses implications for enterprise AI adoption, and highlights three new coding tools that boost developer productivity by automating code reviews."
 """
 
         user_prompt = f"""Summarize this newsletter from {source}:
@@ -114,9 +120,8 @@ Title: {title}
 
 Content:
 {content}
-{links_context}
 
-Create a 2-3 sentence summary with embedded markdown links to the most relevant articles/topics."""
+Create a 2-3 sentence summary describing the main topics and themes. Do NOT include any links or URLs in the summary - just provide a clear narrative description."""
 
         response = client.chat.completions.create(
             model=os.getenv('OPENAI_MODEL', 'gpt-4o-mini'),
@@ -140,23 +145,30 @@ Create a 2-3 sentence summary with embedded markdown links to the most relevant 
 def generate_fallback_summary(newsletter_data: Dict) -> str:
     """
     Generate a simple fallback summary without AI.
-    Just lists the top links.
+    Just describes the top topics without embedding links.
     """
     source = newsletter_data.get('source', 'Newsletter')
     extracted_links = newsletter_data.get('extracted_links', [])
 
     if not extracted_links:
-        return f"Newsletter from {source} (no links extracted)"
+        return f"Newsletter from {source} covering various AI and tech topics."
 
-    # Create summary with top 3 links
-    summary_parts = [f"This {source} newsletter covers:"]
+    # Create summary describing top 3 link topics (without embedding URLs)
+    topics = []
+    for link in extracted_links[:3]:
+        title = link.get('title', '')
+        if title and len(title) > 3:  # Skip very short titles
+            topics.append(title)
 
-    for i, link in enumerate(extracted_links[:3], 1):
-        title = link.get('title', 'Link')
-        url = link.get('url', '')
-        summary_parts.append(f"[{title}]({url})")
-
-    return " ".join(summary_parts[:1]) + " " + ", ".join(summary_parts[1:]) + "."
+    if topics:
+        if len(topics) == 1:
+            return f"This {source} newsletter covers {topics[0]}."
+        elif len(topics) == 2:
+            return f"This {source} newsletter covers {topics[0]} and {topics[1]}."
+        else:
+            return f"This {source} newsletter covers {topics[0]}, {topics[1]}, and {topics[2]}."
+    else:
+        return f"Newsletter from {source} covering various AI and tech topics."
 
 
 def extract_newsletter_tags(title: str, summary: str) -> List[str]:

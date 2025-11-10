@@ -20,7 +20,15 @@ import re
 from src.utils.database import get_session, Article, Category, Industry, Newsletter
 from src.processors.report_generator import generate_pending_review, generate_newsletter_draft
 from src.processors.article_generator import generate_standard_format, generate_article_with_ai
+from src.fetchers.rss_fetcher import fetch_all_rss, save_fetched_articles
+from src.processors.pipeline import process_articles
+from src.processors.newsletter_pipeline import fetch_and_process_gmail_newsletters
 import openai
+
+# Import simplified newsletter workflow
+from dashboard.newsletter_workflow import render_newsletter_preview_page
+from dashboard.builder_workflow import render_newsletter_builder_workflow
+from dashboard.newsletter_formatter import generate_strictlyvc_style_newsletter
 
 # Page config
 st.set_page_config(
@@ -41,8 +49,14 @@ if 'filter_applied' not in st.session_state:
     st.session_state.filter_applied = False
 if 'articles_to_show' not in st.session_state:
     st.session_state.articles_to_show = 20  # Show 20 articles initially
+if 'newsletters_to_show' not in st.session_state:
+    st.session_state.newsletters_to_show = 50  # Show 50 newsletters initially
+if 'builder_items_to_show' not in st.session_state:
+    st.session_state.builder_items_to_show = 50  # Show 50 items in builder initially
 if 'content_type' not in st.session_state:
-    st.session_state.content_type = 'newsletters'  # 'articles' or 'newsletters'
+    st.session_state.content_type = 'newsletters'  # 'newsletter_builder', 'articles', or 'newsletters'
+if 'preview_newsletter_id' not in st.session_state:
+    st.session_state.preview_newsletter_id = None
 
 # Custom CSS - Modern Dark Theme
 st.markdown("""
@@ -592,131 +606,119 @@ def render_article_review_page(session):
 
     st.write(f"Showing {showing_count} of {total_articles} articles")
 
-    # Display articles
+    # Display articles with card design (matching newsletter style)
     for i, article in enumerate(articles_to_display):
-        # Status indicator for collapsed view
-        status_info = {
-            'included': {'text': 'Included', 'bg': '#d4edda', 'text_color': '#28a745'},
-            'not_included': {'text': 'Not Included', 'bg': '#f8d7da', 'text_color': '#dc3545'},
-            'in_review': {'text': 'In Review', 'bg': '#fff3cd', 'text_color': '#856404'},
-            'generated': {'text': 'Generated', 'bg': '#d1ecf1', 'text_color': '#0c5460'},
-            'finalized': {'text': 'Finalized', 'bg': '#d4edda', 'text_color': '#28a745'}
-        }
-
-        current_status = status_info.get(article.status, status_info['not_included'])
-        status_display = current_status['text']
-        status_color_bg = current_status['bg']
-        status_color_text = current_status['text_color']
-
-        # Display article with colored status badge
         with st.container():
-            st.markdown(f"""
-                <div style='display: flex; justify-content: space-between; align-items: center; padding: 8px; background-color: #1e1e1e; border-radius: 5px; margin-bottom: 5px;'>
-                    <div style='flex-grow: 1; color: white;'><strong>{article.title}</strong></div>
-                    <div style='background-color: {status_color_bg}; color: {status_color_text}; padding: 4px 12px; border-radius: 4px; font-weight: bold; margin-left: 10px; white-space: nowrap;'>{status_display}</div>
-                </div>
-            """, unsafe_allow_html=True)
+            # Prepare summary with properly rendered markdown links
+            if article.summary:
+                summary = article.summary
+                # Convert markdown links to HTML for proper rendering
+                import re
+                summary_html = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', r'<a href="\2">\1</a>', summary)
+            else:
+                summary_html = '<em>No summary available</em>'
 
-            with st.expander("View Details", expanded=False):
-                # Status badge with background color
-                status_color = current_status['bg']
-                text_color = current_status['text_color']
+            # Build tags HTML
+            tags_html = ''
+            if article.industries:
+                # Map industries to tag colors (reuse newsletter tag classes)
+                industry_class_map = {
+                    'General AI': 'tools',
+                    'Healthcare and Medicine': 'research',
+                    'Finance and Banking': 'funding',
+                    'Legal and LegalTech': 'legal',
+                    'Cybersecurity': 'security',
+                    'Software and Development': 'tools',
+                    'Manufacturing and Robotics': 'tools',
+                    'Marketing and Advertising': 'funding',
+                    'Education and EdTech': 'research',
+                    'Retail and E-commerce': 'funding',
+                    'Transportation and Autonomous Vehicles': 'tools',
+                    'Energy and Utilities': 'research',
+                    'Media and Entertainment': 'tools',
+                    'Agriculture and AgriTech': 'research',
+                    'Real Estate and PropTech': 'funding',
+                    'Customer Service and Support': 'tools',
+                    'Human Resources and Recruiting': 'funding',
+                    'Supply Chain and Logistics': 'tools',
+                    'Telecommunications': 'tools',
+                    'Government and Public Sector': 'legal',
+                }
 
-                st.markdown(f"""
-                <div style="background-color: {status_color}; color: {text_color}; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-weight: bold; text-align: center;">
-                    STATUS: {status_display.upper()}
-                </div>
-                """, unsafe_allow_html=True)
+                tags = [(ind.name, industry_class_map.get(ind.name, 'tools')) for ind in article.industries[:3]]  # Show max 3
+                tags_html = '<div class="tag-container">' + ''.join([f'<span class="tag {tag[1]}">{tag[0]}</span>' for tag in tags]) + '</div>'
 
-                # Article metadata
-                st.write(f"**Source:** {article.source} | [Read Original Article]({article.url})")
+            # Create two columns: content and button
+            col_content, col_button = st.columns([0.90, 0.10])
 
-                if article.published_date:
-                    st.write(f"**Published:** {article.published_date.strftime('%Y-%m-%d %H:%M')}")
+            with col_content:
+                # Title HTML with embedded link
+                title_html = f'<a href="{article.url}" class="newsletter-title-link" target="_blank">{article.title}</a>'
 
-                if article.category:
-                    st.write(f"**Category:** {article.category.name}")
+                # Render card content
+                card_html = f'''
+                <div class="newsletter-card">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
+                        {title_html}
+                        {tags_html}
+                    </div>
+                    <div class="newsletter-preview-text">{summary_html}</div>
+                '''
+                st.markdown(card_html, unsafe_allow_html=True)
 
-                # Industries
-                if article.industries:
-                    industries_str = ', '.join([ind.name for ind in article.industries])
-                    st.write(f"**Industries:** {industries_str}")
+            with col_button:
+                # Status indicator button - shows current state
+                is_included = article.status == 'included'
+                btn_color = "#28a745" if is_included else "#dc3545"
+                btn_symbol = "✓" if is_included else "×"
+                help_text = "Included - Click to exclude" if is_included else "Excluded - Click to include"
+                new_status = 'not_included' if is_included else 'included'
 
-                # Summary
-                if article.summary:
-                    st.subheader("Summary")
-                    st.write(article.summary)
+                # Add inline CSS for button styling
+                st.markdown(f'''
+                <style>
+                button[key="btn_toggle_article_{article.id}"] {{
+                    background-color: {btn_color} !important;
+                    background: {btn_color} !important;
+                    color: white !important;
+                    border: 2px solid {btn_color} !important;
+                    border-radius: 8px !important;
+                    width: 50px !important;
+                    min-width: 50px !important;
+                    height: 50px !important;
+                    min-height: 50px !important;
+                    font-size: 24px !important;
+                    font-weight: bold !important;
+                }}
+                </style>
+                ''', unsafe_allow_html=True)
 
-                # Full content (collapsible)
-                if article.full_content:
-                    with st.expander("View Full Article"):
-                        cleaned_content = clean_html_content(article.full_content)
-                        st.markdown(cleaned_content)
+                if st.button(btn_symbol, key=f"btn_toggle_article_{article.id}", help=help_text):
+                    update_article_status(session, article.id, new_status, article.your_analysis)
+                    st.rerun()
 
-                # User analysis
-                st.subheader("Your Analysis")
-                analysis = st.text_area(
-                    "Add your notes or analysis",
-                    value=article.your_analysis or "",
-                    key=f"analysis_{article.id}",
-                    height=100
-                )
+            # Continue card content in the same column context
+            with col_content:
+                # Expandable section for notes only
+                with st.expander("Save Notes", expanded=False):
+                    # User analysis
+                    st.markdown("**Your Analysis:**")
+                    analysis = st.text_area(
+                        "Add your notes:",
+                        value=article.your_analysis or "",
+                        height=100,
+                        key=f"analysis_{article.id}",
+                        placeholder="Add your thoughts, insights, or notes...",
+                        label_visibility="collapsed"
+                    )
 
-                # Status update
-                st.subheader("Update Status")
-                
-                # Show different buttons based on current status
-                if article.status == 'not_included':
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        if st.button("Include", key=f"include_{article.id}", type="primary", use_container_width=True):
-                            update_article_status(session, article.id, 'included', analysis)
-                            st.success("Marked as Included")
-                            st.session_state.refresh_trigger += 1
-                            st.rerun()
-                    with col2:
-                        if st.button("Save Notes", key=f"save_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, article.status, analysis)
-                            st.success("Notes saved")
-                    with col3:
-                        st.empty()  # Empty column for spacing
-                
-                elif article.status == 'included':
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        if st.button("Not Include", key=f"not_include_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, 'not_included', analysis)
-                            st.warning("Marked as Not Included")
-                            st.session_state.refresh_trigger += 1
-                            st.rerun()
-                    with col2:
-                        if st.button("Save Notes", key=f"save_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, article.status, analysis)
-                            st.success("Notes saved")
-                    with col3:
-                        if st.button("Reset to Not Included", key=f"reset_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, 'not_included', analysis)
-                            st.info("Reset to Not Included")
-                            st.session_state.refresh_trigger += 1
-                            st.rerun()
-                
-                else:  # in_review, generated, finalized
-                    col1, col2, col3 = st.columns(3)
-                    with col1:
-                        if st.button("Reset to Not Included", key=f"reset_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, 'not_included', analysis)
-                            st.info("Reset to Not Included")
-                            st.session_state.refresh_trigger += 1
-                            st.rerun()
-                    with col2:
-                        if st.button("Save Notes", key=f"save_{article.id}", use_container_width=True):
-                            update_article_status(session, article.id, article.status, analysis)
-                            st.success("Notes saved")
-                    with col3:
-                        st.info(f"Status: {status_display}")
+                    if st.button("Save Notes", key=f"save_{article.id}", type="primary", use_container_width=True):
+                        update_article_status(session, article.id, article.status, analysis)
+                        st.success("Notes saved!")
+                        st.rerun()
 
-        # Add spacing between articles
-        st.markdown("<br>", unsafe_allow_html=True)
+                # Close card div
+                st.markdown('</div>', unsafe_allow_html=True)
 
     # Load More button
     if showing_count < total_articles:
@@ -800,6 +802,7 @@ def render_newsletter_review_page(session):
     if st.sidebar.button("Apply Filters", type="primary", use_container_width=True, key="apply_newsletter_filters"):
         st.session_state.applied_filters = filters.copy()
         st.session_state.filter_applied = True
+        st.session_state.newsletters_to_show = 50  # Reset pagination
         st.rerun()
 
     # Clear Filters button
@@ -811,6 +814,7 @@ def render_newsletter_review_page(session):
             'status': 'All'
         }
         st.session_state.filter_applied = True
+        st.session_state.newsletters_to_show = 50  # Reset pagination
         st.rerun()
 
     # Use applied filters
@@ -834,19 +838,23 @@ def render_newsletter_review_page(session):
     all_newsletters = load_newsletters(session, active_filters)
     total = len(all_newsletters)
 
+    # Pagination - show limited newsletters
+    newsletters_to_display = all_newsletters[:st.session_state.newsletters_to_show]
+    showing_count = len(newsletters_to_display)
+
     # Count display
-    st.markdown(f'<p style="color: #8b92a8; font-size: 16px; margin-bottom: 24px;">Showing {min(20, total)} of {total} newsletters</p>', unsafe_allow_html=True)
+    st.markdown(f'<p style="color: #8b92a8; font-size: 16px; margin-bottom: 24px;">Showing {showing_count} of {total} newsletters</p>', unsafe_allow_html=True)
 
     if not all_newsletters:
         st.info("No newsletters found with current filters.")
         return
 
     # Display newsletters with modern card design
-    for i, newsletter in enumerate(all_newsletters[:20]):  # Show first 20
+    for i, newsletter in enumerate(newsletters_to_display):
         # Use container and wrap with styled div
         with st.container():
             # Build complete card content as HTML for title, meta, summary, tags
-            archive_link = newsletter.archive_url if hasattr(newsletter, 'archive_url') and newsletter.archive_url else '#'
+            archive_link = newsletter.archive_url if hasattr(newsletter, 'archive_url') and newsletter.archive_url else None
             date_str = newsletter.published_date.strftime("%b %d, %Y") if newsletter.published_date else "N/A"
             status_badge_class = "status-badge-read" if newsletter.status == 'not_included' else "status-badge"
             status_text = "Included" if newsletter.status == 'included' else "Read"
@@ -870,11 +878,17 @@ def render_newsletter_review_page(session):
             col_content, col_button = st.columns([0.90, 0.10])
 
             with col_content:
+                # Title HTML - make it a link only if archive_url exists
+                if archive_link:
+                    title_html = f'<a href="{archive_link}" class="newsletter-title-link" target="_blank">{newsletter.title}</a>'
+                else:
+                    title_html = f'<span class="newsletter-title-link" style="cursor: default;">{newsletter.title}</span>'
+
                 # Render all content as one HTML block inside card (tags next to title)
                 card_html = f'''
                 <div class="newsletter-card">
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap;">
-                        <a href="{archive_link}" class="newsletter-title-link" target="_blank">{newsletter.title}</a>
+                        {title_html}
                         {tags_html}
                     </div>
                     <div class="newsletter-preview-text">{summary_html}</div>
@@ -883,7 +897,8 @@ def render_newsletter_review_page(session):
 
             with col_button:
                 # Status indicator button - shows current state
-                is_included = newsletter.status == 'included'
+                # Consider 'generated' as included for display purposes
+                is_included = newsletter.status in ['included', 'generated', 'finalized']
                 btn_color = "#28a745" if is_included else "#dc3545"
                 btn_symbol = "✓" if is_included else "×"
                 help_text = "Included - Click to exclude" if is_included else "Excluded - Click to include"
@@ -951,9 +966,9 @@ def render_newsletter_review_page(session):
                         if len(newsletter.extracted_links) > 10:
                             st.markdown(f"*... and {len(newsletter.extracted_links) - 10} more links*")
 
-                        # View source article button
-                        if archive_link != '#':
-                            st.markdown(f'<a href="{archive_link}" target="_blank" style="color: #6bb6ff; text-decoration: none; font-size: 14px;">View Source Article</a>', unsafe_allow_html=True)
+                        # View source article button (only if archive_link exists)
+                        if archive_link:
+                            st.markdown(f'<a href="{archive_link}" target="_blank" style="color: #6bb6ff; text-decoration: none; font-size: 14px;">View Original Newsletter</a>', unsafe_allow_html=True)
                     else:
                         st.info("No links extracted from this newsletter")
 
@@ -976,6 +991,16 @@ def render_newsletter_review_page(session):
 
                 # Close card div
                 st.markdown('</div>', unsafe_allow_html=True)
+    
+    # Load More button
+    if showing_count < total:
+        remaining = total - showing_count
+        st.markdown("---")
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            if st.button(f"Load More ({remaining} remaining)", type="primary", use_container_width=True, key="load_more_newsletters"):
+                st.session_state.newsletters_to_show += 50  # Load 50 more
+                st.rerun()
 
 
 def render_review_and_generate_page(session):
@@ -1490,10 +1515,154 @@ Example format:
         return None
 
 
+def generate_report_for_selected_links(selected_links):
+    """
+    Generate a report with 2-3 sentences about each selected link using AI.
+    
+    Args:
+        selected_links: List of link dictionaries with 'title', 'url', 'context'
+        
+    Returns:
+        str: Formatted report with descriptions
+    """
+    # Check if OpenAI is available
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+        st.error("OpenAI API key not found. Please set OPENAI_API_KEY environment variable.")
+        return None
+    
+    try:
+        client = openai.OpenAI(api_key=api_key)
+        
+        # Build context for AI
+        links_context = []
+        for i, link in enumerate(selected_links, 1):
+            link_info = f"{i}. {link.get('title', 'Untitled')} - {link.get('url', '#')}"
+            if link.get('context'):
+                link_info += f"\n   Context: {link.get('context')[:200]}"
+            links_context.append(link_info)
+        
+        context_str = '\n'.join(links_context)
+        
+        system_prompt = """You are an expert newsletter curator. For each link provided, write exactly 2-3 sentences that:
+1. Explain what the link is about
+2. Highlight the key information or value
+3. Make it engaging and informative
+
+Format:
+- Start each entry with the number
+- Write 2-3 complete sentences (no bullet points)
+- Keep it concise and informative
+- Use plain text only (no emojis)
+
+Example format:
+1. [Link Title](url) - This article discusses the latest breakthrough in AI reasoning capabilities. The research team achieved a 40% improvement in complex problem-solving tasks. This development could significantly impact enterprise AI applications.
+
+2. [Another Link](url) - A comprehensive guide to implementing computer vision in production systems. The tutorial covers optimization techniques and real-world deployment strategies. Developers can apply these methods immediately to improve their CV pipelines."""
+
+        user_prompt = f"""Please write 2-3 sentences for each of these links:
+
+{context_str}
+
+For each link, provide engaging and informative descriptions that explain what it's about and why it matters."""
+
+        with st.spinner("🤖 Generating descriptions for selected links..."):
+            response = client.chat.completions.create(
+                model=os.getenv('OPENAI_MODEL', 'gpt-4o-mini'),
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.7,
+                max_tokens=2000
+            )
+        
+        generated_descriptions = response.choices[0].message.content.strip()
+        
+        # Add header
+        header = f"# Newsletter Links Report\n\n"
+        header += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n"
+        header += f"**Total Links:** {len(selected_links)}\n\n"
+        header += "---\n\n"
+        
+        return header + generated_descriptions
+        
+    except Exception as e:
+        st.error(f"Error generating report: {e}")
+        return None
+
+
+def is_unwanted_link(link):
+    """
+    Filter out sponsored, signup, and administrative links.
+    
+    Args:
+        link: Dictionary with 'title', 'url', 'context'
+        
+    Returns:
+        bool: True if link should be filtered out, False if it should be kept
+    """
+    title = link.get('title', '').lower()
+    url = link.get('url', '').lower()
+    
+    # List of patterns to filter out
+    unwanted_patterns = [
+        # Sponsored/Ads
+        'sponsor', 'sponsored', '(sponsor)', 'advertisement', 'advertise',
+        
+        # Sign up / Newsletter management
+        'sign up', 'signup', 'subscribe', 'unsubscribe', 'manage your subscriptions',
+        'manage subscriptions',
+        
+        # Legal/Admin
+        'privacy policy', 'privacy', 'terms of use', 'terms', 'cookie policy',
+        
+        # Newsletter platform links
+        'powered by', 'beehiiv', 'substack', 'mailchimp',
+        
+        # View/Share links
+        'view online', 'view in browser', 'read online', 'web version',
+        'share on twitter', 'share on facebook', 'share on linkedin',
+        
+        # Footer/Admin
+        'manage preferences', 'update preferences', 'email preferences',
+        'forward to a friend', 'forward this email',
+        
+        # Signature/Author links
+        'thanks for reading', 'if you have any comments', 'just respond to this email',
+        
+        # Common author/editor names from TLDR (these are usually just signature links)
+        'rachita kumar', 'matt cheung', 'gabriel sundaram',
+        
+        # Common marketing/promo
+        'enterprise-grade', 'enterprising solutions',
+    ]
+    
+    # ONLY filter truly unwanted admin/legal/promo patterns
+    # Be less aggressive - only filter obvious spam/admin links
+    for pattern in unwanted_patterns:
+        if pattern in title or pattern in url:
+            return True
+    
+    # Filter out platform domains
+    unwanted_domains = [
+        'beehiiv.com', 'substack.com', 'mailchimp.com',
+        'facebook.com/sharer', 'twitter.com/intent', 'linkedin.com/sharing',
+        'link.gettheelevator.com',  # Elevator tracking links
+        'gettheelevator.com',  # Elevator links
+    ]
+    
+    for domain in unwanted_domains:
+        if domain in url:
+            return True
+    
+    return False
+
+
 def render_newsletter_review_and_generate_page(session):
     """Review page for generating final newsletter content from included newsletters."""
     st.title("Newsletter Review & Generate")
-    st.markdown("Review included newsletters and generate your personalized link summary.")
+    st.markdown("Review included newsletters, select links, and generate your report.")
     
     # Get all included newsletters
     included_newsletters = session.query(Newsletter).filter(
@@ -1509,104 +1678,143 @@ def render_newsletter_review_and_generate_page(session):
     # Display summary of included newsletters
     st.header(f"Included Newsletters ({len(included_newsletters)})")
     
-    # Display newsletters
-    for newsletter in included_newsletters:
-        with st.expander(f"**{newsletter.source}** - {newsletter.title[:80]}...", expanded=False):
-            # Show status badge
-            status_display = newsletter.status.upper().replace('_', ' ')
-            st.markdown(f"**Status:** {status_display}")
-            st.markdown(f"**Date:** {newsletter.published_date.strftime('%Y-%m-%d') if newsletter.published_date else 'N/A'}")
-            
-            if newsletter.tags:
-                tags_str = ', '.join(newsletter.tags)
-                st.markdown(f"**Tags:** {tags_str}")
-            
-            # Show summary
-            if newsletter.summary:
-                st.markdown(f"**Summary:** {newsletter.summary}")
-            
-            # Show editor's analysis
-            if newsletter.your_analysis:
-                st.info(f"**Your Analysis:** {newsletter.your_analysis}")
-            
-            # Show link count
-            link_count = len(newsletter.extracted_links) if newsletter.extracted_links else 0
-            st.markdown(f"**Extracted Links:** {link_count}")
-            
+    # Display newsletters summary in a compact way
+    with st.expander(f"View {len(included_newsletters)} included newsletters", expanded=False):
+        for newsletter in included_newsletters:
+            st.markdown(f"**{newsletter.source}** - {newsletter.title[:100]}...")
+            st.markdown(f"*Date:* {newsletter.published_date.strftime('%Y-%m-%d') if newsletter.published_date else 'N/A'} | *Links:* {len(newsletter.extracted_links) if newsletter.extracted_links else 0}")
             st.divider()
     
     st.markdown("---")
     
-    # Two column layout
-    col1, col2 = st.columns(2)
+    # Collect all links from all newsletters and filter out unwanted ones
+    all_links = []
+    filtered_count = 0
     
-    with col1:
-        st.subheader("Your Analysis")
-        user_analysis = st.text_area(
-            "Add your insights, context, or themes",
-            value=included_newsletters[0].user_content if included_newsletters[0].user_content else "",
-            height=200,
-            key="newsletter_user_analysis",
-            placeholder="Add any additional context, themes you noticed, or specific angles you want to highlight...",
-            label_visibility="collapsed"
-        )
-        
-        if st.button("Produce ALL", type="primary", use_container_width=True):
-            # Generate all links
-            all_links_content = produce_all_links(included_newsletters)
-            
-            # Save content and analysis
-            for newsletter in included_newsletters:
-                newsletter.user_content = user_analysis
-                newsletter.generated_content = all_links_content
-                newsletter.status = 'generated'
-            session.commit()
-            
-            st.success("✅ All links generated! Go to 'Newsletter Final Edit' to view or make tweaks.")
-            st.session_state.current_page = 'newsletter_final_edit'
+    for newsletter in included_newsletters:
+        if newsletter.extracted_links:
+            for link in newsletter.extracted_links:
+                # Check if link should be filtered out
+                if is_unwanted_link(link):
+                    filtered_count += 1
+                    continue
+                
+                # Add source newsletter info to each link
+                link_with_source = link.copy()
+                link_with_source['source_newsletter'] = newsletter.source
+                link_with_source['newsletter_title'] = newsletter.title
+                all_links.append(link_with_source)
+    
+    if not all_links:
+        st.warning("No content links found in the included newsletters (all links were filtered as spam/admin).")
+        return
+    
+    # Show filtering info
+    st.header(f"Content Links from Selected Newsletters ({len(all_links)} links)")
+    if filtered_count > 0:
+        st.info(f"✓ Automatically filtered out {filtered_count} administrative/sponsored links (privacy, terms, sign up, powered by, etc.)")
+    st.markdown("**All links are selected by default.** Uncheck any links you want to exclude from the report.")
+    
+    # Initialize session state for link selection
+    if 'selected_links' not in st.session_state:
+        st.session_state.selected_links = {i: True for i in range(len(all_links))}
+    
+    # Make sure we have the right number of items in selected_links
+    if len(st.session_state.selected_links) != len(all_links):
+        st.session_state.selected_links = {i: True for i in range(len(all_links))}
+    
+    # Display all links with checkboxes
+    st.markdown("---")
+    
+    # Add select/deselect all buttons
+    col_all, col_none, col_count = st.columns([1, 1, 2])
+    with col_all:
+        if st.button("✓ Select All", use_container_width=True):
+            st.session_state.selected_links = {i: True for i in range(len(all_links))}
             st.rerun()
+    with col_none:
+        if st.button("✗ Deselect All", use_container_width=True):
+            st.session_state.selected_links = {i: False for i in range(len(all_links))}
+            st.rerun()
+    with col_count:
+        selected_count = sum(1 for v in st.session_state.selected_links.values() if v)
+        st.markdown(f"**Selected: {selected_count} / {len(all_links)}**")
     
-    with col2:
-        st.subheader("Personalize with AI")
-        user_preferences = st.text_area(
-            "What are you interested in? (AI will use this + editor notes + your analysis)",
-            value=included_newsletters[0].ai_instructions if included_newsletters[0].ai_instructions else "",
-            height=200,
-            key="newsletter_ai_preferences",
-            placeholder="E.g., 'I'm interested in AI model research, computer vision breakthroughs, and enterprise AI applications. I'm not interested in funding news or general product launches.'",
-            label_visibility="collapsed"
-        )
+    st.markdown("---")
+    
+    # Display links with checkboxes
+    for i, link in enumerate(all_links):
+        col_check, col_content = st.columns([0.05, 0.95])
         
-        if st.button("Generate Report", type="secondary", use_container_width=True):
-            if not user_preferences.strip():
-                st.error("Please describe what you're interested in.")
-            else:
-                # Save preferences and analysis
+        with col_check:
+            # Checkbox for selection
+            is_selected = st.checkbox(
+                "",
+                value=st.session_state.selected_links.get(i, True),
+                key=f"link_checkbox_{i}",
+                label_visibility="collapsed"
+            )
+            st.session_state.selected_links[i] = is_selected
+        
+        with col_content:
+            link_title = link.get('title', 'Untitled Link')
+            link_url = link.get('url', '#')
+            link_context = link.get('context', '')
+            source_nl = link.get('source_newsletter', 'Unknown')
+            
+            # Display link with source
+            st.markdown(f"**{i+1}.** [{link_title}]({link_url})")
+            st.markdown(f"*From: {source_nl}*")
+            
+            if link_context and len(link_context) > 10:
+                clean_context = link_context[:200] + "..." if len(link_context) > 200 else link_context
+                st.markdown(f"> {clean_context}")
+            
+            st.markdown("")
+    
+    st.markdown("---")
+    
+    # Generate button
+    st.header("Generate Report")
+    
+    selected_count = sum(1 for v in st.session_state.selected_links.values() if v)
+    
+    if selected_count == 0:
+        st.warning("Please select at least one link to generate a report.")
+    else:
+        st.markdown(f"Ready to generate a **StrictlyVC-style newsletter** with **{selected_count}** selected links.")
+        st.markdown("The newsletter will be organized by category (Top News, Massive/Big/Smaller Fundings, Other News) with AI-generated descriptions.")
+        
+        if st.button("🤖 Generate Newsletter", type="primary", use_container_width=True):
+            # Get selected links
+            selected_links = [all_links[i] for i, selected in st.session_state.selected_links.items() if selected]
+
+            if not selected_links:
+                st.error("No links selected!")
+                return
+
+            # Generate StrictlyVC-style newsletter
+            newsletter_title = f"AI & Tech Weekly - {datetime.now().strftime('%B %d, %Y')}"
+
+            with st.spinner("🤖 Generating StrictlyVC-style newsletter..."):
+                report_content = generate_strictlyvc_style_newsletter(selected_links, newsletter_title)
+
+            if report_content:
+                # Save generated content
                 for newsletter in included_newsletters:
-                    newsletter.ai_instructions = user_preferences
-                    newsletter.user_content = user_analysis
-                    newsletter.status = 'in_review'
+                    newsletter.generated_content = report_content
+                    newsletter.status = 'generated'
                 session.commit()
-                
-                # Generate personalized content using preferences, editor notes, and analysis
-                personalized_content = personalize_links_with_ai(included_newsletters, user_preferences, user_analysis)
-                
-                if personalized_content:
-                    # Save generated content
-                    for newsletter in included_newsletters:
-                        newsletter.generated_content = personalized_content
-                        newsletter.status = 'generated'
-                    session.commit()
-                    
-                    st.success("✅ Personalized report generated! Go to 'Newsletter Final Edit' to view or make tweaks.")
-                    st.session_state.current_page = 'newsletter_final_edit'
-                    st.rerun()
+
+                st.success(f"✅ Newsletter generated with {len(selected_links)} links! Go to 'Newsletter Final Edit' to view.")
+                st.session_state.current_page = 'newsletter_final_edit'
+                st.rerun()
 
 
 def render_newsletter_final_edit_page(session):
-    """Final editing page for newsletter content."""
-    st.title("Newsletter Final Edit")
-    st.markdown("Review and edit your generated newsletter content.")
+    """Final viewing page for newsletter content with export options."""
+    st.title("Newsletter Final Report")
+    st.markdown("Your generated report is ready! Export it as PDF or DOCX.")
     
     # Get newsletters that are generated or finalized
     newsletters = session.query(Newsletter).filter(
@@ -1621,53 +1829,174 @@ def render_newsletter_final_edit_page(session):
     generated_content = newsletters[0].generated_content if newsletters[0].generated_content else ""
     final_content = newsletters[0].final_content if newsletters[0].final_content else generated_content
     
-    # Edit area
-    st.header("Edit Content")
-    edited_content = st.text_area(
-        "Final Newsletter Content",
-        value=final_content,
-        height=400,
-        key="newsletter_final_content_editor",
-        help="Edit the content as needed. This is your final version."
-    )
+    # Mark as finalized if not already
+    for newsletter in newsletters:
+        if newsletter.status == 'generated':
+            newsletter.final_content = final_content
+            newsletter.status = 'finalized'
+    session.commit()
     
-    # Action buttons
+    # Export buttons
+    st.header("Export Options")
+    
     col1, col2, col3 = st.columns(3)
     
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    
     with col1:
-        if st.button("Save Changes", type="primary", use_container_width=True):
-            for newsletter in newsletters:
-                newsletter.final_content = edited_content
-                newsletter.status = 'finalized'
-            session.commit()
-            st.success("Changes saved!")
-            st.rerun()
+        # Export as Markdown
+        st.download_button(
+            label="Export as Markdown",
+            data=final_content,
+            file_name=f"newsletter_report_{timestamp}.md",
+            mime="text/markdown",
+            use_container_width=True
+        )
     
     with col2:
-        if st.button("📥 Export as Markdown", use_container_width=True):
-            # Provide download button
+        # Export as DOCX
+        try:
+            from docx import Document
+            from io import BytesIO
+            
+            doc = Document()
+            
+            # Process markdown into Word
+            lines = final_content.split('\n')
+            for line in lines:
+                if line.startswith('# '):
+                    doc.add_heading(line[2:], level=1)
+                elif line.startswith('## '):
+                    doc.add_heading(line[3:], level=2)
+                elif line.startswith('### '):
+                    doc.add_heading(line[4:], level=3)
+                elif line.strip():
+                    # Handle markdown links in text
+                    import re
+                    # Simple handling - just keep the text for now
+                    clean_line = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', line)
+                    doc.add_paragraph(clean_line)
+            
+            # Save to BytesIO
+            buffer = BytesIO()
+            doc.save(buffer)
+            docx_data = buffer.getvalue()
+            
             st.download_button(
-                label="Download .md",
-                data=edited_content,
-                file_name=f"newsletter_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
-                mime="text/markdown"
+                label="Export as Word",
+                data=docx_data,
+                file_name=f"newsletter_report_{timestamp}.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                use_container_width=True
             )
+        except ImportError:
+            st.button("Export as Word", disabled=True, use_container_width=True, help="Install python-docx: pip install python-docx")
     
     with col3:
-        if st.button("🔄 Reset Workflow", use_container_width=True):
-            for newsletter in newsletters:
-                newsletter.status = 'included'
-                newsletter.generated_content = None
-                newsletter.final_content = None
-            session.commit()
-            st.success("Workflow reset! Go back to 'Newsletter Review & Generate'.")
-            st.session_state.current_page = 'newsletter_review_generate'
-            st.rerun()
+        # Export as PDF - Use reportlab (simpler, works on Windows)
+        try:
+            from reportlab.lib.pagesizes import letter
+            from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+            from reportlab.lib.units import inch
+            from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+            from reportlab.lib.enums import TA_LEFT
+            from io import BytesIO
+            import re
+            
+            # Create PDF
+            buffer = BytesIO()
+            doc = SimpleDocTemplate(buffer, pagesize=letter, topMargin=0.5*inch, bottomMargin=0.5*inch)
+            
+            # Styles
+            styles = getSampleStyleSheet()
+            title_style = ParagraphStyle(
+                'CustomTitle',
+                parent=styles['Heading1'],
+                fontSize=18,
+                textColor='#333333',
+                spaceAfter=12
+            )
+            heading_style = ParagraphStyle(
+                'CustomHeading',
+                parent=styles['Heading2'],
+                fontSize=14,
+                textColor='#555555',
+                spaceAfter=8
+            )
+            body_style = ParagraphStyle(
+                'CustomBody',
+                parent=styles['BodyText'],
+                fontSize=10,
+                textColor='#000000',
+                alignment=TA_LEFT,
+                spaceAfter=10
+            )
+            
+            # Build content
+            story = []
+            lines = final_content.split('\n')
+            
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    story.append(Spacer(1, 0.1*inch))
+                    continue
+                
+                if line.startswith('# '):
+                    clean_line = line[2:].replace('<', '&lt;').replace('>', '&gt;')
+                    story.append(Paragraph(clean_line, title_style))
+                elif line.startswith('## '):
+                    clean_line = line[3:].replace('<', '&lt;').replace('>', '&gt;')
+                    story.append(Paragraph(clean_line, heading_style))
+                elif line.startswith('### '):
+                    clean_line = line[4:].replace('<', '&lt;').replace('>', '&gt;')
+                    story.append(Paragraph(clean_line, heading_style))
+                else:
+                    # Handle markdown formatting
+                    clean_line = line
+                    
+                    # First escape any existing HTML
+                    clean_line = clean_line.replace('&', '&amp;')
+                    
+                    # Handle markdown links: [text](url)
+                    clean_line = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', r'<a href="\2" color="blue">\1</a>', clean_line)
+                    
+                    # Handle bold: **text**
+                    clean_line = re.sub(r'\*\*([^\*]+)\*\*', r'<b>\1</b>', clean_line)
+                    
+                    # Handle italic: *text*
+                    clean_line = re.sub(r'\*([^\*]+)\*', r'<i>\1</i>', clean_line)
+                    
+                    # Escape any remaining < > that aren't part of our tags
+                    # (This is already handled by the escaping above)
+                    
+                    try:
+                        story.append(Paragraph(clean_line, body_style))
+                    except Exception as e:
+                        # If there's an error parsing, just add plain text
+                        safe_text = line.replace('<', '&lt;').replace('>', '&gt;').replace('&', '&amp;')
+                        story.append(Paragraph(safe_text, body_style))
+            
+            # Build PDF
+            doc.build(story)
+            pdf_data = buffer.getvalue()
+            
+            st.download_button(
+                label="Export as PDF",
+                data=pdf_data,
+                file_name=f"newsletter_report_{timestamp}.pdf",
+                mime="application/pdf",
+                use_container_width=True
+            )
+        except ImportError:
+            st.button("Export as PDF", disabled=True, use_container_width=True, help="Install reportlab: pip install reportlab")
     
-    # Preview
+    # Preview section
     st.markdown("---")
-    st.header("Preview")
-    st.markdown(edited_content)
+    st.header("Report Preview")
+    
+    # Display as read-only
+    st.markdown(final_content)
 
 
 def main():
@@ -1676,24 +2005,75 @@ def main():
 
     session = get_db_session()
 
-    # Content Type Selector
+    # Workflow Mode Selector
     st.sidebar.markdown("---")
-    st.sidebar.subheader("Content Type")
+    st.sidebar.subheader("Workflow Mode")
 
     def on_content_type_change():
         """Callback when content type changes."""
         st.session_state.content_type = st.session_state.content_type_selector
         st.session_state.applied_filters = None  # Reset filters
         st.session_state.current_page = 'review'  # Go back to review page
+        if st.session_state.content_type == 'newsletter_builder':
+            st.session_state.builder_page = 'feed'  # Reset builder page
 
     content_type = st.sidebar.radio(
-        "Select content:",
-        options=['articles', 'newsletters'],
-        format_func=lambda x: 'Articles' if x == 'articles' else 'Newsletters',
+        "Select workflow:",
+        options=['newsletters', 'articles', 'newsletter_builder'],
+        format_func=lambda x: {
+            'newsletter_builder': 'Newsletter Builder',
+            'articles': 'Articles (Detailed)',
+            'newsletters': 'Newsletters (Links)'
+        }[x],
         key="content_type_selector",
-        index=0 if st.session_state.content_type == 'articles' else 1,
+        index={'newsletters': 0, 'articles': 1, 'newsletter_builder': 2}.get(
+            st.session_state.content_type, 0
+        ),
         on_change=on_content_type_change
     )
+
+    # Update buttons for fetching new content (not shown in newsletter builder mode)
+    if st.session_state.content_type != 'newsletter_builder':
+        st.sidebar.markdown("---")
+        st.sidebar.subheader("Update Content")
+
+    if st.session_state.content_type == 'articles':
+        if st.sidebar.button("Update Articles", type="primary", use_container_width=True):
+            with st.spinner("Fetching articles from RSS feeds..."):
+                try:
+                    # Fetch articles from RSS feeds
+                    articles = fetch_all_rss()
+
+                    if articles:
+                        # Save to temp file
+                        save_fetched_articles(articles)
+
+                        # Process and save to database
+                        with st.spinner(f"Processing {len(articles)} articles..."):
+                            processed_count = process_articles()
+
+                        st.sidebar.success(f"✅ Added {processed_count} new articles!")
+                        st.session_state.refresh_trigger += 1
+                        st.rerun()
+                    else:
+                        st.sidebar.warning("No new articles found.")
+                except Exception as e:
+                    st.sidebar.error(f"Error updating articles: {e}")
+    else:
+        if st.sidebar.button("Update Newsletters", type="primary", use_container_width=True):
+            with st.spinner("Fetching newsletters from Gmail..."):
+                try:
+                    # Fetch and process newsletters from Gmail (past 7 days)
+                    processed_count = fetch_and_process_gmail_newsletters(days_back=7)
+
+                    if processed_count > 0:
+                        st.sidebar.success(f"✅ Added {processed_count} new newsletters!")
+                        st.session_state.refresh_trigger += 1
+                        st.rerun()
+                    else:
+                        st.sidebar.info("No new newsletters found.")
+                except Exception as e:
+                    st.sidebar.error(f"Error updating newsletters: {e}")
 
     # Clear All Inclusions button at top
     st.sidebar.markdown("---")
@@ -1720,43 +2100,47 @@ def main():
         st.session_state.refresh_trigger += 1
         st.rerun()
 
-    # Page navigation
-    st.sidebar.markdown("---")
-    st.sidebar.subheader("Navigation")
+    # Page navigation (only for articles and newsletters workflows, not newsletter builder)
+    if st.session_state.content_type != 'newsletter_builder':
+        st.sidebar.markdown("---")
+        st.sidebar.subheader("Navigation")
 
-    # Different pages for articles vs newsletters
-    if st.session_state.content_type == 'articles':
-        page_options = {
-            'review': 'Article Review',
-            'review_generate': 'Review & Generate',
-            'final_edit': 'Final Edit'
-        }
-    else:
-        page_options = {
-            'review': 'Newsletter Review',
-            'newsletter_review_generate': 'Newsletter Review & Generate',
-            'newsletter_final_edit': 'Newsletter Final Edit'
-        }
+        # Different pages for articles vs newsletters
+        if st.session_state.content_type == 'articles':
+            page_options = {
+                'review': 'Article Review',
+                'review_generate': 'Review & Generate',
+                'final_edit': 'Final Edit'
+            }
+        else:
+            page_options = {
+                'review': 'Newsletter Review',
+                'newsletter_review_generate': 'Newsletter Review & Generate',
+                'newsletter_final_edit': 'Newsletter Final Edit'
+            }
 
-    # Use session state directly for the radio button value
-    if 'current_page' not in st.session_state:
-        st.session_state.current_page = 'review'
+        # Use session state directly for the radio button value
+        if 'current_page' not in st.session_state:
+            st.session_state.current_page = 'review'
 
-    def on_page_change():
-        """Callback to update page when radio button changes."""
-        st.session_state.current_page = st.session_state.page_selector
+        def on_page_change():
+            """Callback to update page when radio button changes."""
+            st.session_state.current_page = st.session_state.page_selector
 
-    selected_page = st.sidebar.radio(
-        "Go to:",
-        options=list(page_options.keys()),
-        format_func=lambda x: page_options[x],
-        key="page_selector",
-        index=list(page_options.keys()).index(st.session_state.current_page) if st.session_state.current_page in page_options else 0,
-        on_change=on_page_change
-    )
+        selected_page = st.sidebar.radio(
+            "Go to:",
+            options=list(page_options.keys()),
+            format_func=lambda x: page_options[x],
+            key="page_selector",
+            index=list(page_options.keys()).index(st.session_state.current_page) if st.session_state.current_page in page_options else 0,
+            on_change=on_page_change
+        )
 
     # Render selected page based on session state and content type
-    if st.session_state.content_type == 'articles':
+    if st.session_state.content_type == 'newsletter_builder':
+        # NEW: Newsletter Builder workflow
+        render_newsletter_builder_workflow(session)
+    elif st.session_state.content_type == 'articles':
         if st.session_state.current_page == 'review':
             render_article_review_page(session)
         elif st.session_state.current_page == 'review_generate':
@@ -1766,6 +2150,14 @@ def main():
     else:  # newsletters
         if st.session_state.current_page == 'review':
             render_newsletter_review_page(session)
+        elif st.session_state.current_page == 'newsletter_preview':
+            # Simplified preview page
+            if st.session_state.preview_newsletter_id:
+                render_newsletter_preview_page(session, st.session_state.preview_newsletter_id)
+            else:
+                st.error("No newsletter selected for preview")
+                st.session_state.current_page = 'review'
+                st.rerun()
         elif st.session_state.current_page == 'newsletter_review_generate':
             render_newsletter_review_and_generate_page(session)
         elif st.session_state.current_page == 'newsletter_final_edit':

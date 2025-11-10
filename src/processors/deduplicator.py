@@ -6,7 +6,7 @@ Prevents duplicate articles from being added to the database.
 import logging
 from sqlalchemy.orm import Session
 
-from utils.database import Article
+from src.utils.database import Article
 
 # Configure logging
 logging.basicConfig(
@@ -106,7 +106,7 @@ def get_duplicate_info(session: Session, url: str) -> dict:
 
 if __name__ == "__main__":
     # Test deduplicator
-    from utils.database import get_session, init_database
+    from src.utils.database import get_session, init_database
 
     print("Testing Deduplicator\n")
 

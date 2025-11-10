@@ -1,0 +1,27 @@
+2025-11-06 16:01:54,200 - src.utils.database - INFO - Database engine created: data/articles.db
+Traceback (most recent call last):
+  File "<string>", line 32, in <module>
+  File "C:\Users\Ali Imran\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 47: character maps to <undefined>
+Found 45 potential intro/welcome newsletters
+
+6,Ben's Bites,"Anthropic's Claude comes to Excel"
+9,Ben's Bites,"Microsoft's 'Mico' personality upgrade"
+10,Ben's Bites,"Open letter demands ASI freeze"
+11,Ben's Bites,"OpenAI enters browser war with Atlas"
+16,Ben's Bites,"ChatGPT to go 18+"
+17,Ben's Bites,"OpenAI’s AI chip era begins"
+19,Ben's Bites,"Google's new enterprise AI play"
+20,Ben's Bites,"Jony Ive's 'peaceful' AI hardware vision"
+21,Last Week in AI,"Last Week in AI #325 - OpenAI is for-profit, ChatGPT Atlas, Copilot Mico"
+23,Last Week in AI,"Last Week in AI #324: OpenAI Deals and DevDay, Haiku 4.5, Veo 3.1"
+25,TheSequence,"The Sequence Knowledge #748: A New Series About Synthetic Data Generation"
+26,TheSequence,"The Sequence Radar #747: Last Week in AI: OpenAI Eyes Wall Street, MiniMax Opens Up, and Vertical AI Goes Deep"
+38,TheSequence,"The Sequence Radar #735: OpenAI x AMD, DevDay, Reflection, and Gemini Enterprise"
+40,TheSequence,"The Sequence AI of the Week #733: DeepSeek 3.2 Makes Long Context Cheap"
+49,The Rundown,"Welcome! 3 quick steps to get started"
+50,The Rundown,"Welcome to The Rundown Robotics!"
+51,The Rundown,"Welcome to The Rundown Tech!"
+52,Tldrnewsletter,"TLDR AI - Confirm your signup"

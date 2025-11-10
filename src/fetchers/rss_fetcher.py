@@ -138,7 +138,7 @@ def fetch_all_rss() -> List[Dict]:
 
     # Add web-scraped sources (like StrictlyVC, Anthropic)
     try:
-        from fetchers.web_scraper import discover_all_web_sources
+        from src.fetchers.web_scraper import discover_all_web_sources
         print(f"Fetching from web sources...", end='', flush=True)
         web_articles = discover_all_web_sources()
         all_articles.extend(web_articles)
