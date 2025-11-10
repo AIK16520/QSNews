@@ -14,14 +14,6 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 NEWSLETTER_GMAIL = os.getenv('NEWSLETTER_GMAIL')
 NEWSLETTER_PASS = os.getenv('NEWSLETTER_PASS') or os.getenv('GMAIL_APP_PASS')  # 16-character app password
 
-# Debug: Log environment variables (remove after testing)
-print(f"[CONFIG DEBUG] NEWSLETTER_GMAIL loaded: {'✓' if NEWSLETTER_GMAIL else '✗'} ({NEWSLETTER_GMAIL[:10] + '...' if NEWSLETTER_GMAIL else 'None'})", flush=True)
-print(f"[CONFIG DEBUG] NEWSLETTER_PASS loaded: {'✓' if NEWSLETTER_PASS else '✗'} ({'***' if NEWSLETTER_PASS else 'None'})", flush=True)
-print(f"[CONFIG DEBUG] OPENAI_API_KEY loaded: {'✓' if OPENAI_API_KEY else '✗'}", flush=True)
-print(f"[CONFIG DEBUG] SUPABASE_URL loaded: {'✓' if SUPABASE_URL else '✗'} ({SUPABASE_URL[:30] + '...' if SUPABASE_URL else 'None'})", flush=True)
-print(f"[CONFIG DEBUG] SUPABASE_KEY loaded: {'✓' if SUPABASE_KEY else '✗'} ({'eyJ...' if SUPABASE_KEY else 'None'})", flush=True)
-print(f"[CONFIG DEBUG] USE_SUPABASE: {USE_SUPABASE}", flush=True)
-
 # Database
 DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/articles.db')
 
@@ -29,6 +21,14 @@ DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/articles.db')
 SUPABASE_URL = os.getenv('SUPABASE_URL')  # https://xxxxx.supabase.co
 SUPABASE_KEY = os.getenv('SUPABASE_KEY')  # API key (service_role preferred)
 USE_SUPABASE = os.getenv('USE_SUPABASE', 'false').lower() == 'true'
+
+# Debug: Log environment variables (remove after testing)
+print(f"[CONFIG DEBUG] NEWSLETTER_GMAIL loaded: {'✓' if NEWSLETTER_GMAIL else '✗'} ({NEWSLETTER_GMAIL[:10] + '...' if NEWSLETTER_GMAIL else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] NEWSLETTER_PASS loaded: {'✓' if NEWSLETTER_PASS else '✗'} ({'***' if NEWSLETTER_PASS else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] OPENAI_API_KEY loaded: {'✓' if OPENAI_API_KEY else '✗'}", flush=True)
+print(f"[CONFIG DEBUG] SUPABASE_URL loaded: {'✓' if SUPABASE_URL else '✗'} ({SUPABASE_URL[:30] + '...' if SUPABASE_URL else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] SUPABASE_KEY loaded: {'✓' if SUPABASE_KEY else '✗'} ({'eyJ...' if SUPABASE_KEY else 'None'})", flush=True)
+print(f"[CONFIG DEBUG] USE_SUPABASE: {USE_SUPABASE}", flush=True)
 
 # RSS Feed Sources
 # Core sources (always enabled)
