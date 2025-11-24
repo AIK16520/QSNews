@@ -1,84 +1,84 @@
 # Weekly Summary Report
-**Period:** 2025-11-10 to 2025-11-17
-**Generated:** 2025-11-17 09:27
+**Period:** 2025-11-17 to 2025-11-24
+**Generated:** 2025-11-24 09:27
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 136
+- **Total Articles Fetched:** 145
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
 - **Skipped:** 0
 
 ## Articles by Category
-- **Tools and Products:** 55 (40.4%) ��������
-- **Funding and M&A:** 30 (22.1%) ����
-- **Research and Studies:** 22 (16.2%) ���
-- **Legal and Regulations:** 11 (8.1%) �
-- **Security and Privacy:** 10 (7.4%) �
-- **Events and Conferences:** 8 (5.9%) �
+- **Tools and Products:** 76 (52.4%) ����������
+- **Research and Studies:** 22 (15.2%) ���
+- **Funding and M&A:** 22 (15.2%) ���
+- **Legal and Regulations:** 11 (7.6%) �
+- **Security and Privacy:** 10 (6.9%) �
+- **Events and Conferences:** 4 (2.8%) 
 
 ## Articles by Industry
-- General AI: 92
-- Software and Development: 89
-- Media and Entertainment: 28
-- Finance and Banking: 17
-- Government and Public Sector: 10
-- Cybersecurity: 10
-- Legal and Law: 7
-- Manufacturing and Robotics: 7
-- Healthcare and Medicine: 6
-- Marketing and Advertising: 5
+- General AI: 113
+- Software and Development: 92
+- Media and Entertainment: 21
+- Government and Public Sector: 17
+- Manufacturing and Robotics: 14
+- Cybersecurity: 11
+- Customer Service and Support: 9
+- Finance and Banking: 8
+- Education and EdTech: 8
+- Marketing and Advertising: 7
 
 ## Top Sources
-- TechCrunch AI: 47
-- Simon Willison: 18
-- VentureBeat AI: 13
-- Wired AI: 13
-- StrictlyVC: 13
-- AI News: 9
-- The Rundown AI: 6
-- MIT Tech Review: 4
+- TechCrunch AI: 46
+- Wired AI: 23
+- VentureBeat AI: 19
+- AI News: 18
+- Simon Willison: 13
+- MIT Tech Review: 7
+- The Rundown AI: 5
+- IEEE Spectrum: 4
 - Anthropic: 4
-- Ars Technica AI: 3
+- LangChain Blog: 3
 
 ## Recent Highlights
 
-### llm-anthropic 0.22
-*Simon Willison - 2025-11-15*
+### Agent design is still hard
+*Simon Willison - 2025-11-23*
 
-The article discusses the release of the llm-anthropic 0.22 plugin, which introduces new features including support for Claude's structured outputs and a web search tool. It also highlights improvements in running the plugin's test suite in an isolated environment.
+The article discusses the challenges of agent design in AI, highlighting the inadequacies of current agent abstraction libraries. It emphasizes the need for custom solutions due to significant differences between models and the complexities involved in testing and evaluation.
 
-[Read more](https://simonwillison.net/2025/Nov/15/llm-anthropic-022/#atom-everything)
+[Read more](https://simonwillison.net/2025/Nov/23/agent-design-is-still-hard/#atom-everything)
 
-### How to Use the New AI Features in OmniFocus, the Power User’s To-Do List
-*Wired AI - 2025-11-15*
+### Lean4: How the theorem prover works and why it's the new competitive edge in AI
+*VentureBeat AI - 2025-11-23*
 
-The article discusses various new AI features and tools introduced by companies like Adobe, OpenAI, and Anthropic, highlighting their potential applications and implications. It emphasizes the integration of AI into everyday tools and the evolving landscape of AI-driven technology in various sectors.
+The article discusses Lean4, an open-source programming language and interactive theorem prover that enhances the reliability of AI systems through formal verification. By ensuring deterministic outputs, Lean4 addresses the unpredictability and hallucinations often seen in large language models, making it a crucial tool for high-stakes industries.
 
-[Read more](https://www.wired.com/story/ai-features-in-omnifocus/)
+[Read more](https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in)
 
-### Leaked documents shed light into how much OpenAI pays Microsoft
-*TechCrunch AI - 2025-11-15*
+### Olmo 3 is a fully open LLM
+*Simon Willison - 2025-11-22*
 
-Leaked documents reveal significant financial details about OpenAI's revenue-sharing agreement with Microsoft, highlighting a substantial increase in payments from OpenAI to Microsoft over recent years. The documents suggest that OpenAI's revenue was at least $2.5 billion in 2024, raising questions about the financial dynamics between the two companies.
+The article discusses the release of Olmo 3, a fully open large language model (LLM) series from Ai2, which includes comprehensive access to training data and processes. Olmo 3 emphasizes interpretability and features various model sizes, including a notable 32B-scale thinking model that allows users to inspect reasoning traces.
 
-[Read more](https://techcrunch.com/2025/11/14/leaked-documents-shed-light-into-how-much-openai-pays-microsoft/)
+[Read more](https://simonwillison.net/2025/Nov/22/olmo-3/#atom-everything)
 
-### Google’s new AI training method helps small models tackle complex reasoning
-*VentureBeat AI - 2025-11-14*
+### Trump administration might not fight state AI regulations after all
+*TechCrunch AI - 2025-11-22*
 
-Researchers from Google Cloud and UCLA have introduced a new reinforcement learning framework called Supervised Reinforcement Learning (SRL) that enhances the ability of smaller language models to tackle complex multi-step reasoning tasks. This method provides richer learning signals and improves the performance of models on challenging benchmarks, addressing limitations of traditional reinforcement learning approaches.
+The Trump administration has shifted its approach to state-level AI regulation, moving from a proposed ban to potentially challenging state laws through an executive order. However, this order is currently on hold and may face significant opposition from within the Republican party.
 
-[Read more](https://venturebeat.com/ai/googles-new-ai-training-method-helps-small-models-tackle-complex-reasoning)
+[Read more](https://techcrunch.com/2025/11/22/trump-administration-might-not-fight-state-ai-regulations-after-all/)
 
-### Databricks co-founder argues US must go open source to beat China in AI
-*TechCrunch AI - 2025-11-14*
+### Waymo gets regulatory approval to expand across Bay Area and Southern California
+*TechCrunch AI - 2025-11-22*
 
-Andy Konwinski, co-founder of Databricks, warns that the U.S. risks losing its AI research dominance to China, which he sees as a threat to democracy. He advocates for open-source practices in AI to foster innovation and collaboration among researchers.
+Waymo has received regulatory approval to expand its autonomous vehicle operations across a larger area in the Bay Area and Southern California. The company plans to welcome riders in San Diego by mid-2026, although additional approvals are needed for carrying paying passengers in some regions.
 
-[Read more](https://techcrunch.com/2025/11/14/databricks-co-founder-argues-us-must-go-open-source-to-beat-china-in-ai/)
+[Read more](https://techcrunch.com/2025/11/22/waymo-gets-regulatory-approval-to-expand-across-bay-area-and-southern-california/)
 
 ---
 
