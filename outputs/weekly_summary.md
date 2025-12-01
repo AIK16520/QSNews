@@ -1,84 +1,83 @@
 # Weekly Summary Report
-**Period:** 2025-11-17 to 2025-11-24
-**Generated:** 2025-11-24 09:27
+**Period:** 2025-11-24 to 2025-12-01
+**Generated:** 2025-12-01 09:31
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 145
+- **Total Articles Fetched:** 98
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
 - **Skipped:** 0
 
 ## Articles by Category
-- **Tools and Products:** 76 (52.4%) ����������
-- **Research and Studies:** 22 (15.2%) ���
-- **Funding and M&A:** 22 (15.2%) ���
-- **Legal and Regulations:** 11 (7.6%) �
-- **Security and Privacy:** 10 (6.9%) �
-- **Events and Conferences:** 4 (2.8%) 
+- **Tools and Products:** 39 (39.8%) �������
+- **Research and Studies:** 27 (27.6%) �����
+- **Legal and Regulations:** 15 (15.3%) ���
+- **Funding and M&A:** 9 (9.2%) �
+- **Security and Privacy:** 7 (7.1%) �
 
 ## Articles by Industry
-- General AI: 113
-- Software and Development: 92
-- Media and Entertainment: 21
-- Government and Public Sector: 17
-- Manufacturing and Robotics: 14
-- Cybersecurity: 11
-- Customer Service and Support: 9
-- Finance and Banking: 8
-- Education and EdTech: 8
-- Marketing and Advertising: 7
+- General AI: 72
+- Software and Development: 59
+- Media and Entertainment: 16
+- Government and Public Sector: 14
+- Healthcare and Medicine: 10
+- Education and EdTech: 7
+- Cybersecurity: 7
+- Retail and E-commerce: 6
+- Finance and Banking: 5
+- Marketing and Advertising: 5
 
 ## Top Sources
-- TechCrunch AI: 46
-- Wired AI: 23
-- VentureBeat AI: 19
-- AI News: 18
-- Simon Willison: 13
-- MIT Tech Review: 7
+- TechCrunch AI: 30
+- AI News: 14
+- Simon Willison: 14
+- VentureBeat AI: 12
+- Wired AI: 11
 - The Rundown AI: 5
-- IEEE Spectrum: 4
-- Anthropic: 4
-- LangChain Blog: 3
+- IEEE Spectrum: 3
+- MIT Tech Review: 3
+- Last Week in AI: 2
+- Eugene Yan: 1
 
 ## Recent Highlights
 
-### Agent design is still hard
-*Simon Willison - 2025-11-23*
+### LWiAI Podcast #226 - Gemini 3, Claude Opus 4.5, Nano Banana Pro, LeJEPA
+*Last Week in AI - 2025-11-30*
 
-The article discusses the challenges of agent design in AI, highlighting the inadequacies of current agent abstraction libraries. It emphasizes the need for custom solutions due to significant differences between models and the complexities involved in testing and evaluation.
+The LWiAI Podcast episode #226 discusses significant advancements in AI, including the release of new models such as Google’s Gemini 3 Pro and Anthropic’s Opus 4.5. The episode also covers robotics innovations, AI safety regulations, and legal developments in AI-generated content.
 
-[Read more](https://simonwillison.net/2025/Nov/23/agent-design-is-still-hard/#atom-everything)
+[Read more](https://lastweekin.ai/p/lwiai-podcast-226-gemini-3-claude)
 
-### Lean4: How the theorem prover works and why it's the new competitive edge in AI
-*VentureBeat AI - 2025-11-23*
+### Black Friday sets online spending record of $11.8B, Adobe says
+*TechCrunch AI - 2025-11-29*
 
-The article discusses Lean4, an open-source programming language and interactive theorem prover that enhances the reliability of AI systems through formal verification. By ensuring deterministic outputs, Lean4 addresses the unpredictability and hallucinations often seen in large language models, making it a crucial tool for high-stakes industries.
+Black Friday 2023 saw a record online spending of $11.8 billion, according to Adobe Analytics. This marks an increase from the previous year, with projections indicating that Cyber Monday will surpass this figure, highlighting the growing trend of e-commerce during the holiday season.
 
-[Read more](https://venturebeat.com/ai/lean4-how-the-theorem-prover-works-and-why-its-the-new-competitive-edge-in)
+[Read more](https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/)
 
-### Olmo 3 is a fully open LLM
-*Simon Willison - 2025-11-22*
+### Why observable AI is the missing SRE layer enterprises need for reliable LLMs
+*VentureBeat AI - 2025-11-29*
 
-The article discusses the release of Olmo 3, a fully open large language model (LLM) series from Ai2, which includes comprehensive access to training data and processes. Olmo 3 emphasizes interpretability and features various model sizes, including a notable 32B-scale thinking model that allows users to inspect reasoning traces.
+The article discusses the importance of observability in AI systems, particularly large language models (LLMs), to ensure reliability and accountability in enterprise settings. It emphasizes that without proper visibility into AI decision-making processes, organizations cannot trust their AI implementations, leading to potential failures and compliance issues.
 
-[Read more](https://simonwillison.net/2025/Nov/22/olmo-3/#atom-everything)
+[Read more](https://venturebeat.com/ai/why-observable-ai-is-the-missing-sre-layer-enterprises-need-for-reliable)
 
-### Trump administration might not fight state AI regulations after all
-*TechCrunch AI - 2025-11-22*
+### No, you can’t get your AI to ‘admit’ to being sexist, but it probably is anyway
+*TechCrunch AI - 2025-11-29*
 
-The Trump administration has shifted its approach to state-level AI regulation, moving from a proposed ban to potentially challenging state laws through an executive order. However, this order is currently on hold and may face significant opposition from within the Republican party.
+The article discusses a troubling interaction between a developer and an AI model, highlighting potential biases in AI systems. It raises concerns about how AI may inadvertently reinforce stereotypes and exhibit discrimination based on gender and race.
 
-[Read more](https://techcrunch.com/2025/11/22/trump-administration-might-not-fight-state-ai-regulations-after-all/)
+[Read more](https://techcrunch.com/2025/11/29/no-you-cant-get-your-ai-to-admit-to-being-sexist-but-it-probably-is/)
 
-### Waymo gets regulatory approval to expand across Bay Area and Southern California
-*TechCrunch AI - 2025-11-22*
+### Context plumbing
+*Simon Willison - 2025-11-29*
 
-Waymo has received regulatory approval to expand its autonomous vehicle operations across a larger area in the Bay Area and Southern California. The company plans to welcome riders in San Diego by mid-2026, although additional approvals are needed for carrying paying passengers in some regions.
+The article discusses the importance of context in AI systems, highlighting how user activity and environmental changes influence AI performance. It emphasizes the need for effective technical architecture to manage context effectively, likening it to plumbing that connects various sources and sinks of information.
 
-[Read more](https://techcrunch.com/2025/11/22/waymo-gets-regulatory-approval-to-expand-across-bay-area-and-southern-california/)
+[Read more](https://simonwillison.net/2025/Nov/29/context-plumbing/#atom-everything)
 
 ---
 
