@@ -1,83 +1,84 @@
 # Weekly Summary Report
-**Period:** 2025-11-24 to 2025-12-01
-**Generated:** 2025-12-01 09:31
+**Period:** 2025-12-01 to 2025-12-08
+**Generated:** 2025-12-08 09:31
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 98
+- **Total Articles Fetched:** 150
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
 - **Skipped:** 0
 
 ## Articles by Category
-- **Tools and Products:** 39 (39.8%) �������
-- **Research and Studies:** 27 (27.6%) �����
-- **Legal and Regulations:** 15 (15.3%) ���
-- **Funding and M&A:** 9 (9.2%) �
-- **Security and Privacy:** 7 (7.1%) �
+- **Tools and Products:** 60 (40.0%) ��������
+- **Research and Studies:** 44 (29.3%) �����
+- **Funding and M&A:** 21 (14.0%) ��
+- **Legal and Regulations:** 8 (5.3%) �
+- **Security and Privacy:** 8 (5.3%) �
+- **Events and Conferences:** 8 (5.3%) �
 
 ## Articles by Industry
-- General AI: 72
-- Software and Development: 59
-- Media and Entertainment: 16
-- Government and Public Sector: 14
-- Healthcare and Medicine: 10
-- Education and EdTech: 7
+- General AI: 110
+- Software and Development: 98
+- Media and Entertainment: 19
+- Government and Public Sector: 15
+- Manufacturing and Robotics: 12
+- Finance and Banking: 10
+- Healthcare and Medicine: 8
 - Cybersecurity: 7
-- Retail and E-commerce: 6
-- Finance and Banking: 5
-- Marketing and Advertising: 5
+- Customer Service and Support: 6
+- Education and EdTech: 6
 
 ## Top Sources
-- TechCrunch AI: 30
-- AI News: 14
-- Simon Willison: 14
-- VentureBeat AI: 12
-- Wired AI: 11
+- TechCrunch AI: 52
+- VentureBeat AI: 23
+- Simon Willison: 19
+- AI News: 17
+- Wired AI: 16
+- MIT Tech Review: 7
 - The Rundown AI: 5
 - IEEE Spectrum: 3
-- MIT Tech Review: 3
-- Last Week in AI: 2
-- Eugene Yan: 1
+- LangChain Blog: 3
+- Anthropic: 3
 
 ## Recent Highlights
 
-### LWiAI Podcast #226 - Gemini 3, Claude Opus 4.5, Nano Banana Pro, LeJEPA
-*Last Week in AI - 2025-11-30*
+### Pat Gelsinger wants to save Moore’s Law, with a little help from the Feds
+*TechCrunch AI - 2025-12-07*
 
-The LWiAI Podcast episode #226 discusses significant advancements in AI, including the release of new models such as Google’s Gemini 3 Pro and Anthropic’s Opus 4.5. The episode also covers robotics innovations, AI safety regulations, and legal developments in AI-generated content.
+Pat Gelsinger, now a partner at Playground Global, is focusing on semiconductor startup xLight, which has secured a preliminary $150 million deal with the U.S. Commerce Department. This partnership highlights a growing trend of government investment in key industries, raising concerns about the implications for free enterprise in Silicon Valley.
 
-[Read more](https://lastweekin.ai/p/lwiai-podcast-226-gemini-3-claude)
+[Read more](https://techcrunch.com/2025/12/06/pat-gelsinger-wants-to-save-moores-law-with-a-little-help-from-the-feds/)
 
-### Black Friday sets online spending record of $11.8B, Adobe says
-*TechCrunch AI - 2025-11-29*
+### This AI Model Can Intuit How the Physical World Works
+*Wired AI - 2025-12-07*
 
-Black Friday 2023 saw a record online spending of $11.8 billion, according to Adobe Analytics. This marks an increase from the previous year, with projections indicating that Cyber Monday will surpass this figure, highlighting the growing trend of e-commerce during the holiday season.
+The article discusses various advancements in AI, including Anthropic's Claude programming a robot dog and the implications of AI in game design and household robotics. It highlights the ongoing developments in AI technology and its potential impact across different sectors.
 
-[Read more](https://techcrunch.com/2025/11/29/black-friday-sets-online-spending-record-of-11-8b-adobe-says/)
+[Read more](https://www.wired.com/story/how-one-ai-model-creates-a-physical-intuition-of-its-environment/)
 
-### Why observable AI is the missing SRE layer enterprises need for reliable LLMs
-*VentureBeat AI - 2025-11-29*
+### The Unexpected Effectiveness of One-Shot Decompilation with Claude
+*Simon Willison - 2025-12-06*
 
-The article discusses the importance of observability in AI systems, particularly large language models (LLMs), to ensure reliability and accountability in enterprise settings. It emphasizes that without proper visibility into AI decision-making processes, organizations cannot trust their AI implementations, leading to potential failures and compliance issues.
+The article discusses Chris Lewis's advancements in decompiling Nintendo 64 games using a new processing tool, Claude Opus 4.5 and Claude Code. By leveraging these tools, he significantly improved the efficiency of his decompilation process, particularly for simpler functions.
 
-[Read more](https://venturebeat.com/ai/why-observable-ai-is-the-missing-sre-layer-enterprises-need-for-reliable)
+[Read more](https://simonwillison.net/2025/Dec/6/one-shot-decompilation/#atom-everything)
 
-### No, you can’t get your AI to ‘admit’ to being sexist, but it probably is anyway
-*TechCrunch AI - 2025-11-29*
+### Quoting Daniel Lemire
+*Simon Willison - 2025-12-06*
 
-The article discusses a troubling interaction between a developer and an AI model, highlighting potential biases in AI systems. It raises concerns about how AI may inadvertently reinforce stereotypes and exhibit discrimination based on gender and race.
+The article discusses the tendency of individuals to cling to outdated work due to the time invested in it, exemplified by a professor who continues to use old lecture notes. This phenomenon highlights the challenges of updating educational materials and the inertia that can arise from a slow work pace.
 
-[Read more](https://techcrunch.com/2025/11/29/no-you-cant-get-your-ai-to-admit-to-being-sexist-but-it-probably-is/)
+[Read more](https://simonwillison.net/2025/Dec/6/daniel-lemire/#atom-everything)
 
-### Context plumbing
-*Simon Willison - 2025-11-29*
+### Ex-Googler’s Yoodli triples valuation to $300M+ with AI built to assist, not replace, people
+*TechCrunch AI - 2025-12-05*
 
-The article discusses the importance of context in AI systems, highlighting how user activity and environmental changes influence AI performance. It emphasizes the need for effective technical architecture to manage context effectively, likening it to plumbing that connects various sources and sinks of information.
+Yoodli, an AI communication training startup, has tripled its valuation to over $300 million following a $40 million Series B funding round. The company focuses on using AI to assist users in improving their communication skills through simulated scenarios rather than replacing them with automation.
 
-[Read more](https://simonwillison.net/2025/Nov/29/context-plumbing/#atom-everything)
+[Read more](https://techcrunch.com/2025/12/05/ex-googlers-yoodli-triples-valuation-to-300m-with-ai-built-to-assist-not-replace-people/)
 
 ---
 
