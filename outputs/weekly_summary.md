@@ -1,84 +1,84 @@
 # Weekly Summary Report
-**Period:** 2025-12-08 to 2025-12-15
-**Generated:** 2025-12-15 09:35
+**Period:** 2025-12-15 to 2025-12-22
+**Generated:** 2025-12-22 09:31
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 148
+- **Total Articles Fetched:** 138
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
 - **Skipped:** 0
 
 ## Articles by Category
-- **Tools and Products:** 77 (52.0%) ����������
-- **Research and Studies:** 33 (22.3%) ����
-- **Funding and M&A:** 18 (12.2%) ��
-- **Legal and Regulations:** 13 (8.8%) �
-- **Security and Privacy:** 6 (4.1%) 
+- **Tools and Products:** 58 (42.0%) ��������
+- **Research and Studies:** 25 (18.1%) ���
+- **Funding and M&A:** 14 (10.1%) ��
+- **Legal and Regulations:** 9 (6.5%) �
+- **Security and Privacy:** 6 (4.3%) 
 - **Events and Conferences:** 1 (0.7%) 
 
 ## Articles by Industry
-- General AI: 107
-- Software and Development: 96
-- Media and Entertainment: 25
-- Government and Public Sector: 14
-- Healthcare and Medicine: 11
-- Retail and E-commerce: 11
-- Education and EdTech: 11
-- Finance and Banking: 9
-- Marketing and Advertising: 8
-- Cybersecurity: 7
+- General AI: 103
+- Software and Development: 63
+- Media and Entertainment: 23
+- Retail and E-commerce: 8
+- Transportation and Autonomous Vehicles: 8
+- Healthcare and Medicine: 6
+- Government and Public Sector: 6
+- Finance and Banking: 6
+- Marketing and Advertising: 5
+- Customer Service and Support: 5
 
 ## Top Sources
-- TechCrunch AI: 57
-- Simon Willison: 21
-- VentureBeat AI: 18
-- AI News: 16
+- TechCrunch AI: 45
+- Simon Willison: 20
+- AI News: 17
 - Wired AI: 15
+- VentureBeat AI: 11
+- MIT Tech Review: 11
 - The Rundown AI: 5
-- Ars Technica AI: 4
-- LangChain Blog: 4
-- IEEE Spectrum: 3
+- Ars Technica AI: 5
+- Anthropic: 3
 - Last Week in AI: 2
 
 ## Recent Highlights
 
-### For the First Time, AI Analyzes Language as Well as a Human Expert
-*Wired AI - 2025-12-14*
+### Quoting Shriram Krishnamurthi
+*Simon Willison - 2025-12-21*
 
-This article discusses recent research that challenges the notion that AI language models lack sophisticated reasoning abilities. A study found that one language model demonstrated impressive analytical skills comparable to a graduate linguistics student, suggesting that AI can analyze language in ways previously thought to be uniquely human.
+Quoting Shriram Krishnamurthi
 
-[Read more](https://www.wired.com/story/in-a-first-ai-models-analyze-language-as-well-as-a-human-expert/)
+[Read more](https://simonwillison.net/2025/Dec/21/shriram-krishnamurthi/#atom-everything)
 
-### Copywriters reveal how AI has decimated their industry
-*Simon Willison - 2025-12-14*
+### OpenAI allows users to directly adjust ChatGPT’s enthusiasm level
+*TechCrunch AI - 2025-12-20*
 
-The article discusses the impact of AI on the copywriting industry, featuring personal stories from 12 professional copywriters whose careers have been negatively affected by AI-generated content. It raises concerns about the dehumanizing effects of AI and questions whether new job opportunities will arise for those displaced by these technologies.
+OpenAI allows users to directly adjust ChatGPT’s enthusiasm level
 
-[Read more](https://simonwillison.net/2025/Dec/14/copywriters-reveal-how-ai-has-decimated-their-industry/#atom-everything)
+[Read more](https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/)
 
-### Why most enterprise AI coding pilots underperform (Hint: It's not the model)
-*VentureBeat AI - 2025-12-13*
+### Hiring specialists made sense before AI — now generalists win
+*VentureBeat AI - 2025-12-20*
 
-The article discusses the challenges faced by enterprises in deploying AI coding agents, emphasizing that the primary issue is not the AI models themselves but the context in which they operate. It highlights the need for a well-engineered environment to support these agents for effective coding workflows.
+Hiring specialists made sense before AI — now generalists win
 
-[Read more](https://venturebeat.com/ai/why-most-enterprise-ai-coding-pilots-underperform-hint-its-not-the-model)
+[Read more](https://venturebeat.com/ai/hiring-specialists-made-sense-before-ai-now-generalists-win)
 
-### AI data center boom could be bad news for other infrastructure projects
-*TechCrunch AI - 2025-12-13*
+### New York Governor Kathy Hochul signs RAISE Act to regulate AI safety
+*TechCrunch AI - 2025-12-20*
 
-The rapid growth of data center construction is expected to negatively impact the progress of infrastructure projects such as roads and bridges. With significant competition for construction resources and labor shortages, many infrastructure initiatives may face delays as funding for data centers increases.
+New York Governor Kathy Hochul signs RAISE Act to regulate AI safety
 
-[Read more](https://techcrunch.com/2025/12/13/ai-data-center-boom-could-be-bad-news-for-other-infrastructure-projects/)
+[Read more](https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/)
 
-### Quoting Obie Fernandez
-*Simon Willison - 2025-12-13*
+### The Shape of AI: Jaggedness, Bottlenecks and Salients
+*One Useful Thing - 2025-12-20*
 
-The article discusses the evolving role of coding agents in programming, emphasizing that for some developers, the joy lies in decision-making rather than the mechanical act of coding. It suggests that tools like intelligent code auto-completion can enhance productivity by allowing developers to focus on higher-level judgment and intent.
+The Shape of AI: Jaggedness, Bottlenecks and Salients
 
-[Read more](https://simonwillison.net/2025/Dec/13/obie-fernandez/#atom-everything)
+[Read more](https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks)
 
 ---
 
