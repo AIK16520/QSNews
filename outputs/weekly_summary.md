@@ -1,84 +1,66 @@
 # Weekly Summary Report
-**Period:** 2025-12-15 to 2025-12-22
-**Generated:** 2025-12-22 09:31
+**Period:** 2025-12-22 to 2025-12-29
+**Generated:** 2025-12-29 09:33
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 138
+- **Total Articles Fetched:** 49
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
 - **Skipped:** 0
 
 ## Articles by Category
-- **Tools and Products:** 58 (42.0%) ��������
-- **Research and Studies:** 25 (18.1%) ���
-- **Funding and M&A:** 14 (10.1%) ��
-- **Legal and Regulations:** 9 (6.5%) �
-- **Security and Privacy:** 6 (4.3%) 
-- **Events and Conferences:** 1 (0.7%) 
 
 ## Articles by Industry
-- General AI: 103
-- Software and Development: 63
-- Media and Entertainment: 23
-- Retail and E-commerce: 8
-- Transportation and Autonomous Vehicles: 8
-- Healthcare and Medicine: 6
-- Government and Public Sector: 6
-- Finance and Banking: 6
-- Marketing and Advertising: 5
-- Customer Service and Support: 5
+- General AI: 49
 
 ## Top Sources
-- TechCrunch AI: 45
-- Simon Willison: 20
-- AI News: 17
-- Wired AI: 15
-- VentureBeat AI: 11
-- MIT Tech Review: 11
-- The Rundown AI: 5
-- Ars Technica AI: 5
-- Anthropic: 3
+- TechCrunch AI: 19
+- Simon Willison: 12
+- Wired AI: 8
+- AI News: 5
+- MIT Tech Review: 2
 - Last Week in AI: 2
+- VentureBeat AI: 1
 
 ## Recent Highlights
 
-### Quoting Shriram Krishnamurthi
-*Simon Willison - 2025-12-21*
+### Substack Network error = security content they don't allow to be sent
+*Simon Willison - 2025-12-28*
 
-Quoting Shriram Krishnamurthi
+Substack Network error = security content they don't allow to be sent
 
-[Read more](https://simonwillison.net/2025/Dec/21/shriram-krishnamurthi/#atom-everything)
+[Read more](https://simonwillison.net/2025/Dec/28/substack-network-error/#atom-everything)
 
-### OpenAI allows users to directly adjust ChatGPT’s enthusiasm level
-*TechCrunch AI - 2025-12-20*
+### India startup funding hits $11B in 2025 as investors grow more selective
+*TechCrunch AI - 2025-12-28*
 
-OpenAI allows users to directly adjust ChatGPT’s enthusiasm level
+India startup funding hits $11B in 2025 as investors grow more selective
 
-[Read more](https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/)
+[Read more](https://techcrunch.com/2025/12/27/india-startup-funding-hits-11b-in-2025-as-investors-grow-more-selective/)
 
-### Hiring specialists made sense before AI — now generalists win
-*VentureBeat AI - 2025-12-20*
+### Pluribus training data
+*Simon Willison - 2025-12-27*
 
-Hiring specialists made sense before AI — now generalists win
+Pluribus training data
 
-[Read more](https://venturebeat.com/ai/hiring-specialists-made-sense-before-ai-now-generalists-win)
+[Read more](https://simonwillison.net/2025/Dec/27/john-cena/#atom-everything)
 
-### New York Governor Kathy Hochul signs RAISE Act to regulate AI safety
-*TechCrunch AI - 2025-12-20*
+### Quoting Boris Cherny
+*Simon Willison - 2025-12-27*
 
-New York Governor Kathy Hochul signs RAISE Act to regulate AI safety
+Quoting Boris Cherny
 
-[Read more](https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/)
+[Read more](https://simonwillison.net/2025/Dec/27/boris-cherny/#atom-everything)
 
-### The Shape of AI: Jaggedness, Bottlenecks and Salients
-*One Useful Thing - 2025-12-20*
+### So Long, GPT-5. Hello, Qwen
+*Wired AI - 2025-12-27*
 
-The Shape of AI: Jaggedness, Bottlenecks and Salients
+So Long, GPT-5. Hello, Qwen
 
-[Read more](https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks)
+[Read more](https://www.wired.com/story/expired-tired-wired-gpt-5/)
 
 ---
 
