@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2025-12-22 to 2025-12-29
-**Generated:** 2025-12-29 09:33
+**Period:** 2025-12-29 to 2026-01-05
+**Generated:** 2026-01-05 09:35
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 49
+- **Total Articles Fetched:** 52
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,53 +14,55 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 49
+- General AI: 52
 
 ## Top Sources
-- TechCrunch AI: 19
-- Simon Willison: 12
-- Wired AI: 8
-- AI News: 5
-- MIT Tech Review: 2
-- Last Week in AI: 2
-- VentureBeat AI: 1
+- Simon Willison: 17
+- TechCrunch AI: 16
+- Wired AI: 7
+- The Rundown AI: 5
+- Ahead of AI: 2
+- AI News: 2
+- Ars Technica AI: 1
+- MIT Tech Review: 1
+- IEEE Spectrum: 1
 
 ## Recent Highlights
 
-### Substack Network error = security content they don't allow to be sent
-*Simon Willison - 2025-12-28*
+### Quoting Jaana Dogan
+*Simon Willison - 2026-01-04*
 
-Substack Network error = security content they don't allow to be sent
+Quoting Jaana Dogan
 
-[Read more](https://simonwillison.net/2025/Dec/28/substack-network-error/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jan/4/jaana-dogan/#atom-everything)
 
-### India startup funding hits $11B in 2025 as investors grow more selective
-*TechCrunch AI - 2025-12-28*
+### Tech billionaires cashed out $16 billion in 2025 as stocks soared
+*TechCrunch AI - 2026-01-03*
 
-India startup funding hits $11B in 2025 as investors grow more selective
+Tech billionaires cashed out $16 billion in 2025 as stocks soared
 
-[Read more](https://techcrunch.com/2025/12/27/india-startup-funding-hits-11b-in-2025-as-investors-grow-more-selective/)
+[Read more](https://techcrunch.com/2026/01/03/tech-billionaires-cashed-out-16-billion-in-2025-as-stocks-soared/)
 
-### Pluribus training data
-*Simon Willison - 2025-12-27*
+### Disinformation Floods Social Media After Nicolás Maduro’s Capture
+*Wired AI - 2026-01-03*
 
-Pluribus training data
+Disinformation Floods Social Media After Nicolás Maduro’s Capture
 
-[Read more](https://simonwillison.net/2025/Dec/27/john-cena/#atom-everything)
+[Read more](https://www.wired.com/story/disinformation-floods-social-media-after-nicolas-maduros-capture/)
 
-### Quoting Boris Cherny
-*Simon Willison - 2025-12-27*
+### The US Invaded Venezuela and Captured Nicolás Maduro. ChatGPT Disagrees
+*Wired AI - 2026-01-03*
 
-Quoting Boris Cherny
+The US Invaded Venezuela and Captured Nicolás Maduro. ChatGPT Disagrees
 
-[Read more](https://simonwillison.net/2025/Dec/27/boris-cherny/#atom-everything)
+[Read more](https://www.wired.com/story/us-invaded-venezuela-and-captured-nicolas-maduro-chatgpt-disagrees/)
 
-### So Long, GPT-5. Hello, Qwen
-*Wired AI - 2025-12-27*
+### Was Daft Punk Having a Laugh When They Chose the Tempo of Harder, Better, Faster, Stronger?
+*Simon Willison - 2026-01-03*
 
-So Long, GPT-5. Hello, Qwen
+Was Daft Punk Having a Laugh When They Chose the Tempo of Harder, Better, Faster, Stronger?
 
-[Read more](https://www.wired.com/story/expired-tired-wired-gpt-5/)
+[Read more](https://simonwillison.net/2026/Jan/3/daft-punk/#atom-everything)
 
 ---
 
