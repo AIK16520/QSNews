@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2025-12-29 to 2026-01-05
-**Generated:** 2026-01-05 09:35
+**Period:** 2026-01-05 to 2026-01-12
+**Generated:** 2026-01-12 09:35
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 52
+- **Total Articles Fetched:** 114
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,55 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 52
+- General AI: 114
 
 ## Top Sources
-- Simon Willison: 17
-- TechCrunch AI: 16
-- Wired AI: 7
+- TechCrunch AI: 52
+- AI News: 16
+- Wired AI: 14
+- Simon Willison: 13
 - The Rundown AI: 5
-- Ahead of AI: 2
-- AI News: 2
-- Ars Technica AI: 1
-- MIT Tech Review: 1
-- IEEE Spectrum: 1
+- MIT Tech Review: 3
+- IEEE Spectrum: 3
+- VentureBeat AI: 2
+- Last Week in AI: 2
+- Ars Technica AI: 2
 
 ## Recent Highlights
 
-### Quoting Jaana Dogan
-*Simon Willison - 2026-01-04*
+### Quoting Linus Torvalds
+*Simon Willison - 2026-01-11*
 
-Quoting Jaana Dogan
+Quoting Linus Torvalds
 
-[Read more](https://simonwillison.net/2026/Jan/4/jaana-dogan/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jan/11/linus-torvalds/#atom-everything)
 
-### Tech billionaires cashed out $16 billion in 2025 as stocks soared
-*TechCrunch AI - 2026-01-03*
+### A Software Library with No Code
+*Simon Willison - 2026-01-10*
 
-Tech billionaires cashed out $16 billion in 2025 as stocks soared
+A Software Library with No Code
 
-[Read more](https://techcrunch.com/2026/01/03/tech-billionaires-cashed-out-16-billion-in-2025-as-stocks-soared/)
+[Read more](https://simonwillison.net/2026/Jan/10/a-software-library-with-no-code/#atom-everything)
 
-### Disinformation Floods Social Media After Nicolás Maduro’s Capture
-*Wired AI - 2026-01-03*
+### OpenAI is reportedly asking contractors to upload real work from past jobs
+*TechCrunch AI - 2026-01-10*
 
-Disinformation Floods Social Media After Nicolás Maduro’s Capture
+OpenAI is reportedly asking contractors to upload real work from past jobs
 
-[Read more](https://www.wired.com/story/disinformation-floods-social-media-after-nicolas-maduros-capture/)
+[Read more](https://techcrunch.com/2026/01/10/openai-is-reportedly-asking-contractors-to-upload-real-work-from-past-jobs/)
 
-### The US Invaded Venezuela and Captured Nicolás Maduro. ChatGPT Disagrees
-*Wired AI - 2026-01-03*
+### Indonesia blocks Grok over non-consensual, sexualized deepfakes
+*TechCrunch AI - 2026-01-10*
 
-The US Invaded Venezuela and Captured Nicolás Maduro. ChatGPT Disagrees
+Indonesia blocks Grok over non-consensual, sexualized deepfakes
 
-[Read more](https://www.wired.com/story/us-invaded-venezuela-and-captured-nicolas-maduro-chatgpt-disagrees/)
+[Read more](https://techcrunch.com/2026/01/10/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/)
 
-### Was Daft Punk Having a Laugh When They Chose the Tempo of Harder, Better, Faster, Stronger?
-*Simon Willison - 2026-01-03*
+### In software, the code documents the app. In AI, the traces do.
+*LangChain Blog - 2026-01-10*
 
-Was Daft Punk Having a Laugh When They Chose the Tempo of Harder, Better, Faster, Stronger?
+In software, the code documents the app. In AI, the traces do.
 
-[Read more](https://simonwillison.net/2026/Jan/3/daft-punk/#atom-everything)
+[Read more](https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/)
 
 ---
 
