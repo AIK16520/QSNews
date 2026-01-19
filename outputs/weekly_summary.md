@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-01-05 to 2026-01-12
-**Generated:** 2026-01-12 09:35
+**Period:** 2026-01-12 to 2026-01-19
+**Generated:** 2026-01-19 09:37
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 114
+- **Total Articles Fetched:** 131
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 114
+- General AI: 131
 
 ## Top Sources
-- TechCrunch AI: 52
-- AI News: 16
-- Wired AI: 14
-- Simon Willison: 13
+- TechCrunch AI: 55
+- LangChain Blog: 16
+- Wired AI: 15
+- AI News: 14
+- Simon Willison: 12
+- MIT Tech Review: 6
 - The Rundown AI: 5
-- MIT Tech Review: 3
-- IEEE Spectrum: 3
+- Anthropic: 4
 - VentureBeat AI: 2
-- Last Week in AI: 2
-- Ars Technica AI: 2
+- AI Business: 1
 
 ## Recent Highlights
 
-### Quoting Linus Torvalds
-*Simon Willison - 2026-01-11*
+### Quoting Jeremy Daer
+*Simon Willison - 2026-01-17*
 
-Quoting Linus Torvalds
+Quoting Jeremy Daer
 
-[Read more](https://simonwillison.net/2026/Jan/11/linus-torvalds/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jan/17/jeremy-daer/#atom-everything)
 
-### A Software Library with No Code
-*Simon Willison - 2026-01-10*
+### Musk wants up to $134B in OpenAI lawsuit, despite $700B fortune
+*TechCrunch AI - 2026-01-17*
 
-A Software Library with No Code
+Musk wants up to $134B in OpenAI lawsuit, despite $700B fortune
 
-[Read more](https://simonwillison.net/2026/Jan/10/a-software-library-with-no-code/#atom-everything)
+[Read more](https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/)
 
-### OpenAI is reportedly asking contractors to upload real work from past jobs
-*TechCrunch AI - 2026-01-10*
+### Thinking Machines Cofounder’s Office Relationship Preceded His Termination
+*Wired AI - 2026-01-17*
 
-OpenAI is reportedly asking contractors to upload real work from past jobs
+Thinking Machines Cofounder’s Office Relationship Preceded His Termination
 
-[Read more](https://techcrunch.com/2026/01/10/openai-is-reportedly-asking-contractors-to-upload-real-work-from-past-jobs/)
+[Read more](https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/)
 
-### Indonesia blocks Grok over non-consensual, sexualized deepfakes
-*TechCrunch AI - 2026-01-10*
+### AI cloud startup Runpod hits $120M in ARR — and it started with a Reddit post
+*TechCrunch AI - 2026-01-16*
 
-Indonesia blocks Grok over non-consensual, sexualized deepfakes
+AI cloud startup Runpod hits $120M in ARR — and it started with a Reddit post
 
-[Read more](https://techcrunch.com/2026/01/10/indonesia-blocks-grok-over-non-consensual-sexualized-deepfakes/)
+[Read more](https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/)
 
-### In software, the code documents the app. In AI, the traces do.
-*LangChain Blog - 2026-01-10*
+### California AG sends Musk’s xAI a cease-and-desist order over sexual deepfakes
+*TechCrunch AI - 2026-01-16*
 
-In software, the code documents the app. In AI, the traces do.
+California AG sends Musk’s xAI a cease-and-desist order over sexual deepfakes
 
-[Read more](https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/)
+[Read more](https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/)
 
 ---
 
