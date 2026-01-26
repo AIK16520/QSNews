@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-01-12 to 2026-01-19
-**Generated:** 2026-01-19 09:37
+**Period:** 2026-01-19 to 2026-01-26
+**Generated:** 2026-01-26 09:37
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 131
+- **Total Articles Fetched:** 119
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 131
+- General AI: 119
 
 ## Top Sources
-- TechCrunch AI: 55
-- LangChain Blog: 16
-- Wired AI: 15
-- AI News: 14
-- Simon Willison: 12
-- MIT Tech Review: 6
+- TechCrunch AI: 50
+- Wired AI: 14
+- Simon Willison: 14
+- AI News: 11
+- MIT Tech Review: 8
 - The Rundown AI: 5
-- Anthropic: 4
-- VentureBeat AI: 2
-- AI Business: 1
+- LangChain Blog: 4
+- Anthropic: 3
+- Ars Technica AI: 3
+- IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### Quoting Jeremy Daer
-*Simon Willison - 2026-01-17*
+### Kākāpō Cam: Rakiura live stream
+*Simon Willison - 2026-01-25*
 
-Quoting Jeremy Daer
+Kākāpō Cam: Rakiura live stream
 
-[Read more](https://simonwillison.net/2026/Jan/17/jeremy-daer/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jan/25/kakapo-cam/#atom-everything)
 
-### Musk wants up to $134B in OpenAI lawsuit, despite $700B fortune
-*TechCrunch AI - 2026-01-17*
+### Don't "Trust the Process"
+*Simon Willison - 2026-01-24*
 
-Musk wants up to $134B in OpenAI lawsuit, despite $700B fortune
+Don't "Trust the Process"
 
-[Read more](https://techcrunch.com/2026/01/17/musk-wants-up-to-134b-in-openai-lawsuit-despite-700b-fortune/)
+[Read more](https://simonwillison.net/2026/Jan/24/dont-trust-the-process/#atom-everything)
 
-### Thinking Machines Cofounder’s Office Relationship Preceded His Termination
-*Wired AI - 2026-01-17*
+### Quoting Jasmine Sun
+*Simon Willison - 2026-01-24*
 
-Thinking Machines Cofounder’s Office Relationship Preceded His Termination
+Quoting Jasmine Sun
 
-[Read more](https://www.wired.com/story/thinking-machines-lab-cofounder-office-relationship-firing-openai/)
+[Read more](https://simonwillison.net/2026/Jan/24/jasmine-sun/#atom-everything)
 
-### AI cloud startup Runpod hits $120M in ARR — and it started with a Reddit post
-*TechCrunch AI - 2026-01-16*
+### Tech CEOs boast and bicker about AI at Davos
+*TechCrunch AI - 2026-01-24*
 
-AI cloud startup Runpod hits $120M in ARR — and it started with a Reddit post
+Tech CEOs boast and bicker about AI at Davos
 
-[Read more](https://techcrunch.com/2026/01/16/ai-cloud-startup-runpod-hits-120m-in-arr-and-it-started-with-a-reddit-post/)
+[Read more](https://techcrunch.com/2026/01/24/tech-ceos-boast-and-bicker-about-ai-at-davos/)
 
-### California AG sends Musk’s xAI a cease-and-desist order over sexual deepfakes
-*TechCrunch AI - 2026-01-16*
+### Former Googlers seek to captivate kids with an AI-powered learning app
+*TechCrunch AI - 2026-01-24*
 
-California AG sends Musk’s xAI a cease-and-desist order over sexual deepfakes
+Former Googlers seek to captivate kids with an AI-powered learning app
 
-[Read more](https://techcrunch.com/2026/01/16/california-ag-sends-musks-xai-a-cease-and-desist-order-over-sexual-deepfakes/)
+[Read more](https://techcrunch.com/2026/01/24/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/)
 
 ---
 
