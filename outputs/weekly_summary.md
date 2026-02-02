@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-01-19 to 2026-01-26
-**Generated:** 2026-01-26 09:37
+**Period:** 2026-01-26 to 2026-02-02
+**Generated:** 2026-02-02 09:54
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 119
+- **Total Articles Fetched:** 138
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 119
+- General AI: 138
 
 ## Top Sources
-- TechCrunch AI: 50
-- Wired AI: 14
-- Simon Willison: 14
-- AI News: 11
+- TechCrunch AI: 62
+- AI News: 19
+- Wired AI: 18
+- Simon Willison: 12
 - MIT Tech Review: 8
 - The Rundown AI: 5
-- LangChain Blog: 4
-- Anthropic: 3
-- Ars Technica AI: 3
-- IEEE Spectrum: 2
+- Ars Technica AI: 4
+- IEEE Spectrum: 4
+- Anthropic: 2
+- LangChain Blog: 2
 
 ## Recent Highlights
 
-### Kākāpō Cam: Rakiura live stream
-*Simon Willison - 2026-01-25*
+### Quoting Andrej Karpathy
+*Simon Willison - 2026-01-31*
 
-Kākāpō Cam: Rakiura live stream
+Quoting Andrej Karpathy
 
-[Read more](https://simonwillison.net/2026/Jan/25/kakapo-cam/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jan/31/andrej-karpathy/#atom-everything)
 
-### Don't "Trust the Process"
-*Simon Willison - 2026-01-24*
+### Nvidia CEO pushes back against report that his company’s $100B OpenAI investment has stalled
+*TechCrunch AI - 2026-01-31*
 
-Don't "Trust the Process"
+Nvidia CEO pushes back against report that his company’s $100B OpenAI investment has stalled
 
-[Read more](https://simonwillison.net/2026/Jan/24/dont-trust-the-process/#atom-everything)
+[Read more](https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/)
 
-### Quoting Jasmine Sun
-*Simon Willison - 2026-01-24*
+### Jeffrey Epstein Had a ‘Personal Hacker,’ Informant Claims
+*Wired AI - 2026-01-31*
 
-Quoting Jasmine Sun
+Jeffrey Epstein Had a ‘Personal Hacker,’ Informant Claims
 
-[Read more](https://simonwillison.net/2026/Jan/24/jasmine-sun/#atom-everything)
+[Read more](https://www.wired.com/story/security-news-this-week-jeffrey-epstein-had-a-personal-hacker-informant-claims/)
 
-### Tech CEOs boast and bicker about AI at Davos
-*TechCrunch AI - 2026-01-24*
+### Singing the gospel of collective efficacy
+*Simon Willison - 2026-01-31*
 
-Tech CEOs boast and bicker about AI at Davos
+Singing the gospel of collective efficacy
 
-[Read more](https://techcrunch.com/2026/01/24/tech-ceos-boast-and-bicker-about-ai-at-davos/)
+[Read more](https://simonwillison.net/2026/Jan/31/collective-efficacy/#atom-everything)
 
-### Former Googlers seek to captivate kids with an AI-powered learning app
-*TechCrunch AI - 2026-01-24*
+### A peek inside Physical Intelligence, the startup building Silicon Valley’s buzziest robot brains
+*TechCrunch AI - 2026-01-31*
 
-Former Googlers seek to captivate kids with an AI-powered learning app
+A peek inside Physical Intelligence, the startup building Silicon Valley’s buzziest robot brains
 
-[Read more](https://techcrunch.com/2026/01/24/former-google-trio-is-building-an-interactive-ai-powered-learning-app-for-kids/)
+[Read more](https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/)
 
 ---
 
