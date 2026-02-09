@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-01-26 to 2026-02-02
-**Generated:** 2026-02-02 09:54
+**Period:** 2026-02-02 to 2026-02-09
+**Generated:** 2026-02-09 10:14
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 138
+- **Total Articles Fetched:** 132
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 138
+- General AI: 132
 
 ## Top Sources
-- TechCrunch AI: 62
-- AI News: 19
-- Wired AI: 18
-- Simon Willison: 12
-- MIT Tech Review: 8
+- TechCrunch AI: 54
+- Simon Willison: 18
+- AI News: 16
+- Wired AI: 15
+- LangChain Blog: 8
 - The Rundown AI: 5
-- Ars Technica AI: 4
-- IEEE Spectrum: 4
-- Anthropic: 2
-- LangChain Blog: 2
+- MIT Tech Review: 5
+- Anthropic: 4
+- IEEE Spectrum: 3
+- Last Week in AI: 2
 
 ## Recent Highlights
 
-### Quoting Andrej Karpathy
-*Simon Willison - 2026-01-31*
+### Quoting Thomas Ptacek
+*Simon Willison - 2026-02-08*
 
-Quoting Andrej Karpathy
+Quoting Thomas Ptacek
 
-[Read more](https://simonwillison.net/2026/Jan/31/andrej-karpathy/#atom-everything)
+[Read more](https://simonwillison.net/2026/Feb/8/thomas-ptacek/#atom-everything)
 
-### Nvidia CEO pushes back against report that his company’s $100B OpenAI investment has stalled
-*TechCrunch AI - 2026-01-31*
+### Vouch
+*Simon Willison - 2026-02-07*
 
-Nvidia CEO pushes back against report that his company’s $100B OpenAI investment has stalled
+Vouch
 
-[Read more](https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/)
+[Read more](https://simonwillison.net/2026/Feb/7/vouch/#atom-everything)
 
-### Jeffrey Epstein Had a ‘Personal Hacker,’ Informant Claims
-*Wired AI - 2026-01-31*
+### Claude: Speed up responses with fast mode
+*Simon Willison - 2026-02-07*
 
-Jeffrey Epstein Had a ‘Personal Hacker,’ Informant Claims
+Claude: Speed up responses with fast mode
 
-[Read more](https://www.wired.com/story/security-news-this-week-jeffrey-epstein-had-a-personal-hacker-informant-claims/)
+[Read more](https://simonwillison.net/2026/Feb/7/claude-fast-mode/#atom-everything)
 
-### Singing the gospel of collective efficacy
-*Simon Willison - 2026-01-31*
+### Quoting David Crawshaw
+*Simon Willison - 2026-02-07*
 
-Singing the gospel of collective efficacy
+Quoting David Crawshaw
 
-[Read more](https://simonwillison.net/2026/Jan/31/collective-efficacy/#atom-everything)
+[Read more](https://simonwillison.net/2026/Feb/7/david-crawshaw/#atom-everything)
 
-### A peek inside Physical Intelligence, the startup building Silicon Valley’s buzziest robot brains
-*TechCrunch AI - 2026-01-31*
+### New York lawmakers propose a three-year pause on new data centers
+*TechCrunch AI - 2026-02-07*
 
-A peek inside Physical Intelligence, the startup building Silicon Valley’s buzziest robot brains
+New York lawmakers propose a three-year pause on new data centers
 
-[Read more](https://techcrunch.com/2026/01/30/physical-intelligence-stripe-veteran-lachy-grooms-latest-bet-is-building-silicon-valleys-buzziest-robot-brains/)
+[Read more](https://techcrunch.com/2026/02/07/new-york-lawmakers-propose-a-three-year-pause-on-new-data-centers/)
 
 ---
 
