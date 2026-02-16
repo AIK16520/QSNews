@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-02-02 to 2026-02-09
-**Generated:** 2026-02-09 10:14
+**Period:** 2026-02-09 to 2026-02-16
+**Generated:** 2026-02-16 09:57
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 132
+- **Total Articles Fetched:** 135
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 132
+- General AI: 135
 
 ## Top Sources
-- TechCrunch AI: 54
-- Simon Willison: 18
-- AI News: 16
+- TechCrunch AI: 59
+- Simon Willison: 19
+- AI News: 17
 - Wired AI: 15
-- LangChain Blog: 8
 - The Rundown AI: 5
 - MIT Tech Review: 5
-- Anthropic: 4
-- IEEE Spectrum: 3
-- Last Week in AI: 2
+- Anthropic: 5
+- LangChain Blog: 4
+- IEEE Spectrum: 4
+- Ars Technica AI: 2
 
 ## Recent Highlights
 
-### Quoting Thomas Ptacek
-*Simon Willison - 2026-02-08*
+### The great computer science exodus (and where students are going instead)
+*TechCrunch AI - 2026-02-15*
 
-Quoting Thomas Ptacek
+The great computer science exodus (and where students are going instead)
 
-[Read more](https://simonwillison.net/2026/Feb/8/thomas-ptacek/#atom-everything)
+[Read more](https://techcrunch.com/2026/02/15/the-great-computer-science-exodus-and-where-students-are-going-instead/)
 
-### Vouch
-*Simon Willison - 2026-02-07*
+### How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
+*Simon Willison - 2026-02-15*
 
-Vouch
+How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
 
-[Read more](https://simonwillison.net/2026/Feb/7/vouch/#atom-everything)
+[Read more](https://simonwillison.net/2026/Feb/15/cognitive-debt/#atom-everything)
 
-### Claude: Speed up responses with fast mode
-*Simon Willison - 2026-02-07*
+### Launching Interop 2026
+*Simon Willison - 2026-02-15*
 
-Claude: Speed up responses with fast mode
+Launching Interop 2026
 
-[Read more](https://simonwillison.net/2026/Feb/7/claude-fast-mode/#atom-everything)
+[Read more](https://simonwillison.net/2026/Feb/15/interop-2026/#atom-everything)
 
-### Quoting David Crawshaw
-*Simon Willison - 2026-02-07*
+### Quoting Boris Cherny
+*Simon Willison - 2026-02-14*
 
-Quoting David Crawshaw
+Quoting Boris Cherny
 
-[Read more](https://simonwillison.net/2026/Feb/7/david-crawshaw/#atom-everything)
+[Read more](https://simonwillison.net/2026/Feb/14/boris/#atom-everything)
 
-### New York lawmakers propose a three-year pause on new data centers
-*TechCrunch AI - 2026-02-07*
+### Is safety ‘dead’ at xAI?
+*TechCrunch AI - 2026-02-14*
 
-New York lawmakers propose a three-year pause on new data centers
+Is safety ‘dead’ at xAI?
 
-[Read more](https://techcrunch.com/2026/02/07/new-york-lawmakers-propose-a-three-year-pause-on-new-data-centers/)
+[Read more](https://techcrunch.com/2026/02/14/is-safety-is-dead-at-xai/)
 
 ---
 
