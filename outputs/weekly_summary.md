@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-02-09 to 2026-02-16
-**Generated:** 2026-02-16 09:57
+**Period:** 2026-02-16 to 2026-02-23
+**Generated:** 2026-02-23 09:58
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 135
+- **Total Articles Fetched:** 153
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 135
+- General AI: 153
 
 ## Top Sources
-- TechCrunch AI: 59
-- Simon Willison: 19
-- AI News: 17
-- Wired AI: 15
+- TechCrunch AI: 71
+- Simon Willison: 26
+- Wired AI: 14
+- AI News: 14
+- LangChain Blog: 6
 - The Rundown AI: 5
-- MIT Tech Review: 5
 - Anthropic: 5
-- LangChain Blog: 4
-- IEEE Spectrum: 4
-- Ars Technica AI: 2
+- Ars Technica AI: 3
+- MIT Tech Review: 3
+- IEEE Spectrum: 3
 
 ## Recent Highlights
 
-### The great computer science exodus (and where students are going instead)
-*TechCrunch AI - 2026-02-15*
+### How we built Agent Builder’s memory system
+*LangChain Blog - 2026-02-22*
 
-The great computer science exodus (and where students are going instead)
+How we built Agent Builder’s memory system
 
-[Read more](https://techcrunch.com/2026/02/15/the-great-computer-science-exodus-and-where-students-are-going-instead/)
+[Read more](https://blog.langchain.com/how-we-built-agent-builders-memory-system/)
 
-### How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
-*Simon Willison - 2026-02-15*
+### Agent Observability Powers Agent Evaluation
+*LangChain Blog - 2026-02-22*
 
-How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt
+Agent Observability Powers Agent Evaluation
 
-[Read more](https://simonwillison.net/2026/Feb/15/cognitive-debt/#atom-everything)
+[Read more](https://blog.langchain.com/agent-observability-powers-agent-evaluation/)
 
-### Launching Interop 2026
-*Simon Willison - 2026-02-15*
+### Sam Altman would like remind you that humans use a lot of energy, too
+*TechCrunch AI - 2026-02-21*
 
-Launching Interop 2026
+Sam Altman would like remind you that humans use a lot of energy, too
 
-[Read more](https://simonwillison.net/2026/Feb/15/interop-2026/#atom-everything)
+[Read more](https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/)
 
-### Quoting Boris Cherny
-*Simon Willison - 2026-02-14*
+### Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’
+*TechCrunch AI - 2026-02-21*
 
-Quoting Boris Cherny
+Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’
 
-[Read more](https://simonwillison.net/2026/Feb/14/boris/#atom-everything)
+[Read more](https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/)
 
-### Is safety ‘dead’ at xAI?
-*TechCrunch AI - 2026-02-14*
+### Google VP warns that two types of AI startups may not survive
+*TechCrunch AI - 2026-02-21*
 
-Is safety ‘dead’ at xAI?
+Google VP warns that two types of AI startups may not survive
 
-[Read more](https://techcrunch.com/2026/02/14/is-safety-is-dead-at-xai/)
+[Read more](https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/)
 
 ---
 
