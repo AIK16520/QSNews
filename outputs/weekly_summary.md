@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-02-16 to 2026-02-23
-**Generated:** 2026-02-23 09:58
+**Period:** 2026-02-23 to 2026-03-02
+**Generated:** 2026-03-02 09:53
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 153
+- **Total Articles Fetched:** 150
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 153
+- General AI: 150
 
 ## Top Sources
-- TechCrunch AI: 71
-- Simon Willison: 26
-- Wired AI: 14
-- AI News: 14
-- LangChain Blog: 6
-- The Rundown AI: 5
+- TechCrunch AI: 70
+- Simon Willison: 25
+- Wired AI: 19
+- AI News: 13
+- The Rundown AI: 6
 - Anthropic: 5
-- Ars Technica AI: 3
 - MIT Tech Review: 3
+- Ars Technica AI: 3
 - IEEE Spectrum: 3
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### How we built Agent Builder’s memory system
-*LangChain Blog - 2026-02-22*
+### The trap Anthropic built for itself
+*TechCrunch AI - 2026-03-01*
 
-How we built Agent Builder’s memory system
+The trap Anthropic built for itself
 
-[Read more](https://blog.langchain.com/how-we-built-agent-builders-memory-system/)
+[Read more](https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/)
 
-### Agent Observability Powers Agent Evaluation
-*LangChain Blog - 2026-02-22*
+### Interactive explanations
+*Simon Willison - 2026-02-28*
 
-Agent Observability Powers Agent Evaluation
+Interactive explanations
 
-[Read more](https://blog.langchain.com/agent-observability-powers-agent-evaluation/)
+[Read more](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything)
 
-### Sam Altman would like remind you that humans use a lot of energy, too
-*TechCrunch AI - 2026-02-21*
+### Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute
+*TechCrunch AI - 2026-02-28*
 
-Sam Altman would like remind you that humans use a lot of energy, too
+Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute
 
-[Read more](https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/)
+[Read more](https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/)
 
-### Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’
-*TechCrunch AI - 2026-02-21*
+### The billion-dollar infrastructure deals powering the AI boom
+*TechCrunch AI - 2026-02-28*
 
-Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’
+The billion-dollar infrastructure deals powering the AI boom
 
-[Read more](https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/)
+[Read more](https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/)
 
-### Google VP warns that two types of AI startups may not survive
-*TechCrunch AI - 2026-02-21*
+### OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
+*TechCrunch AI - 2026-02-28*
 
-Google VP warns that two types of AI startups may not survive
+OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
 
-[Read more](https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/)
+[Read more](https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/)
 
 ---
 
