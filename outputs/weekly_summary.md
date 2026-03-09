@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-02-23 to 2026-03-02
-**Generated:** 2026-03-02 09:53
+**Period:** 2026-03-02 to 2026-03-09
+**Generated:** 2026-03-09 09:55
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 150
+- **Total Articles Fetched:** 116
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 150
+- General AI: 116
 
 ## Top Sources
-- TechCrunch AI: 70
-- Simon Willison: 25
-- Wired AI: 19
-- AI News: 13
+- TechCrunch AI: 52
+- AI News: 14
+- Simon Willison: 14
+- Wired AI: 12
 - The Rundown AI: 6
-- Anthropic: 5
-- MIT Tech Review: 3
-- Ars Technica AI: 3
-- IEEE Spectrum: 3
+- IEEE Spectrum: 5
+- MIT Tech Review: 5
+- LangChain Blog: 4
+- Anthropic: 2
 - Last Week in AI: 1
 
 ## Recent Highlights
 
-### The trap Anthropic built for itself
-*TechCrunch AI - 2026-03-01*
+### Military AI Policy Needs Democratic Oversight
+*IEEE Spectrum - 2026-03-08*
 
-The trap Anthropic built for itself
+Military AI Policy Needs Democratic Oversight
 
-[Read more](https://techcrunch.com/2026/02/28/the-trap-anthropic-built-for-itself/)
+[Read more](https://spectrum.ieee.org/military-ai-governance)
 
-### Interactive explanations
-*Simon Willison - 2026-02-28*
+### AI will make engineering more human, not less
+*The Rundown AI - 2026-03-08*
 
-Interactive explanations
+AI will make engineering more human, not less
 
-[Read more](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything)
+[Read more](https://www.therundown.ai/p/ai-will-make-engineering-more-human-not-less)
 
-### Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute
-*TechCrunch AI - 2026-02-28*
+### A roadmap for AI, if anyone will listen
+*TechCrunch AI - 2026-03-08*
 
-Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute
+A roadmap for AI, if anyone will listen
 
-[Read more](https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/)
+[Read more](https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/)
 
-### The billion-dollar infrastructure deals powering the AI boom
-*TechCrunch AI - 2026-02-28*
+### Google just gave Sundar Pichai a $692M pay package
+*TechCrunch AI - 2026-03-08*
 
-The billion-dollar infrastructure deals powering the AI boom
+Google just gave Sundar Pichai a $692M pay package
 
-[Read more](https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/)
+[Read more](https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/)
 
-### OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
-*TechCrunch AI - 2026-02-28*
+### Grammarly’s ‘expert review’ is just missing the actual experts
+*TechCrunch AI - 2026-03-07*
 
-OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’
+Grammarly’s ‘expert review’ is just missing the actual experts
 
-[Read more](https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/)
+[Read more](https://techcrunch.com/2026/03/07/grammarlys-expert-review-is-just-missing-the-actual-experts/)
 
 ---
 
