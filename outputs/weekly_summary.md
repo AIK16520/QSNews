@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-03-02 to 2026-03-09
-**Generated:** 2026-03-09 09:55
+**Period:** 2026-03-09 to 2026-03-16
+**Generated:** 2026-03-16 10:07
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 116
+- **Total Articles Fetched:** 136
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 116
+- General AI: 136
 
 ## Top Sources
-- TechCrunch AI: 52
+- TechCrunch AI: 59
+- Wired AI: 24
 - AI News: 14
 - Simon Willison: 14
-- Wired AI: 12
-- The Rundown AI: 6
-- IEEE Spectrum: 5
-- MIT Tech Review: 5
+- MIT Tech Review: 7
+- The Rundown AI: 5
 - LangChain Blog: 4
-- Anthropic: 2
-- Last Week in AI: 1
+- Anthropic: 3
+- Last Week in AI: 2
+- Ars Technica AI: 2
 
 ## Recent Highlights
 
-### Military AI Policy Needs Democratic Oversight
-*IEEE Spectrum - 2026-03-08*
+### US Army announces contract with Anduril worth up to $20B
+*TechCrunch AI - 2026-03-14*
 
-Military AI Policy Needs Democratic Oversight
+US Army announces contract with Anduril worth up to $20B
 
-[Read more](https://spectrum.ieee.org/military-ai-governance)
+[Read more](https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/)
 
-### AI will make engineering more human, not less
-*The Rundown AI - 2026-03-08*
+### Quoting Jannis Leidel
+*Simon Willison - 2026-03-14*
 
-AI will make engineering more human, not less
+Quoting Jannis Leidel
 
-[Read more](https://www.therundown.ai/p/ai-will-make-engineering-more-human-not-less)
+[Read more](https://simonwillison.net/2026/Mar/14/jannis-leidel/#atom-everything)
 
-### A roadmap for AI, if anyone will listen
-*TechCrunch AI - 2026-03-08*
+### My fireside chat about agentic engineering at the Pragmatic Summit
+*Simon Willison - 2026-03-14*
 
-A roadmap for AI, if anyone will listen
+My fireside chat about agentic engineering at the Pragmatic Summit
 
-[Read more](https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/)
+[Read more](https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything)
 
-### Google just gave Sundar Pichai a $692M pay package
-*TechCrunch AI - 2026-03-08*
+### How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others
+*TechCrunch AI - 2026-03-14*
 
-Google just gave Sundar Pichai a $692M pay package
+How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others
 
-[Read more](https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/)
+[Read more](https://techcrunch.com/2026/03/14/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/)
 
-### Grammarly’s ‘expert review’ is just missing the actual experts
-*TechCrunch AI - 2026-03-07*
+### ‘Not built right the first time’ — Musk’s xAI is starting over again, again
+*TechCrunch AI - 2026-03-14*
 
-Grammarly’s ‘expert review’ is just missing the actual experts
+‘Not built right the first time’ — Musk’s xAI is starting over again, again
 
-[Read more](https://techcrunch.com/2026/03/07/grammarlys-expert-review-is-just-missing-the-actual-experts/)
+[Read more](https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/)
 
 ---
 
