@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-03-09 to 2026-03-16
-**Generated:** 2026-03-16 10:07
+**Period:** 2026-03-16 to 2026-03-23
+**Generated:** 2026-03-23 10:05
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 136
+- **Total Articles Fetched:** 128
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 136
+- General AI: 128
 
 ## Top Sources
-- TechCrunch AI: 59
-- Wired AI: 24
-- AI News: 14
-- Simon Willison: 14
-- MIT Tech Review: 7
+- TechCrunch AI: 57
+- Wired AI: 19
+- Simon Willison: 18
+- AI News: 9
+- LangChain Blog: 7
 - The Rundown AI: 5
-- LangChain Blog: 4
-- Anthropic: 3
+- MIT Tech Review: 5
+- IEEE Spectrum: 4
 - Last Week in AI: 2
 - Ars Technica AI: 2
 
 ## Recent Highlights
 
-### US Army announces contract with Anduril worth up to $20B
-*TechCrunch AI - 2026-03-14*
+### Are AI tokens the new signing bonus or just a cost of doing business?
+*TechCrunch AI - 2026-03-22*
 
-US Army announces contract with Anduril worth up to $20B
+Are AI tokens the new signing bonus or just a cost of doing business?
 
-[Read more](https://techcrunch.com/2026/03/14/us-army-announces-contract-with-anduril-worth-up-to-20b/)
+[Read more](https://techcrunch.com/2026/03/21/are-ai-tokens-the-new-signing-bonus-or-just-a-cost-of-doing-business/)
 
-### Quoting Jannis Leidel
-*Simon Willison - 2026-03-14*
+### Profiling Hacker News users based on their comments
+*Simon Willison - 2026-03-21*
 
-Quoting Jannis Leidel
+Profiling Hacker News users based on their comments
 
-[Read more](https://simonwillison.net/2026/Mar/14/jannis-leidel/#atom-everything)
+[Read more](https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/#atom-everything)
 
-### My fireside chat about agentic engineering at the Pragmatic Summit
-*Simon Willison - 2026-03-14*
+### Using Git with coding agents
+*Simon Willison - 2026-03-21*
 
-My fireside chat about agentic engineering at the Pragmatic Summit
+Using Git with coding agents
 
-[Read more](https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything)
+[Read more](https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/#atom-everything)
 
-### How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others
-*TechCrunch AI - 2026-03-14*
+### Publisher pulls horror novel ‘Shy Girl’ over AI concerns
+*TechCrunch AI - 2026-03-21*
 
-How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others
+Publisher pulls horror novel ‘Shy Girl’ over AI concerns
 
-[Read more](https://techcrunch.com/2026/03/14/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/)
+[Read more](https://techcrunch.com/2026/03/21/publisher-pulls-horror-novel-shy-girl-over-ai-concerns/)
 
-### ‘Not built right the first time’ — Musk’s xAI is starting over again, again
-*TechCrunch AI - 2026-03-14*
+### Delve accused of misleading customers with ‘fake compliance’
+*TechCrunch AI - 2026-03-21*
 
-‘Not built right the first time’ — Musk’s xAI is starting over again, again
+Delve accused of misleading customers with ‘fake compliance’
 
-[Read more](https://techcrunch.com/2026/03/13/not-built-right-the-first-time-musks-xai-is-starting-over-again-again/)
+[Read more](https://techcrunch.com/2026/03/21/delve-accused-of-misleading-customers-with-fake-compliance/)
 
 ---
 
