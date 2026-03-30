@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-03-16 to 2026-03-23
-**Generated:** 2026-03-23 10:05
+**Period:** 2026-03-23 to 2026-03-30
+**Generated:** 2026-03-30 10:19
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 128
+- **Total Articles Fetched:** 144
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 128
+- General AI: 144
 
 ## Top Sources
-- TechCrunch AI: 57
+- TechCrunch AI: 60
+- Simon Willison: 29
 - Wired AI: 19
-- Simon Willison: 18
-- AI News: 9
-- LangChain Blog: 7
-- The Rundown AI: 5
+- LangChain Blog: 8
+- The Rundown AI: 6
+- AI News: 6
 - MIT Tech Review: 5
-- IEEE Spectrum: 4
-- Last Week in AI: 2
-- Ars Technica AI: 2
+- IEEE Spectrum: 5
+- Ars Technica AI: 4
+- Ahead of AI: 1
 
 ## Recent Highlights
 
-### Are AI tokens the new signing bonus or just a cost of doing business?
-*TechCrunch AI - 2026-03-22*
+### An exclusive Q&A with alibaba.com's Kuo Zhang
+*The Rundown AI - 2026-03-29*
 
-Are AI tokens the new signing bonus or just a cost of doing business?
+An exclusive Q&A with alibaba.com's Kuo Zhang
 
-[Read more](https://techcrunch.com/2026/03/21/are-ai-tokens-the-new-signing-bonus-or-just-a-cost-of-doing-business/)
+[Read more](https://www.therundown.ai/p/an-exclusive-q-a-with-alibaba-com-s-kuo-zhang)
 
-### Profiling Hacker News users based on their comments
-*Simon Willison - 2026-03-21*
+### Bluesky leans into AI with Attie, an app for building custom feeds
+*TechCrunch AI - 2026-03-28*
 
-Profiling Hacker News users based on their comments
+Bluesky leans into AI with Attie, an app for building custom feeds
 
-[Read more](https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/#atom-everything)
+[Read more](https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/)
 
-### Using Git with coding agents
-*Simon Willison - 2026-03-21*
+### Stanford study outlines dangers of asking AI chatbots for personal advice
+*TechCrunch AI - 2026-03-28*
 
-Using Git with coding agents
+Stanford study outlines dangers of asking AI chatbots for personal advice
 
-[Read more](https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/#atom-everything)
+[Read more](https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/)
 
-### Publisher pulls horror novel ‘Shy Girl’ over AI concerns
-*TechCrunch AI - 2026-03-21*
+### Elon Musk’s last co-founder reportedly leaves xAI
+*TechCrunch AI - 2026-03-28*
 
-Publisher pulls horror novel ‘Shy Girl’ over AI concerns
+Elon Musk’s last co-founder reportedly leaves xAI
 
-[Read more](https://techcrunch.com/2026/03/21/publisher-pulls-horror-novel-shy-girl-over-ai-concerns/)
+[Read more](https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/)
 
-### Delve accused of misleading customers with ‘fake compliance’
-*TechCrunch AI - 2026-03-21*
+### Quoting Matt Webb
+*Simon Willison - 2026-03-28*
 
-Delve accused of misleading customers with ‘fake compliance’
+Quoting Matt Webb
 
-[Read more](https://techcrunch.com/2026/03/21/delve-accused-of-misleading-customers-with-fake-compliance/)
+[Read more](https://simonwillison.net/2026/Mar/28/matt-webb/#atom-everything)
 
 ---
 
