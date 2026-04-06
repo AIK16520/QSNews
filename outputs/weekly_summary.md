@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-03-23 to 2026-03-30
-**Generated:** 2026-03-30 10:19
+**Period:** 2026-03-30 to 2026-04-06
+**Generated:** 2026-04-06 10:11
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 144
+- **Total Articles Fetched:** 119
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 144
+- General AI: 119
 
 ## Top Sources
-- TechCrunch AI: 60
-- Simon Willison: 29
-- Wired AI: 19
-- LangChain Blog: 8
-- The Rundown AI: 6
-- AI News: 6
+- Simon Willison: 35
+- TechCrunch AI: 33
+- Wired AI: 15
+- AI News: 15
+- The Rundown AI: 5
 - MIT Tech Review: 5
-- IEEE Spectrum: 5
-- Ars Technica AI: 4
-- Ahead of AI: 1
+- LangChain Blog: 4
+- Ars Technica AI: 2
+- IEEE Spectrum: 1
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### An exclusive Q&A with alibaba.com's Kuo Zhang
-*The Rundown AI - 2026-03-29*
+### scan-for-secrets 0.2
+*Simon Willison - 2026-04-05*
 
-An exclusive Q&A with alibaba.com's Kuo Zhang
+scan-for-secrets 0.2
 
-[Read more](https://www.therundown.ai/p/an-exclusive-q-a-with-alibaba-com-s-kuo-zhang)
+[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything)
 
-### Bluesky leans into AI with Attie, an app for building custom feeds
-*TechCrunch AI - 2026-03-28*
+### scan-for-secrets 0.1.1
+*Simon Willison - 2026-04-05*
 
-Bluesky leans into AI with Attie, an app for building custom feeds
+scan-for-secrets 0.1.1
 
-[Read more](https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/)
+[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets-2/#atom-everything)
 
-### Stanford study outlines dangers of asking AI chatbots for personal advice
-*TechCrunch AI - 2026-03-28*
+### scan-for-secrets 0.1
+*Simon Willison - 2026-04-05*
 
-Stanford study outlines dangers of asking AI chatbots for personal advice
+scan-for-secrets 0.1
 
-[Read more](https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/)
+[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything)
 
-### Elon Musk’s last co-founder reportedly leaves xAI
-*TechCrunch AI - 2026-03-28*
+### research-llm-apis 2026-04-04
+*Simon Willison - 2026-04-05*
 
-Elon Musk’s last co-founder reportedly leaves xAI
+research-llm-apis 2026-04-04
 
-[Read more](https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/)
+[Read more](https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything)
 
-### Quoting Matt Webb
-*Simon Willison - 2026-03-28*
+### Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage
+*TechCrunch AI - 2026-04-04*
 
-Quoting Matt Webb
+Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage
 
-[Read more](https://simonwillison.net/2026/Mar/28/matt-webb/#atom-everything)
+[Read more](https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/)
 
 ---
 
