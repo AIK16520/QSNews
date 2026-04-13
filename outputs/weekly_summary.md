@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-03-30 to 2026-04-06
-**Generated:** 2026-04-06 10:11
+**Period:** 2026-04-06 to 2026-04-13
+**Generated:** 2026-04-13 10:48
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 119
+- **Total Articles Fetched:** 107
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 119
+- General AI: 107
 
 ## Top Sources
-- Simon Willison: 35
-- TechCrunch AI: 33
-- Wired AI: 15
-- AI News: 15
+- TechCrunch AI: 40
+- Wired AI: 17
+- Simon Willison: 14
+- AI News: 10
+- LangChain Blog: 8
 - The Rundown AI: 5
-- MIT Tech Review: 5
-- LangChain Blog: 4
-- Ars Technica AI: 2
-- IEEE Spectrum: 1
-- Last Week in AI: 1
+- MIT Tech Review: 4
+- Ars Technica AI: 4
+- IEEE Spectrum: 4
+- Anthropic: 1
 
 ## Recent Highlights
 
-### scan-for-secrets 0.2
-*Simon Willison - 2026-04-05*
+### SQLite 3.53.0
+*Simon Willison - 2026-04-11*
 
-scan-for-secrets 0.2
+SQLite 3.53.0
 
-[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything)
+[Read more](https://simonwillison.net/2026/Apr/11/sqlite/#atom-everything)
 
-### scan-for-secrets 0.1.1
-*Simon Willison - 2026-04-05*
+### SQLite Query Result Formatter Demo
+*Simon Willison - 2026-04-11*
 
-scan-for-secrets 0.1.1
+SQLite Query Result Formatter Demo
 
-[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets-2/#atom-everything)
+[Read more](https://simonwillison.net/2026/Apr/11/sqlite-qrf/#atom-everything)
 
-### scan-for-secrets 0.1
-*Simon Willison - 2026-04-05*
+### Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home
+*TechCrunch AI - 2026-04-11*
 
-scan-for-secrets 0.1
+Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home
 
-[Read more](https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything)
+[Read more](https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/)
 
-### research-llm-apis 2026-04-04
-*Simon Willison - 2026-04-05*
+### Your harness, your memory
+*LangChain Blog - 2026-04-11*
 
-research-llm-apis 2026-04-04
+Your harness, your memory
 
-[Read more](https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything)
+[Read more](https://blog.langchain.com/your-harness-your-memory/)
 
-### Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage
-*TechCrunch AI - 2026-04-04*
+### Your Push Notifications Aren’t Safe From the FBI
+*Wired AI - 2026-04-11*
 
-Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage
+Your Push Notifications Aren’t Safe From the FBI
 
-[Read more](https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/)
+[Read more](https://www.wired.com/story/security-news-this-week-your-push-notifications-arent-safe-from-the-fbi/)
 
 ---
 
