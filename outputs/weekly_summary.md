@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-04-13 to 2026-04-20
-**Generated:** 2026-04-20 10:50
+**Period:** 2026-04-20 to 2026-04-27
+**Generated:** 2026-04-27 11:07
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 133
+- **Total Articles Fetched:** 145
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 133
+- General AI: 145
 
 ## Top Sources
-- TechCrunch AI: 55
-- Simon Willison: 22
+- TechCrunch AI: 58
+- Simon Willison: 26
 - Wired AI: 20
-- AI News: 12
-- MIT Tech Review: 9
-- The Rundown AI: 6
+- AI News: 13
+- MIT Tech Review: 12
+- The Rundown AI: 5
+- Ars Technica AI: 3
 - IEEE Spectrum: 3
 - Anthropic: 3
-- Ars Technica AI: 2
-- Ahead of AI: 1
+- Berkeley AI Research: 1
 
 ## Recent Highlights
 
-### Exclusive: Inside Canva AI 2.0 with CPO Cameron Adams
-*The Rundown AI - 2026-04-19*
+### Anthropic created a test marketplace for agent-on-agent commerce
+*TechCrunch AI - 2026-04-25*
 
-Exclusive: Inside Canva AI 2.0 with CPO Cameron Adams
+Anthropic created a test marketplace for agent-on-agent commerce
 
-[Read more](https://www.therundown.ai/p/exclusive-inside-canva-ai-2-0-with-cpo-cameron-adams)
+[Read more](https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/)
 
-### Changes in the system prompt between Claude Opus 4.6 and 4.7
-*Simon Willison - 2026-04-18*
+### Maine’s governor vetoes data center moratorium
+*TechCrunch AI - 2026-04-25*
 
-Changes in the system prompt between Claude Opus 4.6 and 4.7
+Maine’s governor vetoes data center moratorium
 
-[Read more](https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything)
+[Read more](https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/)
 
-### Tesla brings its robotaxi service to Dallas and Houston
-*TechCrunch AI - 2026-04-18*
+### OpenAI CEO apologizes to Tumbler Ridge community
+*TechCrunch AI - 2026-04-25*
 
-Tesla brings its robotaxi service to Dallas and Houston
+OpenAI CEO apologizes to Tumbler Ridge community
 
-[Read more](https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/)
+[Read more](https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/)
 
-### Anthropic’s relationship with the Trump administration seems to be thawing
-*TechCrunch AI - 2026-04-18*
+### WHY ARE YOU LIKE THIS
+*Simon Willison - 2026-04-25*
 
-Anthropic’s relationship with the Trump administration seems to be thawing
+WHY ARE YOU LIKE THIS
 
-[Read more](https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/)
+[Read more](https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything)
 
-### The App Store is booming again, and AI may be why
-*TechCrunch AI - 2026-04-18*
+### Why Cohere is merging with Aleph Alpha
+*TechCrunch AI - 2026-04-25*
 
-The App Store is booming again, and AI may be why
+Why Cohere is merging with Aleph Alpha
 
-[Read more](https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/)
+[Read more](https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/)
 
 ---
 
