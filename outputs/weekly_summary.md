@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-04-20 to 2026-04-27
-**Generated:** 2026-04-27 11:07
+**Period:** 2026-04-27 to 2026-05-04
+**Generated:** 2026-05-04 11:06
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 145
+- **Total Articles Fetched:** 157
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 145
+- General AI: 157
 
 ## Top Sources
-- TechCrunch AI: 58
-- Simon Willison: 26
-- Wired AI: 20
+- TechCrunch AI: 50
+- AI Business: 28
+- Wired AI: 22
+- Simon Willison: 17
 - AI News: 13
-- MIT Tech Review: 12
-- The Rundown AI: 5
+- MIT Tech Review: 8
+- IEEE Spectrum: 7
+- The Rundown AI: 6
 - Ars Technica AI: 3
-- IEEE Spectrum: 3
-- Anthropic: 3
-- Berkeley AI Research: 1
+- Anthropic: 2
 
 ## Recent Highlights
 
-### Anthropic created a test marketplace for agent-on-agent commerce
-*TechCrunch AI - 2026-04-25*
+### Exclusive: UiPath CMO Michael Atalla on AI at work
+*The Rundown AI - 2026-05-03*
 
-Anthropic created a test marketplace for agent-on-agent commerce
+Exclusive: UiPath CMO Michael Atalla on AI at work
 
-[Read more](https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/)
+[Read more](https://www.therundown.ai/p/exclusive-uipath-cmo-michael-atalla-on-ai-at-work)
 
-### Maine’s governor vetoes data center moratorium
-*TechCrunch AI - 2026-04-25*
+### AI-generated actors and scripts are now ineligible for Oscars
+*TechCrunch AI - 2026-05-02*
 
-Maine’s governor vetoes data center moratorium
+AI-generated actors and scripts are now ineligible for Oscars
 
-[Read more](https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/)
+[Read more](https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/)
 
-### OpenAI CEO apologizes to Tumbler Ridge community
-*TechCrunch AI - 2026-04-25*
+### Sightings
+*Simon Willison - 2026-05-02*
 
-OpenAI CEO apologizes to Tumbler Ridge community
+Sightings
 
-[Read more](https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/)
+[Read more](https://simonwillison.net/2026/May/2/sightings/#atom-everything)
 
-### WHY ARE YOU LIKE THIS
-*Simon Willison - 2026-04-25*
+### The best AI dictation apps, tested and ranked
+*TechCrunch AI - 2026-05-02*
 
-WHY ARE YOU LIKE THIS
+The best AI dictation apps, tested and ranked
 
-[Read more](https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything)
+[Read more](https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/)
 
-### Why Cohere is merging with Aleph Alpha
-*TechCrunch AI - 2026-04-25*
+### Disneyland Now Uses Face Recognition on Visitors
+*Wired AI - 2026-05-02*
 
-Why Cohere is merging with Aleph Alpha
+Disneyland Now Uses Face Recognition on Visitors
 
-[Read more](https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/)
+[Read more](https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/)
 
 ---
 
