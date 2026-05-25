@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-05-11 to 2026-05-18
-**Generated:** 2026-05-18 12:33
+**Period:** 2026-05-18 to 2026-05-25
+**Generated:** 2026-05-25 12:33
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 148
+- **Total Articles Fetched:** 153
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 148
+- General AI: 153
 
 ## Top Sources
-- TechCrunch AI: 51
-- Simon Willison: 23
-- Wired AI: 22
-- AI Business: 14
+- TechCrunch AI: 61
+- Wired AI: 20
+- Simon Willison: 19
+- AI Business: 15
 - AI News: 9
-- MIT Tech Review: 9
-- IEEE Spectrum: 7
+- MIT Tech Review: 8
+- IEEE Spectrum: 6
 - The Rundown AI: 5
-- Ars Technica AI: 4
+- Ars Technica AI: 5
 - Anthropic: 3
 
 ## Recent Highlights
 
-### Warelay -> OpenClaw
-*Simon Willison - 2026-05-16*
+### GITEX AI EUROPE
+*AI Business - 2026-06-30*
 
-Warelay -> OpenClaw
+GITEX AI EUROPE
 
-[Read more](https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything)
+[Read more](https://aibusiness.com/events/gitex-ai-europe)
 
-### The haves and have nots of the AI gold rush
-*TechCrunch AI - 2026-05-16*
+### These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin
+*Wired AI - 2026-05-24*
 
-The haves and have nots of the AI gold rush
+These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin
 
-[Read more](https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/)
+[Read more](https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/)
 
-### Research repository ArXiv will ban authors for a year if they let AI do all the work
-*TechCrunch AI - 2026-05-16*
+### On the <dl>
+*Simon Willison - 2026-05-23*
 
-Research repository ArXiv will ban authors for a year if they let AI do all the work
+On the <dl>
 
-[Read more](https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/)
+[Read more](https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything)
 
-### Quoting Julia Evans
-*Simon Willison - 2026-05-16*
+### Ferrari is using IBM’s AI to create F1 superfans
+*TechCrunch AI - 2026-05-23*
 
-Quoting Julia Evans
+Ferrari is using IBM’s AI to create F1 superfans
 
-[Read more](https://simonwillison.net/2026/May/16/julia-evans/#atom-everything)
+[Read more](https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/)
 
-### OpenAI co-founder Greg Brockman takes charge of product strategy
-*TechCrunch AI - 2026-05-16*
+### Elon Musk has given up on solar power (on Earth)
+*TechCrunch AI - 2026-05-23*
 
-OpenAI co-founder Greg Brockman takes charge of product strategy
+Elon Musk has given up on solar power (on Earth)
 
-[Read more](https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/)
+[Read more](https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/)
 
 ---
 
