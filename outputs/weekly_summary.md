@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-05-18 to 2026-05-25
-**Generated:** 2026-05-25 12:33
+**Period:** 2026-05-25 to 2026-06-01
+**Generated:** 2026-06-01 15:22
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 153
+- **Total Articles Fetched:** 131
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 153
+- General AI: 131
 
 ## Top Sources
-- TechCrunch AI: 61
-- Wired AI: 20
-- Simon Willison: 19
-- AI Business: 15
-- AI News: 9
-- MIT Tech Review: 8
-- IEEE Spectrum: 6
-- The Rundown AI: 5
+- TechCrunch AI: 51
+- Wired AI: 17
+- Simon Willison: 17
+- AI Business: 13
+- AI News: 8
+- MIT Tech Review: 5
 - Ars Technica AI: 5
-- Anthropic: 3
+- Anthropic: 5
+- The Rundown AI: 4
+- IEEE Spectrum: 3
 
 ## Recent Highlights
 
-### GITEX AI EUROPE
-*AI Business - 2026-06-30*
+### How Turkey Hacked the Hair Transplant Industry
+*Wired AI - 2026-05-31*
 
-GITEX AI EUROPE
+How Turkey Hacked the Hair Transplant Industry
 
-[Read more](https://aibusiness.com/events/gitex-ai-europe)
+[Read more](https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/)
 
-### These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin
-*Wired AI - 2026-05-24*
+### Quoting Karen Kwok for Reuters Breakingviews
+*Simon Willison - 2026-05-31*
 
-These Robots Are Making Meals for a Nonprofit in San Francisco’s Tenderloin
+Quoting Karen Kwok for Reuters Breakingviews
 
-[Read more](https://www.wired.com/story/these-robots-are-making-meals-for-a-nonprofit-in-san-franciscos-tenderloin/)
+[Read more](https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything)
 
-### On the <dl>
-*Simon Willison - 2026-05-23*
+### SoftBank says it will invest up to €75 billion to build French data centers
+*TechCrunch AI - 2026-05-30*
 
-On the <dl>
+SoftBank says it will invest up to €75 billion to build French data centers
 
-[Read more](https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything)
+[Read more](https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/)
 
-### Ferrari is using IBM’s AI to create F1 superfans
-*TechCrunch AI - 2026-05-23*
+### How we contain Claude across products
+*Simon Willison - 2026-05-30*
 
-Ferrari is using IBM’s AI to create F1 superfans
+How we contain Claude across products
 
-[Read more](https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/)
+[Read more](https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything)
 
-### Elon Musk has given up on solar power (on Earth)
-*TechCrunch AI - 2026-05-23*
+### Running Python ASGI apps in the browser via Pyodide + a service worker
+*Simon Willison - 2026-05-30*
 
-Elon Musk has given up on solar power (on Earth)
+Running Python ASGI apps in the browser via Pyodide + a service worker
 
-[Read more](https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/)
+[Read more](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything)
 
 ---
 
