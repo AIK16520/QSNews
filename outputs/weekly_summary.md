@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-05-25 to 2026-06-01
-**Generated:** 2026-06-01 15:22
+**Period:** 2026-06-01 to 2026-06-08
+**Generated:** 2026-06-08 13:08
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 131
+- **Total Articles Fetched:** 145
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 131
+- General AI: 145
 
 ## Top Sources
 - TechCrunch AI: 51
-- Wired AI: 17
-- Simon Willison: 17
-- AI Business: 13
-- AI News: 8
-- MIT Tech Review: 5
-- Ars Technica AI: 5
-- Anthropic: 5
-- The Rundown AI: 4
+- Wired AI: 21
+- AI Business: 19
+- Simon Willison: 16
+- AI News: 11
+- Ars Technica AI: 9
+- The Rundown AI: 5
+- MIT Tech Review: 4
+- Anthropic: 4
 - IEEE Spectrum: 3
 
 ## Recent Highlights
 
-### How Turkey Hacked the Hair Transplant Industry
-*Wired AI - 2026-05-31*
+### OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks
+*TechCrunch AI - 2026-06-06*
 
-How Turkey Hacked the Hair Transplant Industry
+OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks
 
-[Read more](https://www.wired.com/story/how-turkey-hacked-the-hair-transplant-industry/)
+[Read more](https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/)
 
-### Quoting Karen Kwok for Reuters Breakingviews
-*Simon Willison - 2026-05-31*
+### What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates
+*TechCrunch AI - 2026-06-06*
 
-Quoting Karen Kwok for Reuters Breakingviews
+What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates
 
-[Read more](https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything)
+[Read more](https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/)
 
-### SoftBank says it will invest up to €75 billion to build French data centers
-*TechCrunch AI - 2026-05-30*
+### Sriram Krishnan is leaving his role as White House AI advisor
+*TechCrunch AI - 2026-06-06*
 
-SoftBank says it will invest up to €75 billion to build French data centers
+Sriram Krishnan is leaving his role as White House AI advisor
 
-[Read more](https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/)
+[Read more](https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/)
 
-### How we contain Claude across products
-*Simon Willison - 2026-05-30*
+### The Trump administration might take an equity stake in OpenAI
+*TechCrunch AI - 2026-06-06*
 
-How we contain Claude across products
+The Trump administration might take an equity stake in OpenAI
 
-[Read more](https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything)
+[Read more](https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/)
 
-### Running Python ASGI apps in the browser via Pyodide + a service worker
-*Simon Willison - 2026-05-30*
+### Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs
+*IEEE Spectrum - 2026-06-06*
 
-Running Python ASGI apps in the browser via Pyodide + a service worker
+Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs
 
-[Read more](https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything)
+[Read more](https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc)
 
 ---
 
