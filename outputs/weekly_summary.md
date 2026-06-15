@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-06-01 to 2026-06-08
-**Generated:** 2026-06-08 13:08
+**Period:** 2026-06-08 to 2026-06-15
+**Generated:** 2026-06-15 15:16
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 145
+- **Total Articles Fetched:** 143
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 145
+- General AI: 143
 
 ## Top Sources
-- TechCrunch AI: 51
-- Wired AI: 21
-- AI Business: 19
-- Simon Willison: 16
-- AI News: 11
-- Ars Technica AI: 9
-- The Rundown AI: 5
-- MIT Tech Review: 4
-- Anthropic: 4
+- TechCrunch AI: 62
+- Wired AI: 20
+- Simon Willison: 18
+- AI Business: 15
+- AI News: 7
+- Anthropic: 6
+- The Rundown AI: 4
+- Ars Technica AI: 4
+- MIT Tech Review: 3
 - IEEE Spectrum: 3
 
 ## Recent Highlights
 
-### OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks
-*TechCrunch AI - 2026-06-06*
+### As Anthropic suspends access to new models, India debates its AI future
+*TechCrunch AI - 2026-06-14*
 
-OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks
+As Anthropic suspends access to new models, India debates its AI future
 
-[Read more](https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/)
+[Read more](https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/)
 
-### What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates
-*TechCrunch AI - 2026-06-06*
+### Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand
+*TechCrunch AI - 2026-06-14*
 
-What to expect from WWDC 2026: Siri’s highly anticipated revamp and Apple Intelligence updates
+Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand
 
-[Read more](https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/)
+[Read more](https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/)
 
-### Sriram Krishnan is leaving his role as White House AI advisor
-*TechCrunch AI - 2026-06-06*
+### Publishing WASM wheels to PyPI for use with Pyodide
+*Simon Willison - 2026-06-13*
 
-Sriram Krishnan is leaving his role as White House AI advisor
+Publishing WASM wheels to PyPI for use with Pyodide
 
-[Read more](https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/)
+[Read more](https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything)
 
-### The Trump administration might take an equity stake in OpenAI
-*TechCrunch AI - 2026-06-06*
+### luau-wasm 0.1a0
+*Simon Willison - 2026-06-13*
 
-The Trump administration might take an equity stake in OpenAI
+luau-wasm 0.1a0
 
-[Read more](https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/)
+[Read more](https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything)
 
-### Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs
-*IEEE Spectrum - 2026-06-06*
+### Mapping SQLite result columns back to their source `table.column`
+*Simon Willison - 2026-06-13*
 
-Nvidia’s AI Hardware Comes to Windows in RTX Spark PCs
+Mapping SQLite result columns back to their source `table.column`
 
-[Read more](https://spectrum.ieee.org/nvidia-rtx-spark-windows-pc)
+[Read more](https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything)
 
 ---
 
