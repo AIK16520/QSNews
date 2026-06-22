@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-06-08 to 2026-06-15
-**Generated:** 2026-06-15 15:16
+**Period:** 2026-06-15 to 2026-06-22
+**Generated:** 2026-06-22 14:42
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 143
+- **Total Articles Fetched:** 137
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 143
+- General AI: 137
 
 ## Top Sources
-- TechCrunch AI: 62
-- Wired AI: 20
-- Simon Willison: 18
-- AI Business: 15
-- AI News: 7
-- Anthropic: 6
-- The Rundown AI: 4
-- Ars Technica AI: 4
+- TechCrunch AI: 63
+- Wired AI: 19
+- Simon Willison: 19
+- AI News: 13
+- AI Business: 11
+- The Rundown AI: 5
 - MIT Tech Review: 3
-- IEEE Spectrum: 3
+- IEEE Spectrum: 2
+- Ars Technica AI: 1
+- Anthropic: 1
 
 ## Recent Highlights
 
-### As Anthropic suspends access to new models, India debates its AI future
-*TechCrunch AI - 2026-06-14*
+### 28 Tips to Take Your ChatGPT Prompts to the Next Level
+*Wired AI - 2026-06-21*
 
-As Anthropic suspends access to new models, India debates its AI future
+28 Tips to Take Your ChatGPT Prompts to the Next Level
 
-[Read more](https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/)
+[Read more](https://www.wired.com/story/28-tips-to-take-your-chatgpt-prompts-to-the-next-level/)
 
-### Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand
-*TechCrunch AI - 2026-06-14*
+### Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’
+*TechCrunch AI - 2026-06-20*
 
-Meta reportedly moves to unwind $2B Manus deal after Beijing’s demand
+Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’
 
-[Read more](https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/)
+[Read more](https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/)
 
-### Publishing WASM wheels to PyPI for use with Pyodide
-*Simon Willison - 2026-06-13*
+### In the Weights is your new AI-centric vanity search
+*TechCrunch AI - 2026-06-20*
 
-Publishing WASM wheels to PyPI for use with Pyodide
+In the Weights is your new AI-centric vanity search
 
-[Read more](https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything)
+[Read more](https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/)
 
-### luau-wasm 0.1a0
-*Simon Willison - 2026-06-13*
+### Nobel laureate John Jumper is leaving DeepMind for rival Anthropic
+*TechCrunch AI - 2026-06-20*
 
-luau-wasm 0.1a0
+Nobel laureate John Jumper is leaving DeepMind for rival Anthropic
 
-[Read more](https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything)
+[Read more](https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/)
 
-### Mapping SQLite result columns back to their source `table.column`
-*Simon Willison - 2026-06-13*
+### Siri AI Hands On: A Smart, Helpful Assistant
+*Wired AI - 2026-06-20*
 
-Mapping SQLite result columns back to their source `table.column`
+Siri AI Hands On: A Smart, Helpful Assistant
 
-[Read more](https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything)
+[Read more](https://www.wired.com/story/siri-ai-hands-on-iphone/)
 
 ---
 
