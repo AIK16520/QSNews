@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-06-15 to 2026-06-22
-**Generated:** 2026-06-22 14:42
+**Period:** 2026-06-22 to 2026-06-29
+**Generated:** 2026-06-29 13:08
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 137
+- **Total Articles Fetched:** 122
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 137
+- General AI: 122
 
 ## Top Sources
-- TechCrunch AI: 63
-- Wired AI: 19
-- Simon Willison: 19
-- AI News: 13
-- AI Business: 11
+- TechCrunch AI: 47
+- Wired AI: 18
+- AI Business: 15
+- Simon Willison: 15
+- AI News: 8
 - The Rundown AI: 5
-- MIT Tech Review: 3
-- IEEE Spectrum: 2
-- Ars Technica AI: 1
-- Anthropic: 1
+- MIT Tech Review: 4
+- IEEE Spectrum: 4
+- Ars Technica AI: 3
+- Eugene Yan: 1
 
 ## Recent Highlights
 
-### 28 Tips to Take Your ChatGPT Prompts to the Next Level
-*Wired AI - 2026-06-21*
+### SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype
+*TechCrunch AI - 2026-06-27*
 
-28 Tips to Take Your ChatGPT Prompts to the Next Level
+SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype
 
-[Read more](https://www.wired.com/story/28-tips-to-take-your-chatgpt-prompts-to-the-next-level/)
+[Read more](https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/)
 
-### Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’
-*TechCrunch AI - 2026-06-20*
+### Apple Vision Pro exec is reportedly leaving for OpenAI
+*TechCrunch AI - 2026-06-27*
 
-Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’
+Apple Vision Pro exec is reportedly leaving for OpenAI
 
-[Read more](https://techcrunch.com/2026/06/20/signals-meredith-whittaker-wants-you-to-remember-that-ai-chatbots-are-not-your-friends/)
+[Read more](https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/)
 
-### In the Weights is your new AI-centric vanity search
-*TechCrunch AI - 2026-06-20*
+### The fittest founder in the room got cancer. Here’s how he used AI to fight back.
+*TechCrunch AI - 2026-06-27*
 
-In the Weights is your new AI-centric vanity search
+The fittest founder in the room got cancer. Here’s how he used AI to fight back.
 
-[Read more](https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/)
+[Read more](https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/)
 
-### Nobel laureate John Jumper is leaving DeepMind for rival Anthropic
-*TechCrunch AI - 2026-06-20*
+### ConlangCrafter Turns AI to Imagining Languages
+*IEEE Spectrum - 2026-06-27*
 
-Nobel laureate John Jumper is leaving DeepMind for rival Anthropic
+ConlangCrafter Turns AI to Imagining Languages
 
-[Read more](https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/)
+[Read more](https://spectrum.ieee.org/conlangs-ai-model-contructed-languages)
 
-### Siri AI Hands On: A Smart, Helpful Assistant
-*Wired AI - 2026-06-20*
+### Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on
+*TechCrunch AI - 2026-06-27*
 
-Siri AI Hands On: A Smart, Helpful Assistant
+Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on
 
-[Read more](https://www.wired.com/story/siri-ai-hands-on-iphone/)
+[Read more](https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/)
 
 ---
 
