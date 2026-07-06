@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-06-22 to 2026-06-29
-**Generated:** 2026-06-29 13:08
+**Period:** 2026-06-29 to 2026-07-06
+**Generated:** 2026-07-06 12:49
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 122
+- **Total Articles Fetched:** 129
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 122
+- General AI: 129
 
 ## Top Sources
 - TechCrunch AI: 47
-- Wired AI: 18
-- AI Business: 15
-- Simon Willison: 15
-- AI News: 8
+- Simon Willison: 22
+- AI News: 12
+- Wired AI: 11
+- AI Business: 9
+- MIT Tech Review: 7
+- Ars Technica AI: 6
+- IEEE Spectrum: 5
 - The Rundown AI: 5
-- MIT Tech Review: 4
-- IEEE Spectrum: 4
-- Ars Technica AI: 3
-- Eugene Yan: 1
+- Anthropic: 4
 
 ## Recent Highlights
 
-### SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype
-*TechCrunch AI - 2026-06-27*
+### sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)
+*Simon Willison - 2026-07-05*
 
-SoftBank’s CEO isn’t the only one with questions about Elon Musk’s orbital data center hype
+sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)
 
-[Read more](https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/)
+[Read more](https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything)
 
-### Apple Vision Pro exec is reportedly leaving for OpenAI
-*TechCrunch AI - 2026-06-27*
+### sqlite-utils 4.0rc2
+*Simon Willison - 2026-07-05*
 
-Apple Vision Pro exec is reportedly leaving for OpenAI
+sqlite-utils 4.0rc2
 
-[Read more](https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/)
+[Read more](https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything)
 
-### The fittest founder in the room got cancer. Here’s how he used AI to fight back.
-*TechCrunch AI - 2026-06-27*
+### Building a World Map with only 500 bytes
+*Simon Willison - 2026-07-04*
 
-The fittest founder in the room got cancer. Here’s how he used AI to fight back.
+Building a World Map with only 500 bytes
 
-[Read more](https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/)
+[Read more](https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything)
 
-### ConlangCrafter Turns AI to Imagining Languages
-*IEEE Spectrum - 2026-06-27*
+### Better Models: Worse Tools
+*Simon Willison - 2026-07-04*
 
-ConlangCrafter Turns AI to Imagining Languages
+Better Models: Worse Tools
 
-[Read more](https://spectrum.ieee.org/conlangs-ai-model-contructed-languages)
+[Read more](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything)
 
-### Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on
-*TechCrunch AI - 2026-06-27*
+### New Google commercial imagines a Declaration of Independence written with help from AI
+*TechCrunch AI - 2026-07-04*
 
-Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on
+New Google commercial imagines a Declaration of Independence written with help from AI
 
-[Read more](https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/)
+[Read more](https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/)
 
 ---
 
