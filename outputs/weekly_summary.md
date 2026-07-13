@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-06-29 to 2026-07-06
-**Generated:** 2026-07-06 12:49
+**Period:** 2026-07-06 to 2026-07-13
+**Generated:** 2026-07-13 12:07
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 129
+- **Total Articles Fetched:** 127
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 129
+- General AI: 127
 
 ## Top Sources
-- TechCrunch AI: 47
-- Simon Willison: 22
-- AI News: 12
-- Wired AI: 11
-- AI Business: 9
-- MIT Tech Review: 7
-- Ars Technica AI: 6
-- IEEE Spectrum: 5
+- TechCrunch AI: 57
+- Wired AI: 19
+- Simon Willison: 16
+- AI Business: 10
+- AI News: 7
 - The Rundown AI: 5
-- Anthropic: 4
+- Anthropic: 5
+- MIT Tech Review: 4
+- Ars Technica AI: 2
+- IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)
-*Simon Willison - 2026-07-05*
+### Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides
+*Wired AI - 2026-07-12*
 
-sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)
+Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides
 
-[Read more](https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything)
+[Read more](https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/)
 
-### sqlite-utils 4.0rc2
-*Simon Willison - 2026-07-05*
+### sqlite-utils 4.1
+*Simon Willison - 2026-07-11*
 
-sqlite-utils 4.0rc2
+sqlite-utils 4.1
 
-[Read more](https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything)
 
-### Building a World Map with only 500 bytes
-*Simon Willison - 2026-07-04*
+### OpenAI bets on families as ChatGPT goes deeper into households
+*TechCrunch AI - 2026-07-11*
 
-Building a World Map with only 500 bytes
+OpenAI bets on families as ChatGPT goes deeper into households
 
-[Read more](https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything)
+[Read more](https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/)
 
-### Better Models: Worse Tools
-*Simon Willison - 2026-07-04*
+### OpenAI’s Head of Safety Is Leaving the Company
+*Wired AI - 2026-07-11*
 
-Better Models: Worse Tools
+OpenAI’s Head of Safety Is Leaving the Company
 
-[Read more](https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything)
+[Read more](https://www.wired.com/story/openai-head-of-safety-leaving/)
 
-### New Google commercial imagines a Declaration of Independence written with help from AI
-*TechCrunch AI - 2026-07-04*
+### Meta removes controversial AI feature on Instagram after backlash
+*TechCrunch AI - 2026-07-10*
 
-New Google commercial imagines a Declaration of Independence written with help from AI
+Meta removes controversial AI feature on Instagram after backlash
 
-[Read more](https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/)
+[Read more](https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/)
 
 ---
 
