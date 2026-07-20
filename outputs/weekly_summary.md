@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-07-06 to 2026-07-13
-**Generated:** 2026-07-13 12:07
+**Period:** 2026-07-13 to 2026-07-20
+**Generated:** 2026-07-20 11:46
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 127
+- **Total Articles Fetched:** 154
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 127
+- General AI: 154
 
 ## Top Sources
-- TechCrunch AI: 57
-- Wired AI: 19
-- Simon Willison: 16
-- AI Business: 10
-- AI News: 7
+- TechCrunch AI: 62
+- Simon Willison: 26
+- AI Business: 20
+- Wired AI: 18
+- AI News: 6
 - The Rundown AI: 5
-- Anthropic: 5
-- MIT Tech Review: 4
-- Ars Technica AI: 2
+- VentureBeat AI: 5
+- Ars Technica AI: 4
+- MIT Tech Review: 3
 - IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides
-*Wired AI - 2026-07-12*
+### AI Mania Is Eviscerating Global Decision-Making
+*Simon Willison - 2026-07-19*
 
-Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides
+AI Mania Is Eviscerating Global Decision-Making
 
-[Read more](https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/)
+[Read more](https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything)
 
-### sqlite-utils 4.1
-*Simon Willison - 2026-07-11*
+### Claude Code uses Bun written in Rust now
+*Simon Willison - 2026-07-19*
 
-sqlite-utils 4.1
+Claude Code uses Bun written in Rust now
 
-[Read more](https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything)
 
-### OpenAI bets on families as ChatGPT goes deeper into households
-*TechCrunch AI - 2026-07-11*
+### Kimi: Threat or menace?
+*TechCrunch AI - 2026-07-18*
 
-OpenAI bets on families as ChatGPT goes deeper into households
+Kimi: Threat or menace?
 
-[Read more](https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/)
+[Read more](https://techcrunch.com/2026/07/18/kimi-threat-or-menace/)
 
-### OpenAI’s Head of Safety Is Leaving the Company
-*Wired AI - 2026-07-11*
+### SQLite Query Explainer
+*Simon Willison - 2026-07-18*
 
-OpenAI’s Head of Safety Is Leaving the Company
+SQLite Query Explainer
 
-[Read more](https://www.wired.com/story/openai-head-of-safety-leaving/)
+[Read more](https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything)
 
-### Meta removes controversial AI feature on Instagram after backlash
-*TechCrunch AI - 2026-07-10*
+### Controlling Reasoning Effort in LLMs
+*Ahead of AI - 2026-07-18*
 
-Meta removes controversial AI feature on Instagram after backlash
+Controlling Reasoning Effort in LLMs
 
-[Read more](https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/)
+[Read more](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms)
 
 ---
 
