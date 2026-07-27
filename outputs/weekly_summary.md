@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-07-13 to 2026-07-20
-**Generated:** 2026-07-20 11:46
+**Period:** 2026-07-20 to 2026-07-27
+**Generated:** 2026-07-27 12:24
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 154
+- **Total Articles Fetched:** 132
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 154
+- General AI: 132
 
 ## Top Sources
-- TechCrunch AI: 62
-- Simon Willison: 26
-- AI Business: 20
-- Wired AI: 18
-- AI News: 6
-- The Rundown AI: 5
-- VentureBeat AI: 5
-- Ars Technica AI: 4
+- TechCrunch AI: 57
+- Wired AI: 16
+- Simon Willison: 13
+- AI Business: 12
+- AI News: 10
+- Last Week in AI: 6
+- Anthropic: 5
+- The Rundown AI: 4
 - MIT Tech Review: 3
-- IEEE Spectrum: 2
+- Ars Technica AI: 3
 
 ## Recent Highlights
 
-### AI Mania Is Eviscerating Global Decision-Making
-*Simon Willison - 2026-07-19*
+### Monday.com is the latest tech company to blame AI for layoffs — here are 20 others
+*TechCrunch AI - 2026-07-26*
 
-AI Mania Is Eviscerating Global Decision-Making
+Monday.com is the latest tech company to blame AI for layoffs — here are 20 others
 
-[Read more](https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything)
+[Read more](https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/)
 
-### Claude Code uses Bun written in Rust now
-*Simon Willison - 2026-07-19*
+### Ruff v0.16.0
+*Simon Willison - 2026-07-25*
 
-Claude Code uses Bun written in Rust now
+Ruff v0.16.0
 
-[Read more](https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/#atom-everything)
+[Read more](https://simonwillison.net/2026/Jul/25/ruff/#atom-everything)
 
-### Kimi: Threat or menace?
-*TechCrunch AI - 2026-07-18*
+### Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+*TechCrunch AI - 2026-07-25*
 
-Kimi: Threat or menace?
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
 
-[Read more](https://techcrunch.com/2026/07/18/kimi-threat-or-menace/)
+[Read more](https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/)
 
-### SQLite Query Explainer
-*Simon Willison - 2026-07-18*
+### One fallen power line exposed a growing AI data center problem. Here’s how to fix it.
+*TechCrunch AI - 2026-07-25*
 
-SQLite Query Explainer
+One fallen power line exposed a growing AI data center problem. Here’s how to fix it.
 
-[Read more](https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything)
+[Read more](https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/)
 
-### Controlling Reasoning Effort in LLMs
-*Ahead of AI - 2026-07-18*
+### The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days
+*Wired AI - 2026-07-25*
 
-Controlling Reasoning Effort in LLMs
+The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days
 
-[Read more](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms)
+[Read more](https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/)
 
 ---
 
