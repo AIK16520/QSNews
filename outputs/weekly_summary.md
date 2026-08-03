@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-07-20 to 2026-07-27
-**Generated:** 2026-07-27 12:24
+**Period:** 2026-07-27 to 2026-08-03
+**Generated:** 2026-08-03 12:25
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 132
+- **Total Articles Fetched:** 156
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 132
+- General AI: 156
 
 ## Top Sources
-- TechCrunch AI: 57
-- Wired AI: 16
-- Simon Willison: 13
-- AI Business: 12
-- AI News: 10
-- Last Week in AI: 6
-- Anthropic: 5
-- The Rundown AI: 4
-- MIT Tech Review: 3
+- TechCrunch AI: 60
+- Simon Willison: 29
+- Wired AI: 25
+- AI Business: 13
+- MIT Tech Review: 7
+- AI News: 6
+- The Rundown AI: 5
+- IEEE Spectrum: 4
+- Anthropic: 3
 - Ars Technica AI: 3
 
 ## Recent Highlights
 
-### Monday.com is the latest tech company to blame AI for layoffs — here are 20 others
-*TechCrunch AI - 2026-07-26*
+### Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives
+*Wired AI - 2026-08-02*
 
-Monday.com is the latest tech company to blame AI for layoffs — here are 20 others
+Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives
 
-[Read more](https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/)
+[Read more](https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/)
 
-### Ruff v0.16.0
-*Simon Willison - 2026-07-25*
+### Open letters about AI development
+*Simon Willison - 2026-08-02*
 
-Ruff v0.16.0
+Open letters about AI development
 
-[Read more](https://simonwillison.net/2026/Jul/25/ruff/#atom-everything)
+[Read more](https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything)
 
-### Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
-*TechCrunch AI - 2026-07-25*
+### July 2026 newsletter
+*Simon Willison - 2026-08-02*
 
-Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+July 2026 newsletter
 
-[Read more](https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/)
+[Read more](https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything)
 
-### One fallen power line exposed a growing AI data center problem. Here’s how to fix it.
-*TechCrunch AI - 2026-07-25*
+### Quoting Greg Brockman
+*Simon Willison - 2026-08-01*
 
-One fallen power line exposed a growing AI data center problem. Here’s how to fix it.
+Quoting Greg Brockman
 
-[Read more](https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/)
+[Read more](https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything)
 
-### The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days
-*Wired AI - 2026-07-25*
+### datasette-apps 0.2a0
+*Simon Willison - 2026-08-01*
 
-The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days
+datasette-apps 0.2a0
 
-[Read more](https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/)
+[Read more](https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything)
 
 ---
 
