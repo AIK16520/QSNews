@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-07-27 to 2026-08-03
-**Generated:** 2026-08-03 12:25
+**Period:** 2026-08-03 to 2026-08-10
+**Generated:** 2026-08-10 10:17
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 156
+- **Total Articles Fetched:** 138
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 156
+- General AI: 138
 
 ## Top Sources
-- TechCrunch AI: 60
-- Simon Willison: 29
-- Wired AI: 25
+- TechCrunch AI: 46
+- Wired AI: 27
+- Simon Willison: 24
 - AI Business: 13
-- MIT Tech Review: 7
-- AI News: 6
+- AI News: 12
 - The Rundown AI: 5
-- IEEE Spectrum: 4
-- Anthropic: 3
+- IEEE Spectrum: 3
 - Ars Technica AI: 3
+- MIT Tech Review: 2
+- Anthropic: 2
 
 ## Recent Highlights
 
-### Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives
-*Wired AI - 2026-08-02*
+### These AI Barons Are Ready to Give Away Their Fortunes
+*Wired AI - 2026-08-09*
 
-Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives
+These AI Barons Are Ready to Give Away Their Fortunes
 
-[Read more](https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/)
+[Read more](https://www.wired.com/story/ai-billionaires-are-pledging-their-wealth-good-or-bad/)
 
-### Open letters about AI development
-*Simon Willison - 2026-08-02*
+### Auto mode is now the default in Claude Code for Pro, Max, and Team plans
+*Simon Willison - 2026-08-08*
 
-Open letters about AI development
+Auto mode is now the default in Claude Code for Pro, Max, and Team plans
 
-[Read more](https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything)
+[Read more](https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything)
 
-### July 2026 newsletter
-*Simon Willison - 2026-08-02*
+### Planned Amazon data center could become the biggest climate polluter in the U.S.
+*TechCrunch AI - 2026-08-08*
 
-July 2026 newsletter
+Planned Amazon data center could become the biggest climate polluter in the U.S.
 
-[Read more](https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything)
+[Read more](https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/)
 
-### Quoting Greg Brockman
-*Simon Willison - 2026-08-01*
+### OpenAI acquires presentation startup NextSlide
+*TechCrunch AI - 2026-08-08*
 
-Quoting Greg Brockman
+OpenAI acquires presentation startup NextSlide
 
-[Read more](https://simonwillison.net/2026/Aug/1/greg-brockman/#atom-everything)
+[Read more](https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/)
 
-### datasette-apps 0.2a0
-*Simon Willison - 2026-08-01*
+### Now we have a timeline of the OpenAI accidental attack against Hugging Face
+*Simon Willison - 2026-08-08*
 
-datasette-apps 0.2a0
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
 
-[Read more](https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything)
+[Read more](https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything)
 
 ---
 
