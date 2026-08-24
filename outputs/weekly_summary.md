@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-08-10 to 2026-08-17
-**Generated:** 2026-08-17 09:42
+**Period:** 2026-08-17 to 2026-08-24
+**Generated:** 2026-08-24 09:49
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 144
+- **Total Articles Fetched:** 138
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 144
+- General AI: 138
 
 ## Top Sources
-- TechCrunch AI: 46
-- Simon Willison: 36
-- Wired AI: 21
-- AI Business: 19
+- TechCrunch AI: 51
+- The Rundown AI: 24
+- Simon Willison: 18
+- AI News: 14
+- AI Business: 11
+- Wired AI: 8
 - MIT Tech Review: 6
-- The Rundown AI: 5
-- AI News: 4
-- Ars Technica AI: 3
-- IEEE Spectrum: 2
-- Anthropic: 1
+- IEEE Spectrum: 4
+- VentureBeat AI: 1
+- Ahead of AI: 1
 
 ## Recent Highlights
 
-### Woman claims her stepfather used Grok to transform childhood photo into explicit imagery
-*TechCrunch AI - 2026-08-15*
+### Harvard’s $699 startup bootcamp offers AI avatars of its instructors
+*TechCrunch AI - 2026-08-22*
 
-Woman claims her stepfather used Grok to transform childhood photo into explicit imagery
+Harvard’s $699 startup bootcamp offers AI avatars of its instructors
 
-[Read more](https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/)
+[Read more](https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/)
 
-### Anthropic shares more details about how Claude’s new watermarks will work
-*TechCrunch AI - 2026-08-15*
+### Quoting Linus Torvalds
+*Simon Willison - 2026-08-22*
 
-Anthropic shares more details about how Claude’s new watermarks will work
+Quoting Linus Torvalds
 
-[Read more](https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/)
+[Read more](https://simonwillison.net/2026/Aug/22/linus-torvalds/)
 
-### SpaceX officially closes its Cursor acquisition
-*TechCrunch AI - 2026-08-15*
+### Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research
+*TechCrunch AI - 2026-08-22*
 
-SpaceX officially closes its Cursor acquisition
+Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research
 
-[Read more](https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/)
+[Read more](https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/)
 
-### CORS Chat
-*Simon Willison - 2026-08-15*
+### llm 0.33
+*Simon Willison - 2026-08-22*
 
-CORS Chat
+llm 0.33
 
-[Read more](https://simonwillison.net/2026/Aug/15/cors-chat/)
+[Read more](https://simonwillison.net/2026/Aug/22/llm/)
 
-### Building an AI Text Detector From Scratch
-*Ahead of AI - 2026-08-15*
+### OpenAI says California should strengthen its AI safety bill
+*TechCrunch AI - 2026-08-22*
 
-Building an AI Text Detector From Scratch
+OpenAI says California should strengthen its AI safety bill
 
-[Read more](https://magazine.sebastianraschka.com/p/ai-detector-from-scratch)
+[Read more](https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/)
 
 ---
 
