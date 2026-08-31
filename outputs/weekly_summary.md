@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-08-17 to 2026-08-24
-**Generated:** 2026-08-24 09:49
+**Period:** 2026-08-24 to 2026-08-31
+**Generated:** 2026-08-31 16:48
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 138
+- **Total Articles Fetched:** 117
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 138
+- General AI: 117
 
 ## Top Sources
-- TechCrunch AI: 51
-- The Rundown AI: 24
-- Simon Willison: 18
-- AI News: 14
-- AI Business: 11
-- Wired AI: 8
+- TechCrunch AI: 46
+- Wired AI: 20
+- AI Business: 17
+- Simon Willison: 8
 - MIT Tech Review: 6
+- AI News: 5
 - IEEE Spectrum: 4
-- VentureBeat AI: 1
-- Ahead of AI: 1
+- The Rundown AI: 4
+- Anthropic: 3
+- VentureBeat AI: 2
 
 ## Recent Highlights
 
-### Harvard’s $699 startup bootcamp offers AI avatars of its instructors
-*TechCrunch AI - 2026-08-22*
+### Why the Hottest New Wearables Want to Be Ignored
+*Wired AI - 2026-08-30*
 
-Harvard’s $699 startup bootcamp offers AI avatars of its instructors
+Why the Hottest New Wearables Want to Be Ignored
 
-[Read more](https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/)
+[Read more](https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/)
 
-### Quoting Linus Torvalds
-*Simon Willison - 2026-08-22*
+### Introducing Hy4 Preview
+*Simon Willison - 2026-08-29*
 
-Quoting Linus Torvalds
+Introducing Hy4 Preview
 
-[Read more](https://simonwillison.net/2026/Aug/22/linus-torvalds/)
+[Read more](https://simonwillison.net/2026/Aug/29/hy4/)
 
-### Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research
-*TechCrunch AI - 2026-08-22*
+### Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft
+*TechCrunch AI - 2026-08-29*
 
-Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research
+Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft
 
-[Read more](https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/)
+[Read more](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/)
 
-### llm 0.33
-*Simon Willison - 2026-08-22*
+### “We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z
+*TechCrunch AI - 2026-08-29*
 
-llm 0.33
+“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z
 
-[Read more](https://simonwillison.net/2026/Aug/22/llm/)
+[Read more](https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/)
 
-### OpenAI says California should strengthen its AI safety bill
-*TechCrunch AI - 2026-08-22*
+### Nvidia’s AI advantage is moving beyond the GPU
+*TechCrunch AI - 2026-08-29*
 
-OpenAI says California should strengthen its AI safety bill
+Nvidia’s AI advantage is moving beyond the GPU
 
-[Read more](https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/)
+[Read more](https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/)
 
 ---
 
