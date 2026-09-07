@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-08-24 to 2026-08-31
-**Generated:** 2026-08-31 16:48
+**Period:** 2026-08-31 to 2026-09-07
+**Generated:** 2026-09-07 14:52
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 117
+- **Total Articles Fetched:** 126
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 117
+- General AI: 126
 
 ## Top Sources
-- TechCrunch AI: 46
+- TechCrunch AI: 54
 - Wired AI: 20
-- AI Business: 17
-- Simon Willison: 8
-- MIT Tech Review: 6
-- AI News: 5
-- IEEE Spectrum: 4
-- The Rundown AI: 4
-- Anthropic: 3
-- VentureBeat AI: 2
+- Simon Willison: 18
+- AI Business: 11
+- AI News: 7
+- The Rundown AI: 5
+- MIT Tech Review: 4
+- IEEE Spectrum: 2
+- Anthropic: 2
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### Why the Hottest New Wearables Want to Be Ignored
-*Wired AI - 2026-08-30*
+### My Brief Summer Fling With Siri AI
+*Wired AI - 2026-09-06*
 
-Why the Hottest New Wearables Want to Be Ignored
+My Brief Summer Fling With Siri AI
 
-[Read more](https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/)
+[Read more](https://www.wired.com/story/my-brief-summer-fling-with-siri-ai/)
 
-### Introducing Hy4 Preview
-*Simon Willison - 2026-08-29*
+### Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit
+*Wired AI - 2026-09-06*
 
-Introducing Hy4 Preview
+Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit
 
-[Read more](https://simonwillison.net/2026/Aug/29/hy4/)
+[Read more](https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/)
 
-### Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft
-*TechCrunch AI - 2026-08-29*
+### Quoting Zach Kehs
+*Simon Willison - 2026-09-06*
 
-Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft
+Quoting Zach Kehs
 
-[Read more](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/)
+[Read more](https://simonwillison.net/2026/Sep/6/zach-kehs/)
 
-### “We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z
-*TechCrunch AI - 2026-08-29*
+### Introducing GPT-6 Astra for developers
+*Simon Willison - 2026-09-05*
 
-“We’re not doing 30 bets a year”: Vijay Pande on betting small after running $4 billion at a16z
+Introducing GPT-6 Astra for developers
 
-[Read more](https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/)
+[Read more](https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/)
 
-### Nvidia’s AI advantage is moving beyond the GPU
-*TechCrunch AI - 2026-08-29*
+### Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft
+*TechCrunch AI - 2026-09-05*
 
-Nvidia’s AI advantage is moving beyond the GPU
+Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft
 
-[Read more](https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/)
+[Read more](https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/)
 
 ---
 
