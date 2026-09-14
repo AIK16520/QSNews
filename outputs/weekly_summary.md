@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-08-31 to 2026-09-07
-**Generated:** 2026-09-07 14:52
+**Period:** 2026-09-07 to 2026-09-14
+**Generated:** 2026-09-14 15:44
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 126
+- **Total Articles Fetched:** 125
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 126
+- General AI: 125
 
 ## Top Sources
-- TechCrunch AI: 54
-- Wired AI: 20
-- Simon Willison: 18
+- TechCrunch AI: 46
+- Simon Willison: 29
+- Wired AI: 14
 - AI Business: 11
-- AI News: 7
-- The Rundown AI: 5
+- AI News: 10
 - MIT Tech Review: 4
-- IEEE Spectrum: 2
-- Anthropic: 2
-- Last Week in AI: 1
+- The Rundown AI: 4
+- IEEE Spectrum: 3
+- Ars Technica AI: 2
+- Ahead of AI: 1
 
 ## Recent Highlights
 
-### My Brief Summer Fling With Siri AI
-*Wired AI - 2026-09-06*
+### AI Agents Are Thirsty for Power
+*Wired AI - 2026-09-13*
 
-My Brief Summer Fling With Siri AI
+AI Agents Are Thirsty for Power
 
-[Read more](https://www.wired.com/story/my-brief-summer-fling-with-siri-ai/)
+[Read more](https://www.wired.com/story/ai-agents-are-thirsty-for-power/)
 
-### Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit
-*Wired AI - 2026-09-06*
+### Generating running routes with GPT-6 Astra and ChatGPT Work
+*Simon Willison - 2026-09-12*
 
-Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit
+Generating running routes with GPT-6 Astra and ChatGPT Work
 
-[Read more](https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/)
+[Read more](https://simonwillison.net/2026/Sep/12/astra-running-routes/)
 
-### Quoting Zach Kehs
-*Simon Willison - 2026-09-06*
+### California Brown Pelican
+*Simon Willison - 2026-09-12*
 
-Quoting Zach Kehs
+California Brown Pelican
 
-[Read more](https://simonwillison.net/2026/Sep/6/zach-kehs/)
+[Read more](https://simonwillison.net/2026/Sep/12/sighting-399708714/)
 
-### Introducing GPT-6 Astra for developers
-*Simon Willison - 2026-09-05*
+### OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026
+*TechCrunch AI - 2026-09-12*
 
-Introducing GPT-6 Astra for developers
+OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026
 
-[Read more](https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/)
+[Read more](https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/)
 
-### Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft
-*TechCrunch AI - 2026-09-05*
+### Anthropic CEO outlines plan to slow AI development
+*TechCrunch AI - 2026-09-12*
 
-Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft
+Anthropic CEO outlines plan to slow AI development
 
-[Read more](https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/)
+[Read more](https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/)
 
 ---
 
