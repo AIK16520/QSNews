@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-09-07 to 2026-09-14
-**Generated:** 2026-09-14 15:44
+**Period:** 2026-09-14 to 2026-09-21
+**Generated:** 2026-09-21 15:43
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 125
+- **Total Articles Fetched:** 168
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 125
+- General AI: 168
 
 ## Top Sources
-- TechCrunch AI: 46
-- Simon Willison: 29
-- Wired AI: 14
-- AI Business: 11
-- AI News: 10
-- MIT Tech Review: 4
-- The Rundown AI: 4
-- IEEE Spectrum: 3
+- TechCrunch AI: 81
+- Wired AI: 24
+- Simon Willison: 19
+- AI News: 12
+- AI Business: 10
+- MIT Tech Review: 6
+- IEEE Spectrum: 5
+- The Rundown AI: 5
 - Ars Technica AI: 2
-- Ahead of AI: 1
+- Anthropic: 2
 
 ## Recent Highlights
 
-### AI Agents Are Thirsty for Power
-*Wired AI - 2026-09-13*
+### Meta's Muse Is Better at Surveilling Than Helping Me
+*Wired AI - 2026-09-20*
 
-AI Agents Are Thirsty for Power
+Meta's Muse Is Better at Surveilling Than Helping Me
 
-[Read more](https://www.wired.com/story/ai-agents-are-thirsty-for-power/)
+[Read more](https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/)
 
-### Generating running routes with GPT-6 Astra and ChatGPT Work
-*Simon Willison - 2026-09-12*
+### It’s Donald Trump Versus MAGA on Data Centers
+*Wired AI - 2026-09-20*
 
-Generating running routes with GPT-6 Astra and ChatGPT Work
+It’s Donald Trump Versus MAGA on Data Centers
 
-[Read more](https://simonwillison.net/2026/Sep/12/astra-running-routes/)
+[Read more](https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/)
 
-### California Brown Pelican
-*Simon Willison - 2026-09-12*
+### Flock reportedly tries to shrink workforce with employee buyouts
+*TechCrunch AI - 2026-09-19*
 
-California Brown Pelican
+Flock reportedly tries to shrink workforce with employee buyouts
 
-[Read more](https://simonwillison.net/2026/Sep/12/sighting-399708714/)
+[Read more](https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/)
 
-### OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026
-*TechCrunch AI - 2026-09-12*
+### Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force
+*TechCrunch AI - 2026-09-19*
 
-OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026
+Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force
 
-[Read more](https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/)
+[Read more](https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/)
 
-### Anthropic CEO outlines plan to slow AI development
-*TechCrunch AI - 2026-09-12*
+### datasette-auth-github 1.0
+*Simon Willison - 2026-09-19*
 
-Anthropic CEO outlines plan to slow AI development
+datasette-auth-github 1.0
 
-[Read more](https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/)
+[Read more](https://simonwillison.net/2026/Sep/19/datasette-auth-github/)
 
 ---
 
