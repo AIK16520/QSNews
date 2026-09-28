@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-09-14 to 2026-09-21
-**Generated:** 2026-09-21 15:43
+**Period:** 2026-09-21 to 2026-09-28
+**Generated:** 2026-09-28 17:26
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 168
+- **Total Articles Fetched:** 130
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 168
+- General AI: 130
 
 ## Top Sources
-- TechCrunch AI: 81
-- Wired AI: 24
-- Simon Willison: 19
-- AI News: 12
-- AI Business: 10
-- MIT Tech Review: 6
-- IEEE Spectrum: 5
-- The Rundown AI: 5
-- Ars Technica AI: 2
-- Anthropic: 2
+- TechCrunch AI: 62
+- Wired AI: 22
+- Simon Willison: 17
+- AI Business: 8
+- AI News: 6
+- MIT Tech Review: 4
+- Ars Technica AI: 4
+- The Rundown AI: 4
+- IEEE Spectrum: 1
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### Meta's Muse Is Better at Surveilling Than Helping Me
-*Wired AI - 2026-09-20*
+### Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India
+*TechCrunch AI - 2026-09-27*
 
-Meta's Muse Is Better at Surveilling Than Helping Me
+Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India
 
-[Read more](https://www.wired.com/story/metas-muse-is-better-at-surveilling-than-helping-me/)
+[Read more](https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/)
 
-### It’s Donald Trump Versus MAGA on Data Centers
-*Wired AI - 2026-09-20*
+### Kākāpō Party
+*Simon Willison - 2026-09-26*
 
-It’s Donald Trump Versus MAGA on Data Centers
+Kākāpō Party
 
-[Read more](https://www.wired.com/story/donald-trump-versus-maga-on-data-centers/)
+[Read more](https://simonwillison.net/2026/Sep/26/kakapo-party/)
 
-### Flock reportedly tries to shrink workforce with employee buyouts
-*TechCrunch AI - 2026-09-19*
+### Insurers claim AI is already increasing healthcare costs
+*TechCrunch AI - 2026-09-26*
 
-Flock reportedly tries to shrink workforce with employee buyouts
+Insurers claim AI is already increasing healthcare costs
 
-[Read more](https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/)
+[Read more](https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/)
 
-### Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force
-*TechCrunch AI - 2026-09-19*
+### I created an interactive digital avatar of myself — and you can talk to it
+*TechCrunch AI - 2026-09-26*
 
-Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force
+I created an interactive digital avatar of myself — and you can talk to it
 
-[Read more](https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/)
+[Read more](https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/)
 
-### datasette-auth-github 1.0
-*Simon Willison - 2026-09-19*
+### Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?
+*Wired AI - 2026-09-26*
 
-datasette-auth-github 1.0
+Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?
 
-[Read more](https://simonwillison.net/2026/Sep/19/datasette-auth-github/)
+[Read more](https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/)
 
 ---
 
