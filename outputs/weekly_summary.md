@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-09-21 to 2026-09-28
-**Generated:** 2026-09-28 17:26
+**Period:** 2026-09-28 to 2026-10-05
+**Generated:** 2026-10-05 18:03
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 130
+- **Total Articles Fetched:** 123
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 130
+- General AI: 123
 
 ## Top Sources
-- TechCrunch AI: 62
-- Wired AI: 22
-- Simon Willison: 17
-- AI Business: 8
-- AI News: 6
-- MIT Tech Review: 4
-- Ars Technica AI: 4
+- TechCrunch AI: 65
+- Wired AI: 18
+- Simon Willison: 11
+- AI Business: 10
+- MIT Tech Review: 5
 - The Rundown AI: 4
-- IEEE Spectrum: 1
-- Last Week in AI: 1
+- IEEE Spectrum: 2
+- Last Week in AI: 2
+- Ars Technica AI: 2
+- Anthropic: 2
 
 ## Recent Highlights
 
-### Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India
-*TechCrunch AI - 2026-09-27*
+### Rural Data Centers Are in for a Big Federal Tax Break
+*Wired AI - 2026-10-04*
 
-Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India
+Rural Data Centers Are in for a Big Federal Tax Break
 
-[Read more](https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/)
+[Read more](https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/)
 
-### Kākāpō Party
-*Simon Willison - 2026-09-26*
+### We're going to need default hard budget caps on pretty much everything
+*Simon Willison - 2026-10-03*
 
-Kākāpō Party
+We're going to need default hard budget caps on pretty much everything
 
-[Read more](https://simonwillison.net/2026/Sep/26/kakapo-party/)
+[Read more](https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/)
 
-### Insurers claim AI is already increasing healthcare costs
-*TechCrunch AI - 2026-09-26*
+### September sponsors-only newsletter
+*Simon Willison - 2026-10-03*
 
-Insurers claim AI is already increasing healthcare costs
+September sponsors-only newsletter
 
-[Read more](https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/)
+[Read more](https://simonwillison.net/2026/Oct/3/newsletter/)
 
-### I created an interactive digital avatar of myself — and you can talk to it
-*TechCrunch AI - 2026-09-26*
+### Amazon responds to data center backlash, says it no longer uses NDAs
+*TechCrunch AI - 2026-10-03*
 
-I created an interactive digital avatar of myself — and you can talk to it
+Amazon responds to data center backlash, says it no longer uses NDAs
 
-[Read more](https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/)
+[Read more](https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/)
 
-### Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?
-*Wired AI - 2026-09-26*
+### The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike
+*Wired AI - 2026-10-03*
 
-Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?
+The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike
 
-[Read more](https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/)
+[Read more](https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/)
 
 ---
 
