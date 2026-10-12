@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-09-28 to 2026-10-05
-**Generated:** 2026-10-05 18:03
+**Period:** 2026-10-05 to 2026-10-12
+**Generated:** 2026-10-12 18:42
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 123
+- **Total Articles Fetched:** 145
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 123
+- General AI: 145
 
 ## Top Sources
-- TechCrunch AI: 65
-- Wired AI: 18
-- Simon Willison: 11
+- TechCrunch AI: 68
+- Simon Willison: 24
+- Wired AI: 16
 - AI Business: 10
-- MIT Tech Review: 5
-- The Rundown AI: 4
-- IEEE Spectrum: 2
-- Last Week in AI: 2
+- MIT Tech Review: 8
+- IEEE Spectrum: 6
+- The Rundown AI: 6
+- Anthropic: 4
 - Ars Technica AI: 2
-- Anthropic: 2
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### Rural Data Centers Are in for a Big Federal Tax Break
-*Wired AI - 2026-10-04*
+### These execs think voice AI hasn’t reached its ChatGPT moment yet
+*TechCrunch AI - 2026-10-11*
 
-Rural Data Centers Are in for a Big Federal Tax Break
+These execs think voice AI hasn’t reached its ChatGPT moment yet
 
-[Read more](https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/)
+[Read more](https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/)
 
-### We're going to need default hard budget caps on pretty much everything
-*Simon Willison - 2026-10-03*
+### I Made Terrible Games With Google’s AI Playground
+*Wired AI - 2026-10-11*
 
-We're going to need default hard budget caps on pretty much everything
+I Made Terrible Games With Google’s AI Playground
 
-[Read more](https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/)
+[Read more](https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/)
 
-### September sponsors-only newsletter
-*Simon Willison - 2026-10-03*
+### Microsoft's Jacob Andreou on AI's product gap
+*The Rundown AI - 2026-10-11*
 
-September sponsors-only newsletter
+Microsoft's Jacob Andreou on AI's product gap
 
-[Read more](https://simonwillison.net/2026/Oct/3/newsletter/)
+[Read more](https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap)
 
-### Amazon responds to data center backlash, says it no longer uses NDAs
-*TechCrunch AI - 2026-10-03*
+### Dwarf Fortress uses version control now
+*Simon Willison - 2026-10-11*
 
-Amazon responds to data center backlash, says it no longer uses NDAs
+Dwarf Fortress uses version control now
 
-[Read more](https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/)
+[Read more](https://simonwillison.net/2026/Oct/11/dwarf-fortress/)
 
-### The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike
-*Wired AI - 2026-10-03*
+### Python 3.15.0 added to actions/python-versions
+*Simon Willison - 2026-10-10*
 
-The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike
+Python 3.15.0 added to actions/python-versions
 
-[Read more](https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/)
+[Read more](https://simonwillison.net/2026/Oct/10/python-actions/)
 
 ---
 
