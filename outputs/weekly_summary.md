@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-10-05 to 2026-10-12
-**Generated:** 2026-10-12 18:42
+**Period:** 2026-10-12 to 2026-10-19
+**Generated:** 2026-10-19 16:16
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 145
+- **Total Articles Fetched:** 118
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,55 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 145
+- General AI: 118
 
 ## Top Sources
-- TechCrunch AI: 68
-- Simon Willison: 24
-- Wired AI: 16
-- AI Business: 10
-- MIT Tech Review: 8
-- IEEE Spectrum: 6
-- The Rundown AI: 6
-- Anthropic: 4
-- Ars Technica AI: 2
-- Last Week in AI: 1
+- TechCrunch AI: 57
+- Wired AI: 18
+- Simon Willison: 17
+- AI Business: 9
+- The Rundown AI: 5
+- Ars Technica AI: 4
+- MIT Tech Review: 3
+- Anthropic: 3
+- IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### These execs think voice AI hasn’t reached its ChatGPT moment yet
-*TechCrunch AI - 2026-10-11*
+### OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty
+*Wired AI - 2026-10-18*
 
-These execs think voice AI hasn’t reached its ChatGPT moment yet
+OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty
 
-[Read more](https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/)
+[Read more](https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/)
 
-### I Made Terrible Games With Google’s AI Playground
-*Wired AI - 2026-10-11*
+### Data Centers Have a New PR Plan: Your Kid’s Field Trip
+*Wired AI - 2026-10-18*
 
-I Made Terrible Games With Google’s AI Playground
+Data Centers Have a New PR Plan: Your Kid’s Field Trip
 
-[Read more](https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/)
+[Read more](https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/)
 
-### Microsoft's Jacob Andreou on AI's product gap
-*The Rundown AI - 2026-10-11*
+### Meta removes language that raised scraping and AI training concerns
+*TechCrunch AI - 2026-10-17*
 
-Microsoft's Jacob Andreou on AI's product gap
+Meta removes language that raised scraping and AI training concerns
 
-[Read more](https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap)
+[Read more](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/)
 
-### Dwarf Fortress uses version control now
-*Simon Willison - 2026-10-11*
+### Inline rendering with document​.currentScript
+*Simon Willison - 2026-10-17*
 
-Dwarf Fortress uses version control now
+Inline rendering with document​.currentScript
 
-[Read more](https://simonwillison.net/2026/Oct/11/dwarf-fortress/)
+[Read more](https://simonwillison.net/2026/Oct/17/document-currentscript/)
 
-### Python 3.15.0 added to actions/python-versions
-*Simon Willison - 2026-10-10*
+### Anthropic says its workforce has become less junior and is spending more time in meetings
+*TechCrunch AI - 2026-10-17*
 
-Python 3.15.0 added to actions/python-versions
+Anthropic says its workforce has become less junior and is spending more time in meetings
 
-[Read more](https://simonwillison.net/2026/Oct/10/python-actions/)
+[Read more](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/)
 
 ---
 
