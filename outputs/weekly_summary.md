@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-10-12 to 2026-10-19
-**Generated:** 2026-10-19 16:16
+**Period:** 2026-10-19 to 2026-10-26
+**Generated:** 2026-10-26 15:55
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 118
+- **Total Articles Fetched:** 135
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,55 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 118
+- General AI: 135
 
 ## Top Sources
-- TechCrunch AI: 57
-- Wired AI: 18
-- Simon Willison: 17
-- AI Business: 9
-- The Rundown AI: 5
-- Ars Technica AI: 4
-- MIT Tech Review: 3
-- Anthropic: 3
-- IEEE Spectrum: 2
+- TechCrunch AI: 59
+- Wired AI: 19
+- Simon Willison: 13
+- Anthropic: 11
+- AI Business: 10
+- MIT Tech Review: 9
+- The Rundown AI: 6
+- IEEE Spectrum: 3
+- Ars Technica AI: 3
+- One Useful Thing: 1
 
 ## Recent Highlights
 
-### OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty
-*Wired AI - 2026-10-18*
+### What the US Movement Against Data Centers Can Learn From Abroad
+*Wired AI - 2026-10-25*
 
-OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty
+What the US Movement Against Data Centers Can Learn From Abroad
 
-[Read more](https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/)
+[Read more](https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/)
 
-### Data Centers Have a New PR Plan: Your Kid’s Field Trip
-*Wired AI - 2026-10-18*
+### SAP's Philipp Herzig on AI built for business data
+*The Rundown AI - 2026-10-25*
 
-Data Centers Have a New PR Plan: Your Kid’s Field Trip
+SAP's Philipp Herzig on AI built for business data
 
-[Read more](https://www.wired.com/story/data-center-industry-is-trying-to-woo-kids/)
+[Read more](https://therundownai.beehiiv.com/p/sap-s-philipp-herzig-on-ai-built-for-business-data)
 
-### Meta removes language that raised scraping and AI training concerns
-*TechCrunch AI - 2026-10-17*
+### The AI graveyard: a running list of projects and startups that didn’t make it
+*TechCrunch AI - 2026-10-24*
 
-Meta removes language that raised scraping and AI training concerns
+The AI graveyard: a running list of projects and startups that didn’t make it
 
-[Read more](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/)
+[Read more](https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/)
 
-### Inline rendering with document​.currentScript
-*Simon Willison - 2026-10-17*
+### Block’s new voice model sounds eerily human
+*TechCrunch AI - 2026-10-24*
 
-Inline rendering with document​.currentScript
+Block’s new voice model sounds eerily human
 
-[Read more](https://simonwillison.net/2026/Oct/17/document-currentscript/)
+[Read more](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/)
 
-### Anthropic says its workforce has become less junior and is spending more time in meetings
-*TechCrunch AI - 2026-10-17*
+### Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.
+*TechCrunch AI - 2026-10-24*
 
-Anthropic says its workforce has become less junior and is spending more time in meetings
+Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.
 
-[Read more](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/)
+[Read more](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/)
 
 ---
 
