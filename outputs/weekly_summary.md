@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-10-19 to 2026-10-26
-**Generated:** 2026-10-26 15:55
+**Period:** 2026-10-26 to 2026-11-02
+**Generated:** 2026-11-02 19:15
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 135
+- **Total Articles Fetched:** 124
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,55 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 135
+- General AI: 124
 
 ## Top Sources
-- TechCrunch AI: 59
-- Wired AI: 19
-- Simon Willison: 13
-- Anthropic: 11
-- AI Business: 10
-- MIT Tech Review: 9
-- The Rundown AI: 6
-- IEEE Spectrum: 3
-- Ars Technica AI: 3
-- One Useful Thing: 1
+- TechCrunch AI: 61
+- Wired AI: 18
+- Simon Willison: 14
+- AI Business: 11
+- MIT Tech Review: 5
+- IEEE Spectrum: 4
+- The Rundown AI: 4
+- Ars Technica AI: 4
+- Anthropic: 3
 
 ## Recent Highlights
 
-### What the US Movement Against Data Centers Can Learn From Abroad
-*Wired AI - 2026-10-25*
+### Chatbots Are Leading Hikers Astray, With Dangerous Consequences
+*Wired AI - 2026-11-01*
 
-What the US Movement Against Data Centers Can Learn From Abroad
+Chatbots Are Leading Hikers Astray, With Dangerous Consequences
 
-[Read more](https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/)
+[Read more](https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/)
 
-### SAP's Philipp Herzig on AI built for business data
-*The Rundown AI - 2026-10-25*
+### How We Took Over ChatGPT Accounts
+*Simon Willison - 2026-10-31*
 
-SAP's Philipp Herzig on AI built for business data
+How We Took Over ChatGPT Accounts
 
-[Read more](https://therundownai.beehiiv.com/p/sap-s-philipp-herzig-on-ai-built-for-business-data)
+[Read more](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/)
 
-### The AI graveyard: a running list of projects and startups that didn’t make it
-*TechCrunch AI - 2026-10-24*
+### datasette-llm 0.1a9
+*Simon Willison - 2026-10-31*
 
-The AI graveyard: a running list of projects and startups that didn’t make it
+datasette-llm 0.1a9
 
-[Read more](https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/)
+[Read more](https://simonwillison.net/2026/Oct/31/datasette-llm/)
 
-### Block’s new voice model sounds eerily human
-*TechCrunch AI - 2026-10-24*
+### Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’
+*TechCrunch AI - 2026-10-31*
 
-Block’s new voice model sounds eerily human
+Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’
 
-[Read more](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/)
+[Read more](https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/)
 
-### Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.
-*TechCrunch AI - 2026-10-24*
+### 4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale
+*TechCrunch AI - 2026-10-31*
 
-Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.
+4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale
 
-[Read more](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/)
+[Read more](https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/)
 
 ---
 
