@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-10-26 to 2026-11-02
-**Generated:** 2026-11-02 19:15
+**Period:** 2026-11-02 to 2026-11-09
+**Generated:** 2026-11-09 19:34
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 124
+- **Total Articles Fetched:** 126
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,55 +14,54 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 124
+- General AI: 126
 
 ## Top Sources
-- TechCrunch AI: 61
-- Wired AI: 18
-- Simon Willison: 14
-- AI Business: 11
-- MIT Tech Review: 5
-- IEEE Spectrum: 4
-- The Rundown AI: 4
-- Ars Technica AI: 4
-- Anthropic: 3
+- TechCrunch AI: 65
+- Wired AI: 21
+- Simon Willison: 13
+- AI Business: 9
+- MIT Tech Review: 8
+- The Rundown AI: 5
+- Ars Technica AI: 3
+- IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### Chatbots Are Leading Hikers Astray, With Dangerous Consequences
-*Wired AI - 2026-11-01*
+### I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good
+*Wired AI - 2026-11-08*
 
-Chatbots Are Leading Hikers Astray, With Dangerous Consequences
+I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good
 
-[Read more](https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/)
+[Read more](https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/)
 
-### How We Took Over ChatGPT Accounts
-*Simon Willison - 2026-10-31*
+### World Models Will Soon Be Inescapable. Here’s What You Need to Know
+*Wired AI - 2026-11-08*
 
-How We Took Over ChatGPT Accounts
+World Models Will Soon Be Inescapable. Here’s What You Need to Know
 
-[Read more](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/)
+[Read more](https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/)
 
-### datasette-llm 0.1a9
-*Simon Willison - 2026-10-31*
+### datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages
+*Simon Willison - 2026-11-07*
 
-datasette-llm 0.1a9
+datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages
 
-[Read more](https://simonwillison.net/2026/Oct/31/datasette-llm/)
+[Read more](https://simonwillison.net/2026/Nov/7/link-rel-next/)
 
-### Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’
-*TechCrunch AI - 2026-10-31*
+### After the midterms, things are looking rocky for Elon Musk and data centers
+*TechCrunch AI - 2026-11-07*
 
-Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’
+After the midterms, things are looking rocky for Elon Musk and data centers
 
-[Read more](https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/)
+[Read more](https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/)
 
-### 4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale
-*TechCrunch AI - 2026-10-31*
+### Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo
+*TechCrunch AI - 2026-11-07*
 
-4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale
+Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo
 
-[Read more](https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/)
+[Read more](https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/)
 
 ---
 
