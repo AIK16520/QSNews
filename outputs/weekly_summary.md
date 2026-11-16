@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-11-02 to 2026-11-09
-**Generated:** 2026-11-09 19:34
+**Period:** 2026-11-09 to 2026-11-16
+**Generated:** 2026-11-16 19:21
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 126
+- **Total Articles Fetched:** 210
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,54 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 126
+- General AI: 210
 
 ## Top Sources
-- TechCrunch AI: 65
-- Wired AI: 21
-- Simon Willison: 13
+- TechCrunch AI: 75
+- Wired AI: 31
+- Simon Willison: 20
+- Eugene Yan: 20
+- TheSequence: 20
+- AI Snake Oil: 16
 - AI Business: 9
-- MIT Tech Review: 8
 - The Rundown AI: 5
+- MIT Tech Review: 4
 - Ars Technica AI: 3
-- IEEE Spectrum: 2
 
 ## Recent Highlights
 
-### I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good
-*Wired AI - 2026-11-08*
+### Understanding Positional Embeddings in Modern LLMs
+*Ahead of AI - 2026-11-15*
 
-I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good
+Understanding Positional Embeddings in Modern LLMs
 
-[Read more](https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/)
+[Read more](https://magazine.sebastianraschka.com/p/understanding-positional-embeddings)
 
-### World Models Will Soon Be Inescapable. Here’s What You Need to Know
-*Wired AI - 2026-11-08*
+### The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket
+*TheSequence - 2026-11-15*
 
-World Models Will Soon Be Inescapable. Here’s What You Need to Know
+The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket
 
-[Read more](https://www.wired.com/story/world-models-will-soon-be-inescapable-what-you-need-to-know/)
+[Read more](https://thesequence.substack.com/p/the-sequence-radar-issue-972-last)
 
-### datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages
-*Simon Willison - 2026-11-07*
+### AI DJs Completely Kill My Groove
+*Wired AI - 2026-11-15*
 
-datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages
+AI DJs Completely Kill My Groove
 
-[Read more](https://simonwillison.net/2026/Nov/7/link-rel-next/)
+[Read more](https://www.wired.com/story/ai-djs-completely-kill-my-groove/)
 
-### After the midterms, things are looking rocky for Elon Musk and data centers
-*TechCrunch AI - 2026-11-07*
+### This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets
+*Wired AI - 2026-11-15*
 
-After the midterms, things are looking rocky for Elon Musk and data centers
+This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets
 
-[Read more](https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/)
+[Read more](https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/)
 
-### Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo
-*TechCrunch AI - 2026-11-07*
+### Where was Nvidia’s security team?
+*TechCrunch AI - 2026-11-15*
 
-Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo
+Where was Nvidia’s security team?
 
-[Read more](https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/)
+[Read more](https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/)
 
 ---
 
