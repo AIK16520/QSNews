@@ -1,11 +1,11 @@
 # Weekly Summary Report
-**Period:** 2026-11-09 to 2026-11-16
-**Generated:** 2026-11-16 19:21
+**Period:** 2026-11-16 to 2026-11-23
+**Generated:** 2026-11-23 20:56
 
 ---
 
 ## Overview
-- **Total Articles Fetched:** 210
+- **Total Articles Fetched:** 122
 - **Pending Review:** 0
 - **Reviewed:** 0
 - **Included:** 0
@@ -14,56 +14,56 @@
 ## Articles by Category
 
 ## Articles by Industry
-- General AI: 210
+- General AI: 122
 
 ## Top Sources
-- TechCrunch AI: 75
-- Wired AI: 31
-- Simon Willison: 20
-- Eugene Yan: 20
-- TheSequence: 20
-- AI Snake Oil: 16
-- AI Business: 9
-- The Rundown AI: 5
+- TechCrunch AI: 65
+- Wired AI: 23
+- Simon Willison: 14
 - MIT Tech Review: 4
-- Ars Technica AI: 3
+- Ars Technica AI: 4
+- IEEE Spectrum: 4
+- The Rundown AI: 4
+- Anthropic: 2
+- Eugene Yan: 1
+- Last Week in AI: 1
 
 ## Recent Highlights
 
-### Understanding Positional Embeddings in Modern LLMs
-*Ahead of AI - 2026-11-15*
+### Banks Have Had It Up to Here With Your AI Agent
+*Wired AI - 2026-11-22*
 
-Understanding Positional Embeddings in Modern LLMs
+Banks Have Had It Up to Here With Your AI Agent
 
-[Read more](https://magazine.sebastianraschka.com/p/understanding-positional-embeddings)
+[Read more](https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/)
 
-### The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket
-*TheSequence - 2026-11-15*
+### Muru
+*Simon Willison - 2026-11-21*
 
-The Sequence Radar - Issue #972: Last Week in AI: The Invisible Hand Wore a Leather Jacket
+Muru
 
-[Read more](https://thesequence.substack.com/p/the-sequence-radar-issue-972-last)
+[Read more](https://simonwillison.net/2026/Nov/21/muru/)
 
-### AI DJs Completely Kill My Groove
-*Wired AI - 2026-11-15*
+### Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance
+*TechCrunch AI - 2026-11-21*
 
-AI DJs Completely Kill My Groove
+Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance
 
-[Read more](https://www.wired.com/story/ai-djs-completely-kill-my-groove/)
+[Read more](https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/)
 
-### This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets
-*Wired AI - 2026-11-15*
+### A tale of two Nvidias
+*TechCrunch AI - 2026-11-21*
 
-This AI Tamagotchi Turns Everyday Objects Into Needy Virtual Pets
+A tale of two Nvidias
 
-[Read more](https://www.wired.com/story/this-ai-tamagotchi-oats-turns-everyday-objects-into-needy-virtual-pets/)
+[Read more](https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/)
 
-### Where was Nvidia’s security team?
-*TechCrunch AI - 2026-11-15*
+### Here are the top AI agents that can live in your text messages
+*TechCrunch AI - 2026-11-21*
 
-Where was Nvidia’s security team?
+Here are the top AI agents that can live in your text messages
 
-[Read more](https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/)
+[Read more](https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/)
 
 ---
 
